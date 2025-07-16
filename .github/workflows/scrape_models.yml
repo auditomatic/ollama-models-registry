@@ -100,10 +100,16 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
+    - name: Prepare Pages content
+      run: |
+        mkdir -p _site
+        cp README.md _site/
+        cp -r data/* _site/
+        
     - name: Upload to Pages
       uses: actions/upload-pages-artifact@v3
       with:
-        path: 'data/'
+        path: '_site/'
         
     - name: Deploy to Pages
       id: deployment
