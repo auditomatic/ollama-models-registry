@@ -1,0 +1,110 @@
+name: Scrape Ollama Models
+
+on:
+  # Run daily at 6 AM UTC
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run in dry-run mode (no commits)'
+        required: false
+        default: false
+        type: boolean
+
+  # Run on pushes to main for testing
+  push:
+    branches: [ main ]
+    paths: [ 'scripts/**', '.github/workflows/**' ]
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Required to push changes
+      pages: write     # Required for GitHub Pages
+      id-token: write  # Required for GitHub Pages
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run scraper (dry-run for testing)
+      if: github.event_name == 'push' || github.event.inputs.dry_run == 'true'
+      run: npm run test
+      
+    - name: Run scraper (production)
+      if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
+      run: npm run scrape
+      
+    - name: Check for changes
+      id: changes
+      run: |
+        if git diff --quiet data/; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "No changes detected in data files"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Changes detected in data files"
+          git diff --stat data/
+        fi
+        
+    - name: Commit and push changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/
+        git commit -m "Update Ollama models data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+        git push
+        
+    - name: Upload data as artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: ollama-models-data
+        path: data/
+        retention-days: 30
+
+  # Deploy to GitHub Pages
+  deploy-pages:
+    needs: scrape
+    if: github.ref == 'refs/heads/main'
+    
+    runs-on: ubuntu-latest
+    
+    permissions:
+      pages: write
+      id-token: write
+      
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload to Pages
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'data/'
+        
+    - name: Deploy to Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
