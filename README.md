@@ -1,5 +1,7 @@
 # Ollama Models Registry
 
+# [(https://ollama.models.auditomatic.org/models.json)](https://ollama.models.auditomatic.org/models.json)
+
 🤖 **Automated scraping and hosting of Ollama model registry data with intelligent tag classification**
 
 This repository automatically scrapes the [Ollama Library](https://ollama.com/library) daily using advanced DOM analysis and provides structured JSON data that can be consumed by applications.
@@ -23,9 +25,9 @@ This repository automatically scrapes the [Ollama Library](https://ollama.com/li
 
 ### 🔗 **Live Data Endpoints**
 
-- **[📄 Complete Dataset](https://ollama-models.auditomatic.org/models.json)** - All 175+ models with nested version tags
-- **[📈 Summary Dataset](https://ollama-models.auditomatic.org/models-summary.json)** - Top models and statistics
-- **[📅 Last Updated](https://ollama-models.auditomatic.org/last-updated.txt)** - Timestamp of last update
+- **[📄 Complete Dataset](https://ollama.models.auditomatic.org/models.json)** - All 175+ models with nested version tags
+- **[📈 Summary Dataset](https://ollama.models.auditomatic.org/models-summary.json)** - Top models and statistics
+- **[📅 Last Updated](https://ollama.models.auditomatic.org/last-updated.txt)** - Timestamp of last update
 
 ### API Usage
 
