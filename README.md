@@ -19,13 +19,19 @@ This repository automatically scrapes the [Ollama Library](https://ollama.com/li
 - **Community Insights**: Real pull counts and popularity rankings
 - **JSON API**: Served via GitHub Pages CDN
 
-## 🚀 Usage
+## 📊 **Direct JSON Access**
 
-### Direct JSON Access
+### 🔗 **Live Data Endpoints**
+
+- **[📄 Complete Dataset](https://ollama-models.auditomatic.org/models.json)** - All 175+ models with nested version tags
+- **[📈 Summary Dataset](https://ollama-models.auditomatic.org/models-summary.json)** - Top models and statistics
+- **[📅 Last Updated](https://ollama-models.auditomatic.org/last-updated.txt)** - Timestamp of last update
+
+### API Usage
 
 ```javascript
 // Get all models data
-const data = await fetch('https://username.github.io/ollama-models-registry/models.json')
+const data = await fetch('https://ollama-models.auditomatic.org/models.json')
   .then(r => r.json());
 
 // Access nested structure  
@@ -37,7 +43,7 @@ const pullCommands = Object.keys(data.models["deepseek-r1"].tags)
   .map(tag => `ollama pull deepseek-r1:${tag}`);
 
 // Get summary data only
-const summary = await fetch('https://username.github.io/ollama-models-registry/models-summary.json')
+const summary = await fetch('https://ollama-models.auditomatic.org/models-summary.json')
   .then(r => r.json());
 ```
 
