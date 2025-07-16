@@ -147,4 +147,4 @@ MIT License - Feel free to use this data in your projects!
 
 ---
 
-**🤖 This repository is fully automated - data updates happen without human intervention!**
+**🤖 This repository is fully automated - data updates happen without human intervention!** 
