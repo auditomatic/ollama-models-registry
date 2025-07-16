@@ -1,0 +1,30 @@
+{
+  "name": "ollama-models-registry",
+  "version": "1.0.0",
+  "description": "Automated scraping and hosting of Ollama model registry data",
+  "main": "scripts/scrape.js",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "test": "node scripts/scrape.js --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/ollama-models-registry.git"
+  },
+  "keywords": [
+    "ollama",
+    "llm",
+    "models",
+    "registry",
+    "ai",
+    "machine-learning"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
