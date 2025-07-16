@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Models Registry</title>
+    <meta name="description" content="Automated Ollama model registry with 175+ models and intelligent tag classification">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 2rem;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #e2e8f0;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        
+        .json-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .json-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .json-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .json-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .json-card p {
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .json-url {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h4 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature p {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        .code-example {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: left;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                gap: 1rem;
+            }
+            
+            .json-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🤖 Ollama Models Registry</h1>
+            <p class="subtitle">Automated scraping and hosting of Ollama model registry data with intelligent tag classification</p>
+            <div class="badge">
+                <span>🔄 Auto-updated daily at 6 AM UTC</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="totalModels">175+</div>
+                <div class="stat-label">Models</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="totalTags">319+</div>
+                <div class="stat-label">Version Tags</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Categories</div>
+            </div>
+        </div>
+
+        <div class="json-links">
+            <a href="./models.json" class="json-card" target="_blank">
+                <h3>📊 Complete Dataset</h3>
+                <p>All 175+ models with nested version tags, descriptions, and metadata</p>
+                <div class="json-url">models.json</div>
+            </a>
+            
+            <a href="./models-summary.json" class="json-card" target="_blank">
+                <h3>📈 Summary Dataset</h3>
+                <p>Top models ranked by popularity with key statistics</p>
+                <div class="json-url">models-summary.json</div>
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h4>🔍 Smart Classification</h4>
+                <p>Auto-discovers model vs version tags using advanced DOM analysis</p>
+            </div>
+            <div class="feature">
+                <h4>📊 Nested Structure</h4>
+                <p>Models contain hierarchical version tags for easy consumption</p>
+            </div>
+            <div class="feature">
+                <h4>🏆 Popularity Rankings</h4>
+                <p>Top models ranked by real community pull counts</p>
+            </div>
+            <div class="feature">
+                <h4>🔄 Future-Proof</h4>
+                <p>Survives website redesigns through adaptive pattern detection</p>
+            </div>
+        </div>
+
+        <div class="code-example">
+<span style="color: #81c784;">// Get all models data</span>
+<span style="color: #90caf9;">const</span> data = <span style="color: #90caf9;">await</span> <span style="color: #ffab91;">fetch</span>(<span style="color: #c5e1a5;">'https://ollama.models.auditomatic.org/models.json'</span>)
+  .<span style="color: #ffab91;">then</span>(r => r.<span style="color: #ffab91;">json</span>());
+
+<span style="color: #81c784;">// Access nested structure</span>
+<span style="color: #90caf9;">const</span> deepseekVersions = <span style="color: #f8bbd9;">Object</span>.<span style="color: #ffab91;">keys</span>(data.models[<span style="color: #c5e1a5;">"deepseek-r1"</span>].tags);
+<span style="color: #81c784;">// → ["1.5b", "7b", "8b", "14b", "32b", "70b", "671b"]</span>
+
+<span style="color: #81c784;">// Generate pull commands</span>
+<span style="color: #90caf9;">const</span> pullCommands = <span style="color: #f8bbd9;">Object</span>.<span style="color: #ffab91;">keys</span>(data.models[<span style="color: #c5e1a5;">"deepseek-r1"</span>].tags)
+  .<span style="color: #ffab91;">map</span>(tag => <span style="color: #c5e1a5;">`ollama pull deepseek-r1:</span><span style="color: #ffcdd2;">${tag}</span><span style="color: #c5e1a5;">`</span>);
+        </div>
+
+        <div class="footer">
+            <p>
+                Data sourced from <a href="https://ollama.com/library" class="github-link">Ollama Library</a> • 
+                <a href="https://github.com/auditomatic/ollama-models-registry" class="github-link">View on GitHub</a>
+            </p>
+            <p>Last updated: <span id="lastUpdated">Loading...</span></p>
+        </div>
+    </div>
+
+    <script>
+        // Load and display current statistics
+        fetch('./models-summary.json')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('totalModels').textContent = data.totalModels;
+                document.getElementById('totalTags').textContent = data.totalTags;
+                document.getElementById('lastUpdated').textContent = new Date(data.lastUpdated).toLocaleDateString();
+            })
+            .catch(() => {
+                document.getElementById('lastUpdated').textContent = 'Unable to load';
+            });
+    </script>
+</body>
+</html>
