@@ -1,9 +1,9 @@
 name: Scrape Ollama Models
 
 on:
-  # Run daily at 2342 UTC 
+  # Run daily at 2354 UTC 
   schedule:
-    - cron: '42 23 * * *'
+    - cron: '54 23 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -71,6 +71,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/
+        git add models.json models-summary.json last-updated.txt 2>/dev/null || true
         git commit -m "Update Ollama models data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         git push
 
@@ -86,6 +87,18 @@ jobs:
     - name: Setup Pages
       if: github.ref == 'refs/heads/main'
       uses: actions/configure-pages@v4
+
+    - name: Copy JSON files to repo root
+      if: github.ref == 'refs/heads/main'
+      run: |
+        if [ -d "data" ] && [ "$(ls -A data)" ]; then
+          cp data/models.json ./
+          cp data/models-summary.json ./
+          cp data/last-updated.txt ./
+          echo "JSON files copied to repo root"
+        else
+          echo "No data files to copy to root"
+        fi
 
     - name: Prepare Pages content
       if: github.ref == 'refs/heads/main'
