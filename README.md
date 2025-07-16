@@ -95,6 +95,12 @@ const summary = await fetch('https://ollama-models.auditomatic.org/models-summar
 
 ## 🛠️ Development
 
+### Manually Run Job
+
+```bash
+gh workflow run "Scrape Ollama Models"
+```
+
 ### Local Testing
 
 ```bash
