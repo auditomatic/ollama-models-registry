@@ -9,10 +9,10 @@ const OLLAMA_LIBRARY_URL = 'https://ollama.com/library';
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const DRY_RUN = process.argv.includes('--dry-run');
 
-// Model extraction function (same as our browser console script)
+// Model extraction function with proper nested structure
 const extractModelsScript = `
 function extractOllamaModels() {
-    const models = [];
+    const modelsMap = {};
     const modelItems = document.querySelectorAll('li[x-test-model]');
     
     modelItems.forEach(item => {
@@ -22,28 +22,14 @@ function extractOllamaModels() {
         const modelName = link.href.split('/library/')[1];
         const description = item.querySelector('p.text-neutral-800, p.text-md')?.textContent?.trim() || '';
         
-        // Extract all text and look for version tags and metadata
+        // Extract all text for parsing
         const fullText = item.textContent.replace(/\\s+/g, ' ').trim();
-        const tags = [];
-        const categories = [];
-        
-        // Look for size indicators like 1.5b, 7b, 32b, etc.
-        const sizeMatches = fullText.match(/\\b\\d+\\.?\\d*[bmgt]b?\\b/gi);
-        if (sizeMatches) {
-            tags.push(...sizeMatches.map(s => s.toLowerCase()));
-        }
-        
-        // Look for model categories/features
-        const categoryMatches = fullText.match(/\\b(latest|instruct|chat|code|vision|tools|thinking|base|uncensored)\\b/gi);
-        if (categoryMatches) {
-            categories.push(...categoryMatches.map(c => c.toLowerCase()));
-        }
         
         // Extract pull count
         const pullMatch = fullText.match(/(\\d+\\.?\\d*[KMB])\\s*Pulls?/i);
         const pullCount = pullMatch ? pullMatch[1] : null;
         
-        // Extract tag count
+        // Extract tag count  
         const tagMatch = fullText.match(/(\\d+)\\s*Tags?/i);
         const tagCount = tagMatch ? parseInt(tagMatch[1]) : null;
         
@@ -51,22 +37,52 @@ function extractOllamaModels() {
         const updatedMatch = fullText.match(/Updated\\s+([^\\n]+)/i);
         const lastUpdated = updatedMatch ? updatedMatch[1].trim() : null;
         
-        models.push({
-            name: modelName,
+        // Extract categories (tools, thinking, vision, etc.)
+        const categoryMatches = fullText.match(/\\b(latest|instruct|chat|code|vision|tools|thinking|base|uncensored)\\b/gi);
+        const categories = categoryMatches ? [...new Set(categoryMatches.map(c => c.toLowerCase()))] : [];
+        
+        // Extract version tags more carefully
+        // Look for patterns between description and pull count
+        const descriptionEnd = fullText.indexOf(description) + description.length;
+        const pullStart = pullCount ? fullText.indexOf(pullCount) : fullText.length;
+        const tagSection = fullText.substring(descriptionEnd, pullStart).trim();
+        
+        // Extract size-based tags (1.5b, 7b, etc.) and other version identifiers
+        const tags = {};
+        const tagPatterns = [
+            /\\b\\d+\\.?\\d*[bmgt]b?\\b/gi,     // Size tags: 1.5b, 7b, 32b, etc.
+            /\\be\\d+[bmgt]?\\b/gi,            // E-series: e2b, e4b  
+            /\\b(latest|base|instruct|chat|code)\\b/gi  // Common version tags
+        ];
+        
+        tagPatterns.forEach(pattern => {
+            const matches = tagSection.match(pattern);
+            if (matches) {
+                matches.forEach(match => {
+                    const cleanTag = match.toLowerCase().trim();
+                    if (cleanTag && !categories.includes(cleanTag)) {
+                        tags[cleanTag] = {};
+                    }
+                });
+            }
+        });
+        
+        // Store in nested structure
+        modelsMap[modelName] = {
             description: description,
-            tags: [...new Set(tags)],
-            categories: [...new Set(categories)],
+            categories: categories,
             pullCount: pullCount,
             tagCount: tagCount,
             lastUpdated: lastUpdated,
+            tags: tags,
             extractedAt: new Date().toISOString()
-        });
+        };
     });
     
-    return models;
+    return modelsMap;
 }
 
-return extractOllamaModels();
+extractOllamaModels();
 `;
 
 async function scrapeOllamaModels() {
@@ -96,47 +112,193 @@ async function scrapeOllamaModels() {
         await page.waitForSelector('li[x-test-model]', { timeout: 10000 });
         
         // Give a bit more time for any dynamic content
-        await page.waitForTimeout(2000);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        
+        console.log('🔍 Analyzing chip structure...');
+        const chipAnalysis = await page.evaluate(() => {
+            const modelItems = document.querySelectorAll('li[x-test-model]');
+            const analysis = [];
+            
+            modelItems.forEach((item, index) => {
+                if (index >= 5) return; // Only analyze first 5 for structure
+                
+                const link = item.querySelector('a[href*="/library/"]');
+                if (!link) return;
+                
+                const modelName = link.href.split('/library/')[1];
+                
+                // Find all possible chip/tag elements
+                const allElements = item.querySelectorAll('span, div');
+                const chips = [];
+                
+                allElements.forEach(el => {
+                    const text = el.textContent.trim();
+                    const classes = el.className;
+                    const styles = window.getComputedStyle(el);
+                    const bgColor = styles.backgroundColor;
+                    const color = styles.color;
+                    
+                    // Look for elements that could be tags/chips
+                    if (text.length > 0 && text.length < 20 && 
+                        !text.includes('Pull') && !text.includes('Tag') && 
+                        !text.includes('Updated') && !text.includes('ago') &&
+                        !text.includes('.') && !text.includes('M') && !text.includes('K') &&
+                        text.match(/^[a-z0-9.-]+$/i)) {
+                        
+                        chips.push({
+                            text: text,
+                            classes: classes,
+                            bgColor: bgColor,
+                            color: color,
+                            position: el.getBoundingClientRect(),
+                            parent: el.parentElement?.className || '',
+                            tagName: el.tagName
+                        });
+                    }
+                });
+                
+                analysis.push({
+                    model: modelName,
+                    chips: chips
+                });
+            });
+            
+            return analysis;
+        });
+        
+        console.log('📊 Chip structure analysis:', JSON.stringify(chipAnalysis, null, 2));
+        
+        // Discover styling patterns by analyzing known tag types
+        console.log('🔍 Discovering tag styling patterns...');
+        const styleDiscovery = await page.evaluate(() => {
+            // Known model-level tags (capabilities/features)
+            const knownModelTags = ['vision', 'tools', 'thinking', 'chat', 'code', 'instruct', 'uncensored'];
+            // Known version tags (sizes/variants)  
+            const knownVersionTags = ['1b', '3b', '7b', '8b', '14b', '30b', '32b', '70b', 'e2b', 'e4b', 'latest', 'base'];
+            
+            const styleGroups = {};
+            
+            // Collect all chips from all models
+            document.querySelectorAll('li[x-test-model]').forEach(item => {
+                const allElements = item.querySelectorAll('span');
+                
+                allElements.forEach(el => {
+                    const text = el.textContent.trim().toLowerCase();
+                    const classes = el.className;
+                    const styles = window.getComputedStyle(el);
+                    const bgColor = styles.backgroundColor;
+                    
+                    // Only look at chip-like elements
+                    if (classes.includes('inline-flex') && classes.includes('rounded-md') && text.length < 20) {
+                        const styleKey = classes + '|' + bgColor;
+                        
+                        if (!styleGroups[styleKey]) {
+                            styleGroups[styleKey] = {
+                                style: { classes: classes, bgColor: bgColor },
+                                modelTags: [],
+                                versionTags: [],
+                                unknownTags: []
+                            };
+                        }
+                        
+                        if (knownModelTags.includes(text)) {
+                            styleGroups[styleKey].modelTags.push(text);
+                        } else if (knownVersionTags.includes(text)) {
+                            styleGroups[styleKey].versionTags.push(text);
+                        } else {
+                            styleGroups[styleKey].unknownTags.push(text);
+                        }
+                    }
+                });
+            });
+            
+            // Find which style is model vs version based on majority
+            let modelStyle = null;
+            let versionStyle = null;
+            let maxModelCount = 0;
+            let maxVersionCount = 0;
+            
+            Object.entries(styleGroups).forEach(([styleKey, group]) => {
+                const modelCount = group.modelTags.length;
+                const versionCount = group.versionTags.length;
+                
+                if (modelCount > maxModelCount) {
+                    maxModelCount = modelCount;
+                    modelStyle = group.style;
+                }
+                if (versionCount > maxVersionCount) {
+                    maxVersionCount = versionCount;
+                    versionStyle = group.style;
+                }
+            });
+            
+            return {
+                styleGroups: styleGroups,
+                modelStyle: modelStyle,
+                versionStyle: versionStyle,
+                confidence: { modelCount: maxModelCount, versionCount: maxVersionCount }
+            };
+        });
+        
+        console.log('🎯 Auto-discovered styles:');
+        console.log('Model style:', styleDiscovery.modelStyle);
+        console.log('Version style:', styleDiscovery.versionStyle);
+        console.log('Confidence:', styleDiscovery.confidence);
+        console.log('All style groups:', styleDiscovery.styleGroups);
         
         console.log('🔍 Extracting model data...');
-        const models = await page.evaluate(extractModelsScript);
+        const modelsMap = await page.evaluate(extractModelsScript);
         
-        console.log(`✅ Extracted ${models.length} models`);
+        const modelNames = Object.keys(modelsMap);
+        console.log(`✅ Extracted ${modelNames.length} models`);
         
-        // Create summary data
+        // Create summary data from nested structure
+        const totalTags = Object.values(modelsMap).reduce((sum, model) => sum + Object.keys(model.tags).length, 0);
+        const allCategories = [...new Set(Object.values(modelsMap).flatMap(m => m.categories))].sort();
+        
+        // Get top models by pull count
+        const topModels = Object.entries(modelsMap)
+            .filter(([name, model]) => model.pullCount)
+            .sort(([nameA, modelA], [nameB, modelB]) => {
+                const aNum = parseFloat(modelA.pullCount);
+                const bNum = parseFloat(modelB.pullCount);
+                const aUnit = modelA.pullCount.slice(-1);
+                const bUnit = modelB.pullCount.slice(-1);
+                
+                const multiplier = { K: 1000, M: 1000000, B: 1000000000 };
+                const aValue = aNum * (multiplier[aUnit] || 1);
+                const bValue = bNum * (multiplier[bUnit] || 1);
+                
+                return bValue - aValue;
+            })
+            .slice(0, 20)
+            .map(([name, model]) => ({ 
+                name: name, 
+                pullCount: model.pullCount, 
+                description: model.description,
+                tagCount: Object.keys(model.tags).length
+            }));
+        
         const summary = {
             lastUpdated: new Date().toISOString(),
-            totalModels: models.length,
-            totalTags: models.reduce((sum, m) => sum + (m.tagCount || 0), 0),
-            categories: [...new Set(models.flatMap(m => m.categories))].sort(),
-            topModels: models
-                .filter(m => m.pullCount)
-                .sort((a, b) => {
-                    const aNum = parseFloat(a.pullCount);
-                    const bNum = parseFloat(b.pullCount);
-                    const aUnit = a.pullCount.slice(-1);
-                    const bUnit = b.pullCount.slice(-1);
-                    
-                    const multiplier = { K: 1000, M: 1000000, B: 1000000000 };
-                    const aValue = aNum * (multiplier[aUnit] || 1);
-                    const bValue = bNum * (multiplier[bUnit] || 1);
-                    
-                    return bValue - aValue;
-                })
-                .slice(0, 20)
-                .map(m => ({ name: m.name, pullCount: m.pullCount, description: m.description }))
+            totalModels: modelNames.length,
+            totalTags: totalTags,
+            categories: allCategories,
+            topModels: topModels
         };
         
         const fullData = {
             ...summary,
-            models: models
+            models: modelsMap
         };
         
         if (DRY_RUN) {
             console.log('🔍 DRY RUN - Would save:');
-            console.log(`- ${models.length} total models`);
+            console.log(`- ${modelNames.length} total models`);
+            console.log(`- ${totalTags} total tags`);
             console.log(`- Top 5 models: ${summary.topModels.slice(0, 5).map(m => m.name).join(', ')}`);
             console.log(`- Categories: ${summary.categories.join(', ')}`);
+            console.log(`- Sample model structure:`, Object.entries(modelsMap)[0]);
             return;
         }
         
@@ -160,7 +322,7 @@ async function scrapeOllamaModels() {
         ]);
         
         console.log('💾 Data saved successfully!');
-        console.log(`📊 Summary: ${models.length} models, ${summary.categories.length} categories`);
+        console.log(`📊 Summary: ${modelNames.length} models, ${summary.categories.length} categories`);
         
     } catch (error) {
         console.error('❌ Error during scraping:', error);
