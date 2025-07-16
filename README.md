@@ -1,13 +1,22 @@
 # Ollama Models Registry
 
-🤖 **Automated scraping and hosting of Ollama model registry data**
+🤖 **Automated scraping and hosting of Ollama model registry data with intelligent tag classification**
 
-This repository automatically scrapes the [Ollama Library](https://ollama.com/library) daily and provides the data as JSON files that can be consumed by applications.
+This repository automatically scrapes the [Ollama Library](https://ollama.com/library) daily using advanced DOM analysis and provides structured JSON data that can be consumed by applications.
+
+## 🎯 Key Features
+
+- **🔍 Adaptive Tag Classification**: Auto-discovers model vs version tags using heuristic analysis
+- **📊 Nested Data Structure**: Models with hierarchical version tags for easy consumption  
+- **🏆 Popularity Rankings**: Top models ranked by community pull counts
+- **🔄 Future-Proof**: Survives website redesigns through style pattern detection
+- **⚡ Single-Page Scraping**: Extracts all 175+ models in one request
 
 ## 📊 Data Available
 
-- **Full Dataset**: All models with complete metadata
-- **Summary**: Condensed view with top models and statistics  
+- **Complete Dataset**: 175+ models with nested version tags
+- **Smart Classification**: Model-level tags (tools, vision) vs version tags (7b, 8b)
+- **Community Insights**: Real pull counts and popularity rankings
 - **JSON API**: Served via GitHub Pages CDN
 
 ## 🚀 Usage
@@ -16,40 +25,56 @@ This repository automatically scrapes the [Ollama Library](https://ollama.com/li
 
 ```javascript
 // Get all models data
-const models = await fetch('https://username.github.io/ollama-models-registry/models.json')
+const data = await fetch('https://username.github.io/ollama-models-registry/models.json')
   .then(r => r.json());
+
+// Access nested structure  
+const deepseekVersions = Object.keys(data.models["deepseek-r1"].tags);
+// → ["1.5b", "7b", "8b", "14b", "32b", "70b", "671b"]
+
+// Generate pull commands
+const pullCommands = Object.keys(data.models["deepseek-r1"].tags)
+  .map(tag => `ollama pull deepseek-r1:${tag}`);
 
 // Get summary data only
 const summary = await fetch('https://username.github.io/ollama-models-registry/models-summary.json')
   .then(r => r.json());
 ```
 
-### Example Data Structure
+### Nested Data Structure
 
 ```json
 {
-  "lastUpdated": "2025-01-16T06:00:00Z",
+  "lastUpdated": "2025-07-16T21:29:22.933Z",
   "totalModels": 175,
-  "totalTags": 1250,
+  "totalTags": 319,
   "categories": ["tools", "thinking", "vision", "code", "chat"],
   "topModels": [
     {
-      "name": "llama3.1",
-      "pullCount": "100M",
-      "description": "Meta's latest language model..."
+      "name": "llama3.1", 
+      "pullCount": "97.9M",
+      "description": "Llama 3.1 is a new state-of-the-art model...",
+      "tagCount": 3
     }
   ],
-  "models": [
-    {
-      "name": "deepseek-r1",
+  "models": {
+    "deepseek-r1": {
       "description": "DeepSeek-R1 is a family of open reasoning models...",
-      "tags": ["1.5b", "7b", "8b", "14b", "32b", "70b", "671b"],
       "categories": ["tools", "thinking"],
       "pullCount": "53.4M",
       "tagCount": 35,
-      "lastUpdated": "2 weeks ago"
+      "lastUpdated": "2 weeks ago",
+      "tags": {
+        "1.5b": {},
+        "7b": {},  
+        "8b": {},
+        "14b": {},
+        "32b": {},
+        "70b": {},
+        "671b": {}
+      }
     }
-  ]
+  }
 }
 ```
 
@@ -75,10 +100,22 @@ npm test
 npm run scrape
 ```
 
-### Scripts
+### Technical Implementation
 
-- `scripts/scrape.js` - Main scraping logic using Puppeteer
+- `scripts/scrape.js` - Advanced scraping with adaptive tag classification
+  - **DOM Analysis**: Inspects chip styling to auto-discover tag types
+  - **Heuristic Classification**: Uses known model/version patterns for validation  
+  - **Style Pattern Detection**: Future-proof against UI redesigns
+  - **Puppeteer Integration**: Full browser rendering for JavaScript content
 - `.github/workflows/scrape-models.yml` - GitHub Actions automation
+
+### How It Works
+
+1. **Load Page**: Puppeteer loads the Ollama library with full JavaScript rendering
+2. **Analyze Chips**: Discovers tag styling patterns using known model/version tags
+3. **Auto-Classify**: Distinguishes model tags (tools, vision) from version tags (7b, 8b)  
+4. **Extract Data**: Scrapes all 175+ models with proper tag classification
+5. **Structure Output**: Creates nested JSON with models containing version tags
 
 ## 📁 Data Files
 
