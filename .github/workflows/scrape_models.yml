@@ -1,9 +1,9 @@
 name: Scrape Ollama Models
 
 on:
-  # Run daily at 2300 UTC 
+  # Run daily at 2342 UTC 
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '42 23 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
         default: false
         type: boolean
 
-  # Run on pushes to main for testing
+  # Run on pushes to main for production
   push:
     branches: [ main ]
     paths: [ 'scripts/**', '.github/workflows/**' ]
@@ -46,11 +46,11 @@ jobs:
       run: npm ci
 
     - name: Run scraper (dry-run for testing)
-      if: github.event_name == 'push' || github.event.inputs.dry_run == 'true'
+      if: github.event.inputs.dry_run == 'true'
       run: npm run test
 
     - name: Run scraper (production)
-      if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
+      if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
       run: npm run scrape
 
     - name: Check for changes
