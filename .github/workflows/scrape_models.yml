@@ -4,7 +4,7 @@ on:
   # Run daily at 6 AM UTC
   schedule:
     - cron: '0 6 * * *'
-  
+
   # Allow manual trigger
   workflow_dispatch:
     inputs:
@@ -20,35 +20,39 @@ on:
     paths: [ 'scripts/**', '.github/workflows/**' ]
 
 jobs:
-  scrape:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write  # Required to push changes
       pages: write     # Required for GitHub Pages
       id-token: write  # Required for GitHub Pages
-    
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
-        
+
     - name: Install dependencies
       run: npm ci
-      
+
     - name: Run scraper (dry-run for testing)
       if: github.event_name == 'push' || github.event.inputs.dry_run == 'true'
       run: npm run test
-      
+
     - name: Run scraper (production)
       if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
       run: npm run scrape
-      
+
     - name: Check for changes
       id: changes
       run: |
@@ -60,7 +64,7 @@ jobs:
           echo "Changes detected in data files"
           git diff --stat data/
         fi
-        
+
     - name: Commit and push changes
       if: steps.changes.outputs.changed == 'true'
       run: |
@@ -69,7 +73,7 @@ jobs:
         git add data/
         git commit -m "Update Ollama models data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         git push
-        
+
     - name: Upload data as artifact
       if: always()
       uses: actions/upload-artifact@v4
@@ -78,39 +82,33 @@ jobs:
         path: data/
         retention-days: 30
 
-  # Deploy to GitHub Pages
-  deploy-pages:
-    needs: scrape
-    if: github.ref == 'refs/heads/main'
-    
-    runs-on: ubuntu-latest
-    
-    permissions:
-      pages: write
-      id-token: write
-      
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-      
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      
+    # GitHub Pages deployment
     - name: Setup Pages
+      if: github.ref == 'refs/heads/main'
       uses: actions/configure-pages@v4
-      
+
     - name: Prepare Pages content
+      if: github.ref == 'refs/heads/main'
       run: |
         mkdir -p _site
         cp README.md _site/
-        cp -r data/* _site/
-        
+        if [ -d "data" ] && [ "$(ls -A data)" ]; then
+          cp -r data/* _site/
+        else
+          echo "Warning: No data directory or empty data directory"
+          # Create placeholder files if data doesn't exist
+          echo '{"error": "Data not available"}' > _site/models.json
+          echo '{"error": "Data not available"}' > _site/models-summary.json
+          echo "$(date -u)" > _site/last-updated.txt
+        fi
+
     - name: Upload to Pages
+      if: github.ref == 'refs/heads/main'
       uses: actions/upload-pages-artifact@v3
       with:
         path: '_site/'
-        
+
     - name: Deploy to Pages
+      if: github.ref == 'refs/heads/main'
       id: deployment
       uses: actions/deploy-pages@v4
