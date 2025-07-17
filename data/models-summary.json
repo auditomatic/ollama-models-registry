@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-07-17T02:25:17.635Z",
+  "lastUpdated": "2025-07-17T20:51:23.539Z",
   "totalModels": 175,
-  "totalTags": 319,
+  "totalTags": 6686,
   "categories": [
     "base",
     "chat",
@@ -16,123 +16,123 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "97.9M",
+      "pullCount": "98M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
-      "tagCount": 3
+      "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "53.4M",
+      "pullCount": "53.6M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
-      "tagCount": 7
+      "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
       "pullCount": "33M",
       "description": "A high-performing open embedding model with a large token context window.",
-      "tagCount": 0
+      "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "25.2M",
+      "pullCount": "25.3M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
-      "tagCount": 2
+      "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "16.6M",
+      "pullCount": "16.7M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
-      "tagCount": 1
+      "tagCount": 84
     },
     {
       "name": "qwen2.5",
       "pullCount": "11.2M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
-      "tagCount": 7
+      "tagCount": 133
     },
     {
       "name": "llama3",
-      "pullCount": "9.3M",
+      "pullCount": "9.4M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
-      "tagCount": 2
+      "tagCount": 68
     },
     {
       "name": "gemma3",
-      "pullCount": "8.8M",
+      "pullCount": "8.9M",
       "description": "The current, most capable model that runs on a single GPU.",
-      "tagCount": 4
+      "tagCount": 21
     },
     {
       "name": "llava",
       "pullCount": "7.7M",
       "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
-      "tagCount": 3
+      "tagCount": 98
     },
     {
       "name": "gemma2",
       "pullCount": "6M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
-      "tagCount": 3
+      "tagCount": 94
     },
     {
       "name": "qwen2.5-coder",
       "pullCount": "5.8M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
-      "tagCount": 6
+      "tagCount": 199
     },
     {
       "name": "phi3",
-      "pullCount": "5.6M",
+      "pullCount": "5.7M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
-      "tagCount": 2
+      "tagCount": 72
     },
     {
       "name": "gemma",
-      "pullCount": "5M",
+      "pullCount": "5.1M",
       "description": "Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1",
-      "tagCount": 2
+      "tagCount": 102
     },
     {
       "name": "qwen",
       "pullCount": "4.8M",
       "description": "Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters",
-      "tagCount": 8
+      "tagCount": 379
     },
     {
       "name": "qwen2",
-      "pullCount": "4.2M",
+      "pullCount": "4.3M",
       "description": "Qwen2 is a new series of large language models from Alibaba group",
-      "tagCount": 4
+      "tagCount": 97
     },
     {
       "name": "mxbai-embed-large",
       "pullCount": "4.2M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
-      "tagCount": 1
+      "tagCount": 4
     },
     {
       "name": "llama2",
       "pullCount": "3.8M",
       "description": "Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.",
-      "tagCount": 3
+      "tagCount": 102
     },
     {
       "name": "qwen3",
       "pullCount": "3.6M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
-      "tagCount": 8
+      "tagCount": 35
     },
     {
       "name": "phi4",
       "pullCount": "3.3M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
-      "tagCount": 1
+      "tagCount": 5
     },
     {
       "name": "codellama",
       "pullCount": "2.5M",
       "description": "A large language model that can use text prompts to generate and discuss code.",
-      "tagCount": 4
+      "tagCount": 199
     }
   ]
 }
