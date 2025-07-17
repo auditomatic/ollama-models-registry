@@ -3,7 +3,7 @@ name: Scrape Ollama Models
 on:
   # Run daily at 2242 UTC 
   schedule:
-    - cron: '22 42 * * *'
+    - cron: '42 22 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
