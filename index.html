@@ -224,8 +224,8 @@
                 <div class="stat-label">Models</div>
             </div>
             <div class="stat">
-                <div class="stat-number" id="totalTags">319+</div>
-                <div class="stat-label">Version Tags</div>
+                <div class="stat-number" id="totalTags">6K+</div>
+                <div class="stat-label">Tags</div>
             </div>
             <div class="stat">
                 <div class="stat-number">9</div>
@@ -247,37 +247,73 @@
             </a>
         </div>
 
-        <div class="features">
-            <div class="feature">
-                <h4>🔍 Smart Classification</h4>
-                <p>Auto-discovers model vs version tags using advanced DOM analysis</p>
-            </div>
-            <div class="feature">
-                <h4>📊 Nested Structure</h4>
-                <p>Models contain hierarchical version tags for easy consumption</p>
-            </div>
-            <div class="feature">
-                <h4>🏆 Popularity Rankings</h4>
-                <p>Top models ranked by real community pull counts</p>
-            </div>
-            <div class="feature">
-                <h4>🔄 Future-Proof</h4>
-                <p>Survives website redesigns through adaptive pattern detection</p>
-            </div>
-        </div>
-
         <div class="code-example">
-<span style="color: #81c784;">// Get all models data</span>
+<span style="color: #81c784;">// JavaScript - Get all models data</span>
 <span style="color: #90caf9;">const</span> data = <span style="color: #90caf9;">await</span> <span style="color: #ffab91;">fetch</span>(<span style="color: #c5e1a5;">'https://ollama.models.auditomatic.org/models.json'</span>)
   .<span style="color: #ffab91;">then</span>(r => r.<span style="color: #ffab91;">json</span>());
 
-<span style="color: #81c784;">// Access nested structure</span>
-<span style="color: #90caf9;">const</span> deepseekVersions = <span style="color: #f8bbd9;">Object</span>.<span style="color: #ffab91;">keys</span>(data.models[<span style="color: #c5e1a5;">"deepseek-r1"</span>].tags);
-<span style="color: #81c784;">// → ["1.5b", "7b", "8b", "14b", "32b", "70b", "671b"]</span>
+<span style="color: #81c784;">// Access all available tags</span>
+<span style="color: #90caf9;">const</span> phi4Versions = <span style="color: #f8bbd9;">Object</span>.<span style="color: #ffab91;">keys</span>(data.models[<span style="color: #c5e1a5;">"phi4"</span>].tags);
+<span style="color: #81c784;">// → ["latest", "14b", "14b-q4_K_M", "14b-q8_0", "14b-fp16"]</span>
+
+<span style="color: #81c784;">// Access rich metadata for each tag</span>
+<span style="color: #90caf9;">const</span> tag14b = data.models[<span style="color: #c5e1a5;">"phi4"</span>].tags[<span style="color: #c5e1a5;">"14b"</span>];
+<span style="color: #81c784;">// → { size: "9.1GB", contextWindow: "16K", modelHash: "ac896e5b8b34" }</span>
 
 <span style="color: #81c784;">// Generate pull commands</span>
-<span style="color: #90caf9;">const</span> pullCommands = <span style="color: #f8bbd9;">Object</span>.<span style="color: #ffab91;">keys</span>(data.models[<span style="color: #c5e1a5;">"deepseek-r1"</span>].tags)
-  .<span style="color: #ffab91;">map</span>(tag => <span style="color: #c5e1a5;">`ollama pull deepseek-r1:</span><span style="color: #ffcdd2;">${tag}</span><span style="color: #c5e1a5;">`</span>);
+<span style="color: #90caf9;">const</span> pullCommands = <span style="color: #f8bbd9;">Object</span>.<span style="color: #ffab91;">keys</span>(data.models[<span style="color: #c5e1a5;">"phi4"</span>].tags)
+  .<span style="color: #ffab91;">map</span>(tag => <span style="color: #c5e1a5;">`ollama pull phi4:</span><span style="color: #ffcdd2;">${tag}</span><span style="color: #c5e1a5;">`</span>);
+<span style="color: #81c784;">// → ["ollama pull phi4:latest", "ollama pull phi4:14b", "ollama pull phi4:14b-q4_K_M", ...]</span>
+        </div>
+
+        <div class="code-example">
+<span style="color: #81c784;"># Python - Get all models data</span>
+<span style="color: #c678dd;">import</span> <span style="color: #e06c75;">json</span>, <span style="color: #e06c75;">requests</span>
+<span style="color: #e5c07b;">data</span> = <span style="color: #e5c07b;">requests</span>.<span style="color: #61afef;">get</span>(<span style="color: #98c379;">'https://ollama.models.auditomatic.org/models.json'</span>).<span style="color: #61afef;">json</span>()
+
+<span style="color: #81c784;"># Access all available tags</span>
+<span style="color: #e5c07b;">phi4_versions</span> = <span style="color: #e5c07b;">list</span>(<span style="color: #e5c07b;">data</span>[<span style="color: #98c379;">'models'</span>][<span style="color: #98c379;">'phi4'</span>][<span style="color: #98c379;">'tags'</span>].<span style="color: #61afef;">keys</span>())
+<span style="color: #81c784;"># → ['latest', '14b', '14b-q4_K_M', '14b-q8_0', '14b-fp16']</span>
+
+<span style="color: #81c784;"># Access rich metadata for each tag</span>
+<span style="color: #e5c07b;">tag_14b</span> = <span style="color: #e5c07b;">data</span>[<span style="color: #98c379;">'models'</span>][<span style="color: #98c379;">'phi4'</span>][<span style="color: #98c379;">'tags'</span>][<span style="color: #98c379;">'14b'</span>]
+<span style="color: #81c784;"># → {'size': '9.1GB', 'contextWindow': '16K', 'modelHash': 'ac896e5b8b34'}</span>
+
+<span style="color: #81c784;"># Generate pull commands</span>
+<span style="color: #e5c07b;">pull_commands</span> = [<span style="color: #98c379;">f"ollama pull phi4:</span><span style="color: #e06c75;">{tag}</span><span style="color: #98c379;">"</span> <span style="color: #c678dd;">for</span> <span style="color: #e5c07b;">tag</span> <span style="color: #c678dd;">in</span> <span style="color: #e5c07b;">phi4_versions</span>]
+<span style="color: #81c784;"># → ['ollama pull phi4:latest', 'ollama pull phi4:14b', 'ollama pull phi4:14b-q4_K_M', ...]</span>
+        </div>
+
+        <div class="why-section" style="margin: 2rem 0; text-align: left; background: #f7fafc; padding: 2rem; border-radius: 12px; border-left: 4px solid #667eea;">
+            <h2 style="color: #2d3748; margin-bottom: 1rem; font-size: 1.5rem;">Why This Registry Exists</h2>
+            
+            <p style="margin-bottom: 1rem; color: #4a5568;"><strong>The Problem:</strong> Ollama has no official API to list available models. Issues <a href="https://github.com/ollama/ollama/issues/286" style="color: #667eea;">#286</a>, <a href="https://github.com/ollama/ollama/issues/2022" style="color: #667eea;">#2022</a>, and <a href="https://github.com/ollama/ollama/issues/7751" style="color: #667eea;">#7751</a> have been requesting this functionality for years, with <strong>hundreds of +1s</strong> from developers building:</p>
+            
+            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: #4a5568;">
+                <li><strong>AI client applications</strong> that need model selection interfaces</li>
+                <li><strong>Development tools</strong> requiring model autocomplete/discovery</li>
+                <li><strong>Model management utilities</strong> for enterprise deployments</li>
+                <li><strong>CLI tools</strong> that want <code>ollama search</code> functionality</li>
+            </ul>
+            
+            <p style="margin-bottom: 1rem; color: #4a5568;"><strong>Community Solutions:</strong> Developers have built creative workarounds including <a href="https://github.com/webfarmer/ollama-get-models" style="color: #667eea;">webfarmer/ollama-get-models</a>, <a href="https://github.com/craigahobbs/ollama-chat" style="color: #667eea;">craigahobbs/ollama-chat</a>, <a href="https://github.com/Tickloop/silsila" style="color: #667eea;">Tickloop/silsila</a>, and others. We are most indebted to <a href="https://github.com/akazwz/ollama-models" style="color: #667eea;">akazwz/ollama-models</a> for pioneering the Cloudflare Worker approach.</p>
+            
+            <p style="margin-bottom: 0; color: #4a5568;"><strong>Our Contribution:</strong> Building on this foundation, we provide enhanced robustness through adaptive DOM analysis, richer metadata (sizes, context windows, model hashes), and reliable daily updates with intelligent tag classification.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h4>🔍 Smart & Future-Proof</h4>
+                <p>Auto-discovers model vs version tags using advanced DOM analysis that survives website redesigns</p>
+            </div>
+            <div class="feature">
+                <h4>📊 Rich Metadata</h4>
+                <p>Each tag includes size, context window, model hash, and hierarchical structure for easy consumption</p>
+            </div>
+            <div class="feature">
+                <h4>🏆 Popularity Rankings</h4>
+                <p>Top models ranked by real community pull counts with comprehensive statistics</p>
+            </div>
         </div>
 
         <div class="footer">
