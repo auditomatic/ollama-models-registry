@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-07-17T21:49:22.739Z",
+  "lastUpdated": "2025-07-17T22:55:52.378Z",
   "totalModels": 175,
   "totalTags": 6686,
   "categories": [
@@ -118,7 +118,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "3.6M",
+      "pullCount": "3.7M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 35
     },
