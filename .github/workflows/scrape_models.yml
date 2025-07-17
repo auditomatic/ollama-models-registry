@@ -1,9 +1,9 @@
 name: Scrape Ollama Models
 
 on:
-  # Run daily at 2354 UTC 
+  # Run daily at 0011 UTC 
   schedule:
-    - cron: '54 23 * * *'
+    - cron: '11 00 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -56,13 +56,14 @@ jobs:
     - name: Check for changes
       id: changes
       run: |
-        if git diff --quiet data/; then
+        if git diff --quiet data/ && git diff --quiet models.json models-summary.json last-updated.txt 2>/dev/null; then
           echo "changed=false" >> $GITHUB_OUTPUT
-          echo "No changes detected in data files"
+          echo "No changes detected in data files or root JSON files"
         else
           echo "changed=true" >> $GITHUB_OUTPUT
-          echo "Changes detected in data files"
-          git diff --stat data/
+          echo "Changes detected in data files or root JSON files"
+          git diff --stat data/ 2>/dev/null || true
+          git diff --stat models.json models-summary.json last-updated.txt 2>/dev/null || true
         fi
 
     - name: Commit and push changes
