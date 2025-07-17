@@ -85,6 +85,80 @@ function extractOllamaModels() {
 extractOllamaModels();
 `;
 
+// Function to extract detailed tags from model tags page
+const extractDetailedTagsScript = `
+function extractDetailedTags() {
+    const detailedTags = {};
+    const tagItems = document.querySelectorAll('.group.px-4.py-3');
+    
+    tagItems.forEach(item => {
+        // Look for links with model:tag pattern
+        const linkElement = item.querySelector('a[href*="/library/"]');
+        if (!linkElement) return;
+        
+        const href = linkElement.getAttribute('href');
+        const fullTag = href.split('/library/')[1];
+        
+        if (!fullTag || !fullTag.includes(':')) return;
+        
+        const [modelName, tagName] = fullTag.split(':');
+        
+        // Extract size information
+        const sizeElement = item.querySelector('.col-span-2.text-neutral-500:first-of-type');
+        const size = sizeElement ? sizeElement.textContent.trim() : null;
+        
+        // Extract context window
+        const contextElement = item.querySelector('.col-span-2.text-neutral-500:nth-of-type(2)');
+        const contextWindow = contextElement ? contextElement.textContent.trim() : null;
+        
+        // Extract model hash
+        const hashElement = item.querySelector('.font-mono');
+        const modelHash = hashElement ? hashElement.textContent.trim() : null;
+        
+        // Extract capabilities/type
+        const capabilityElement = item.querySelector('.col-span-2.text-neutral-500:nth-of-type(3)');
+        const capabilities = capabilityElement ? capabilityElement.textContent.trim().split(',').map(s => s.trim()) : [];
+        
+        detailedTags[tagName] = {
+            fullTag: fullTag,
+            size: size,
+            contextWindow: contextWindow,
+            modelHash: modelHash,
+            capabilities: capabilities,
+            extractedAt: new Date().toISOString()
+        };
+    });
+    
+    return detailedTags;
+}
+
+extractDetailedTags();
+`;
+
+// Function to scrape detailed tags for a specific model
+async function scrapeModelTags(page, modelName) {
+    try {
+        const tagsUrl = `${OLLAMA_LIBRARY_URL}/${modelName}/tags`;
+        console.log(`  📋 Fetching detailed tags for ${modelName}...`);
+        
+        await page.goto(tagsUrl, { 
+            waitUntil: 'networkidle2',
+            timeout: 15000 
+        });
+        
+        // Wait for tags to load
+        await page.waitForSelector('.group.px-4.py-3', { timeout: 5000 });
+        
+        // Extract detailed tags
+        const detailedTags = await page.evaluate(extractDetailedTagsScript);
+        
+        return detailedTags;
+    } catch (error) {
+        console.log(`  ⚠️  Failed to fetch tags for ${modelName}: ${error.message}`);
+        return {};
+    }
+}
+
 async function scrapeOllamaModels() {
     console.log('🚀 Starting Ollama models scrape...');
     
@@ -251,6 +325,31 @@ async function scrapeOllamaModels() {
         
         const modelNames = Object.keys(modelsMap);
         console.log(`✅ Extracted ${modelNames.length} models`);
+        
+        // Scrape detailed tags for each model
+        console.log('🔍 Fetching detailed quantization tags...');
+        const maxModelsToDetail = DRY_RUN ? 3 : modelNames.length; // Pull ALL models
+        
+        for (let i = 0; i < maxModelsToDetail; i++) {
+            const modelName = modelNames[i];
+            const model = modelsMap[modelName];
+            
+            console.log(`📋 Processing ${i + 1}/${maxModelsToDetail}: ${modelName}`);
+            
+            // Fetch detailed tags
+            const detailedTags = await scrapeModelTags(page, modelName);
+            
+            // Merge detailed tags with existing basic tags
+            if (Object.keys(detailedTags).length > 0) {
+                // Replace basic tags with detailed tags
+                model.tags = detailedTags;
+                model.tagCount = Object.keys(detailedTags).length;
+            }
+            
+            // No delay needed - GitHub Pages can handle the load
+        }
+        
+        console.log(`✅ Enhanced ${maxModelsToDetail} models with detailed tags`);
         
         // Create summary data from nested structure
         const totalTags = Object.values(modelsMap).reduce((sum, model) => sum + Object.keys(model.tags).length, 0);
