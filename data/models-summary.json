@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-07-24T22:56:41.969Z",
+  "lastUpdated": "2025-07-25T22:56:19.517Z",
   "totalModels": 175,
   "totalTags": 6686,
   "categories": [
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "98.5M",
+      "pullCount": "98.6M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "54.4M",
+      "pullCount": "54.6M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "33.6M",
+      "pullCount": "33.7M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "26.5M",
+      "pullCount": "26.6M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "16.9M",
+      "pullCount": "17M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -52,13 +52,13 @@
     },
     {
       "name": "gemma3",
-      "pullCount": "9.6M",
+      "pullCount": "9.7M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 21
     },
     {
       "name": "llama3",
-      "pullCount": "9.5M",
+      "pullCount": "9.7M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -76,13 +76,13 @@
     },
     {
       "name": "phi3",
-      "pullCount": "6.1M",
+      "pullCount": "6.2M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "5.8M",
+      "pullCount": "5.9M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -129,10 +129,10 @@
       "tagCount": 5
     },
     {
-      "name": "codellama",
+      "name": "minicpm-v",
       "pullCount": "2.5M",
-      "description": "A large language model that can use text prompts to generate and discuss code.",
-      "tagCount": 199
+      "description": "A series of multimodal LLMs (MLLMs) designed for vision-language understanding.",
+      "tagCount": 17
     }
   ]
 }
