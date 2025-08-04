@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-08-03T22:56:21.468Z",
+  "lastUpdated": "2025-08-04T22:57:06.989Z",
   "totalModels": 176,
   "totalTags": 6705,
   "categories": [
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "99.3M",
+      "pullCount": "99.4M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "55.7M",
+      "pullCount": "55.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "34.5M",
+      "pullCount": "34.6M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "28M",
+      "pullCount": "28.2M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "17.3M",
+      "pullCount": "17.4M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -52,7 +52,7 @@
     },
     {
       "name": "gemma3",
-      "pullCount": "10.6M",
+      "pullCount": "10.7M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 21
     },
@@ -70,7 +70,7 @@
     },
     {
       "name": "phi3",
-      "pullCount": "6.7M",
+      "pullCount": "6.8M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -106,7 +106,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "4.4M",
+      "pullCount": "4.5M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -130,7 +130,7 @@
     },
     {
       "name": "minicpm-v",
-      "pullCount": "2.6M",
+      "pullCount": "2.7M",
       "description": "A series of multimodal LLMs (MLLMs) designed for vision-language understanding.",
       "tagCount": 17
     }
