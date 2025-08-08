@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-08-07T22:57:21.658Z",
+  "lastUpdated": "2025-08-08T22:54:52.860Z",
   "totalModels": 177,
   "totalTags": 6716,
   "categories": [
@@ -16,43 +16,43 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "99.6M",
+      "pullCount": "99.7M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "56.4M",
+      "pullCount": "56.5M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "34.9M",
+      "pullCount": "35.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "28.7M",
+      "pullCount": "28.8M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "17.5M",
+      "pullCount": "17.6M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "qwen2.5",
-      "pullCount": "12M",
+      "pullCount": "12.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "gemma3",
-      "pullCount": "11.1M",
+      "pullCount": "11.2M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 21
     },
@@ -64,13 +64,13 @@
     },
     {
       "name": "llava",
-      "pullCount": "8.4M",
+      "pullCount": "8.5M",
       "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
       "tagCount": 98
     },
     {
       "name": "phi3",
-      "pullCount": "7M",
+      "pullCount": "7.1M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -93,16 +93,16 @@
       "tagCount": 102
     },
     {
+      "name": "qwen3",
+      "pullCount": "4.8M",
+      "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
+      "tagCount": 56
+    },
+    {
       "name": "qwen",
       "pullCount": "4.8M",
       "description": "Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters",
       "tagCount": 379
-    },
-    {
-      "name": "qwen3",
-      "pullCount": "4.7M",
-      "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
-      "tagCount": 56
     },
     {
       "name": "mxbai-embed-large",
