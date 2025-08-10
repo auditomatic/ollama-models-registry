@@ -6,6 +6,7 @@ const path = require('path');
 
 // Configuration
 const OLLAMA_LIBRARY_URL = 'https://ollama.com/library';
+const LITELLM_PRICES_URL = 'https://raw.githubusercontent.com/BerriAI/litellm/refs/heads/main/model_prices_and_context_window.json';
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const DRY_RUN = process.argv.includes('--dry-run');
 
@@ -156,6 +157,42 @@ async function scrapeModelTags(page, modelName) {
     } catch (error) {
         console.log(`  ⚠️  Failed to fetch tags for ${modelName}: ${error.message}`);
         return {};
+    }
+}
+
+// Function to fetch LiteLLM model prices data
+async function fetchLiteLLMPrices() {
+    console.log('📈 Fetching LiteLLM model prices...');
+    
+    try {
+        const https = require('https');
+        const http = require('http');
+        
+        return new Promise((resolve, reject) => {
+            const client = LITELLM_PRICES_URL.startsWith('https') ? https : http;
+            
+            client.get(LITELLM_PRICES_URL, (res) => {
+                if (res.statusCode !== 200) {
+                    reject(new Error(`HTTP ${res.statusCode}: ${res.statusMessage}`));
+                    return;
+                }
+                
+                let data = '';
+                res.on('data', (chunk) => data += chunk);
+                res.on('end', () => {
+                    try {
+                        const jsonData = JSON.parse(data);
+                        console.log('✅ LiteLLM prices data fetched successfully');
+                        resolve(jsonData);
+                    } catch (error) {
+                        reject(new Error(`JSON parse error: ${error.message}`));
+                    }
+                });
+            }).on('error', reject);
+        });
+    } catch (error) {
+        console.log(`⚠️  Failed to fetch LiteLLM prices: ${error.message}`);
+        return null;
     }
 }
 
@@ -351,6 +388,9 @@ async function scrapeOllamaModels() {
         
         console.log(`✅ Enhanced ${maxModelsToDetail} models with detailed tags`);
         
+        // Fetch LiteLLM prices data
+        const litellmPricesData = await fetchLiteLLMPrices();
+        
         // Create summary data from nested structure
         const totalTags = Object.values(modelsMap).reduce((sum, model) => sum + Object.keys(model.tags).length, 0);
         const allCategories = [...new Set(Object.values(modelsMap).flatMap(m => m.categories))].sort();
@@ -405,7 +445,7 @@ async function scrapeOllamaModels() {
         await fs.mkdir(DATA_DIR, { recursive: true });
         
         // Write files
-        await Promise.all([
+        const writePromises = [
             fs.writeFile(
                 path.join(DATA_DIR, 'models.json'),
                 JSON.stringify(fullData, null, 2)
@@ -418,7 +458,19 @@ async function scrapeOllamaModels() {
                 path.join(DATA_DIR, 'last-updated.txt'),
                 new Date().toISOString()
             )
-        ]);
+        ];
+        
+        // Add LiteLLM prices data if available
+        if (litellmPricesData) {
+            writePromises.push(
+                fs.writeFile(
+                    path.join(DATA_DIR, 'litellm_model_prices_and_context_window.json'),
+                    JSON.stringify(litellmPricesData, null, 2)
+                )
+            );
+        }
+        
+        await Promise.all(writePromises);
         
         console.log('💾 Data saved successfully!');
         console.log(`📊 Summary: ${modelNames.length} models, ${summary.categories.length} categories`);
