@@ -56,14 +56,14 @@ jobs:
     - name: Check for changes
       id: changes
       run: |
-        if git diff --quiet data/ && git diff --quiet models.json models-summary.json last-updated.txt 2>/dev/null; then
+        if git diff --quiet data/ && git diff --quiet models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json 2>/dev/null; then
           echo "changed=false" >> $GITHUB_OUTPUT
           echo "No changes detected in data files or root JSON files"
         else
           echo "changed=true" >> $GITHUB_OUTPUT
           echo "Changes detected in data files or root JSON files"
           git diff --stat data/ 2>/dev/null || true
-          git diff --stat models.json models-summary.json last-updated.txt 2>/dev/null || true
+          git diff --stat models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json 2>/dev/null || true
         fi
 
     - name: Commit and push changes
@@ -72,7 +72,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/
-        git add models.json models-summary.json last-updated.txt 2>/dev/null || true
+        git add models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json 2>/dev/null || true
         git commit -m "Update Ollama models data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         git push
 
@@ -96,6 +96,10 @@ jobs:
           cp data/models.json ./
           cp data/models-summary.json ./
           cp data/last-updated.txt ./
+          if [ -f "data/litellm_model_prices_and_context_window.json" ]; then
+            cp data/litellm_model_prices_and_context_window.json ./
+            echo "LiteLLM prices data copied to repo root"
+          fi
           echo "JSON files copied to repo root"
         else
           echo "No data files to copy to root"
