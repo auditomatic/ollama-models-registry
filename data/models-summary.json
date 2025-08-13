@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-08-12T22:53:19.716Z",
+  "lastUpdated": "2025-08-13T22:52:31.404Z",
   "totalModels": 177,
   "totalTags": 6716,
   "categories": [
@@ -16,13 +16,13 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "99.9M",
+      "pullCount": "100M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "57M",
+      "pullCount": "57.2M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
@@ -34,7 +34,7 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "29.4M",
+      "pullCount": "29.6M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -46,13 +46,13 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "12.2M",
+      "pullCount": "12.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "gemma3",
-      "pullCount": "11.7M",
+      "pullCount": "11.8M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 21
     },
@@ -64,13 +64,13 @@
     },
     {
       "name": "llava",
-      "pullCount": "8.5M",
+      "pullCount": "8.6M",
       "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
       "tagCount": 98
     },
     {
       "name": "phi3",
-      "pullCount": "7.3M",
+      "pullCount": "7.4M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -87,16 +87,16 @@
       "tagCount": 199
     },
     {
+      "name": "qwen3",
+      "pullCount": "5.2M",
+      "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
+      "tagCount": 56
+    },
+    {
       "name": "gemma",
       "pullCount": "5.2M",
       "description": "Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1",
       "tagCount": 102
-    },
-    {
-      "name": "qwen3",
-      "pullCount": "5.1M",
-      "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
-      "tagCount": 56
     },
     {
       "name": "qwen",
