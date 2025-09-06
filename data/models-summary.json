@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-09-05T22:51:54.294Z",
+  "lastUpdated": "2025-09-06T22:51:38.130Z",
   "totalModels": 179,
   "totalTags": 6733,
   "categories": [
@@ -22,31 +22,31 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "60.6M",
+      "pullCount": "60.7M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "37.8M",
+      "pullCount": "38M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "33.3M",
+      "pullCount": "33.5M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "18.7M",
+      "pullCount": "18.8M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma3",
-      "pullCount": "14.5M",
+      "pullCount": "14.7M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -64,13 +64,13 @@
     },
     {
       "name": "llava",
-      "pullCount": "9.2M",
+      "pullCount": "9.3M",
       "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
       "tagCount": 98
     },
     {
       "name": "phi3",
-      "pullCount": "8.8M",
+      "pullCount": "8.9M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -82,7 +82,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "7.2M",
+      "pullCount": "7.3M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
