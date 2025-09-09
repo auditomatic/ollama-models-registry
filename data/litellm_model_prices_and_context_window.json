@@ -13122,6 +13122,7 @@
     "mode": "chat",
     "supports_response_schema": true,
     "supports_tool_choice": true,
+    "supports_function_calling": true,
     "supports_reasoning": true
   },
   "openai.gpt-oss-120b-1:0": {
@@ -13134,6 +13135,7 @@
     "mode": "chat",
     "supports_response_schema": true,
     "supports_tool_choice": true,
+    "supports_function_calling": true,
     "supports_reasoning": true
   },
   "anthropic.claude-opus-4-1-20250805-v1:0": {
@@ -15244,7 +15246,7 @@
     "mode": "chat",
     "source": "https://www.together.ai/models/gpt-oss-120b"
   },
-  "together_ai/OpenAI/gpt-oss-20B": {
+  "together_ai/openai/gpt-oss-20b": {
     "input_cost_per_token": 5e-8,
     "output_cost_per_token": 2e-7,
     "max_input_tokens": 128000,
