@@ -6,6 +6,7 @@
     "input_cost_per_token": 0,
     "output_cost_per_token": 0,
     "output_cost_per_reasoning_token": 0,
+    "input_cost_per_audio_token": 0,
     "litellm_provider": "one of https://docs.litellm.ai/docs/providers",
     "mode": "one of: chat, embedding, completion, image_generation, audio_transcription, audio_speech, image_generation, moderation, rerank",
     "supports_function_calling": true,
@@ -19096,34 +19097,59 @@
     "max_tokens": 32768,
     "max_input_tokens": 30720,
     "max_output_tokens": 8192,
+    "input_cost_per_token": 0.0000016,
+    "output_cost_per_token": 0.0000064,
     "litellm_provider": "dashscope",
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "mode": "chat",
-    "source": "https://bailian.console.alibabacloud.com/?spm=a2c63.p38356.0.0.4a615d7bjSUCb4&tab=doc#/doc/?type=model&url=https%3A%2F%2Fwww.alibabacloud.com%2Fhelp%2Fen%2Fdoc-detail%2F2840914.html"
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
   },
   "dashscope/qwen-plus-latest": {
-    "max_tokens": 131072,
-    "max_input_tokens": 129024,
-    "max_output_tokens": 16384,
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 32768,
     "litellm_provider": "dashscope",
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "mode": "chat",
-    "source": "https://bailian.console.alibabacloud.com/?spm=a2c63.p38356.0.0.4a615d7bjSUCb4&tab=doc#/doc/?type=model&url=https%3A%2F%2Fwww.alibabacloud.com%2Fhelp%2Fen%2Fdoc-detail%2F2840914.html"
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          256000
+        ],
+        "input_cost_per_token": 4e-7,
+        "output_cost_per_token": 0.0000012,
+        "output_cost_per_reasoning_token": 0.000004
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.0000012,
+        "output_cost_per_token": 0.0000036,
+        "output_cost_per_reasoning_token": 0.000012
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
   },
   "dashscope/qwen-turbo-latest": {
-    "max_tokens": 131072,
-    "max_input_tokens": 129024,
+    "max_tokens": 1000000,
+    "max_input_tokens": 1000000,
     "max_output_tokens": 16384,
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 2e-7,
+    "output_cost_per_reasoning_token": 5e-7,
     "litellm_provider": "dashscope",
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "mode": "chat",
-    "source": "https://bailian.console.alibabacloud.com/?spm=a2c63.p38356.0.0.4a615d7bjSUCb4&tab=doc#/doc/?type=model&url=https%3A%2F%2Fwww.alibabacloud.com%2Fhelp%2Fen%2Fdoc-detail%2F2840914.html"
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
   },
   "dashscope/qwen3-30b-a3b": {
     "max_tokens": 131072,
@@ -19134,7 +19160,473 @@
     "supports_tool_choice": true,
     "supports_reasoning": true,
     "mode": "chat",
-    "source": "https://bailian.console.alibabacloud.com/?spm=a2c63.p38356.0.0.4a615d7bjSUCb4&tab=doc#/doc/?type=model&url=https%3A%2F%2Fwww.alibabacloud.com%2Fhelp%2Fen%2Fdoc-detail%2F2840914.html"
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen3-max-preview": {
+    "max_tokens": 262144,
+    "max_input_tokens": 258048,
+    "max_output_tokens": 65536,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          32000
+        ],
+        "input_cost_per_token": 0.0000012,
+        "output_cost_per_token": 0.000006
+      },
+      {
+        "range": [
+          32000,
+          128000
+        ],
+        "input_cost_per_token": 0.0000024,
+        "output_cost_per_token": 0.000012
+      },
+      {
+        "range": [
+          128000,
+          252000
+        ],
+        "input_cost_per_token": 0.000003,
+        "output_cost_per_token": 0.000015
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-plus": {
+    "max_tokens": 131072,
+    "max_input_tokens": 129024,
+    "max_output_tokens": 16384,
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 0.0000012,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-flash": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 32768,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          256000
+        ],
+        "input_cost_per_token": 5e-8,
+        "output_cost_per_token": 4e-7
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 2.5e-7,
+        "output_cost_per_token": 0.000002
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-coder": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 16384,
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000015,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen3-coder-plus": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 65536,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          32000
+        ],
+        "input_cost_per_token": 0.000001,
+        "output_cost_per_token": 0.000005,
+        "cache_read_input_token_cost": 1e-7
+      },
+      {
+        "range": [
+          32000,
+          128000
+        ],
+        "input_cost_per_token": 0.0000018,
+        "output_cost_per_token": 0.000009,
+        "cache_read_input_token_cost": 1.8e-7
+      },
+      {
+        "range": [
+          128000,
+          256000
+        ],
+        "input_cost_per_token": 0.000003,
+        "output_cost_per_token": 0.000015,
+        "cache_read_input_token_cost": 3e-7
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.000006,
+        "output_cost_per_token": 0.00006,
+        "cache_read_input_token_cost": 6e-7
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen3-coder-plus-2025-07-22": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 65536,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          32000
+        ],
+        "input_cost_per_token": 0.000001,
+        "output_cost_per_token": 0.000005
+      },
+      {
+        "range": [
+          32000,
+          128000
+        ],
+        "input_cost_per_token": 0.0000018,
+        "output_cost_per_token": 0.000009
+      },
+      {
+        "range": [
+          128000,
+          256000
+        ],
+        "input_cost_per_token": 0.000003,
+        "output_cost_per_token": 0.000015
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.000006,
+        "output_cost_per_token": 0.00006
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen3-coder-flash": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 65536,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          32000
+        ],
+        "input_cost_per_token": 3e-7,
+        "output_cost_per_token": 0.0000015,
+        "cache_read_input_token_cost": 8e-8
+      },
+      {
+        "range": [
+          32000,
+          128000
+        ],
+        "input_cost_per_token": 5e-7,
+        "output_cost_per_token": 0.0000025,
+        "cache_read_input_token_cost": 1.2e-7
+      },
+      {
+        "range": [
+          128000,
+          256000
+        ],
+        "input_cost_per_token": 8e-7,
+        "output_cost_per_token": 0.000004,
+        "cache_read_input_token_cost": 2e-7
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.0000016,
+        "output_cost_per_token": 0.0000096,
+        "cache_read_input_token_cost": 4e-7
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen3-coder-flash-2025-07-28": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 65536,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          32000
+        ],
+        "input_cost_per_token": 3e-7,
+        "output_cost_per_token": 0.0000015
+      },
+      {
+        "range": [
+          32000,
+          128000
+        ],
+        "input_cost_per_token": 5e-7,
+        "output_cost_per_token": 0.0000025
+      },
+      {
+        "range": [
+          128000,
+          256000
+        ],
+        "input_cost_per_token": 8e-7,
+        "output_cost_per_token": 0.000004
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.0000016,
+        "output_cost_per_token": 0.0000096
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-plus-2025-09-11": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 32768,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          256000
+        ],
+        "input_cost_per_token": 4e-7,
+        "output_cost_per_token": 0.0000012,
+        "output_cost_per_reasoning_token": 0.000004
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.0000012,
+        "output_cost_per_token": 0.0000036,
+        "output_cost_per_reasoning_token": 0.000012
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-plus-2025-07-28": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 32768,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          256000
+        ],
+        "input_cost_per_token": 4e-7,
+        "output_cost_per_token": 0.0000012,
+        "output_cost_per_reasoning_token": 0.000004
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 0.0000012,
+        "output_cost_per_token": 0.0000036,
+        "output_cost_per_reasoning_token": 0.000012
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-plus-2025-07-14": {
+    "max_tokens": 131072,
+    "max_input_tokens": 129024,
+    "max_output_tokens": 16384,
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 0.0000012,
+    "output_cost_per_reasoning_token": 0.000004,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-plus-2025-04-28": {
+    "max_tokens": 131072,
+    "max_input_tokens": 129024,
+    "max_output_tokens": 16384,
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 0.0000012,
+    "output_cost_per_reasoning_token": 0.000004,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-plus-2025-01-25": {
+    "max_tokens": 131072,
+    "max_input_tokens": 129024,
+    "max_output_tokens": 8192,
+    "input_cost_per_token": 4e-7,
+    "output_cost_per_token": 0.0000012,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-flash-2025-07-28": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 997952,
+    "max_output_tokens": 32768,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "tiered_pricing": [
+      {
+        "range": [
+          0,
+          256000
+        ],
+        "input_cost_per_token": 5e-8,
+        "output_cost_per_token": 4e-7
+      },
+      {
+        "range": [
+          256000,
+          1000000
+        ],
+        "input_cost_per_token": 2.5e-7,
+        "output_cost_per_token": 0.000002
+      }
+    ],
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-turbo": {
+    "max_tokens": 131072,
+    "max_input_tokens": 129024,
+    "max_output_tokens": 16384,
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 2e-7,
+    "output_cost_per_reasoning_token": 5e-7,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-turbo-2025-04-28": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 16384,
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 2e-7,
+    "output_cost_per_reasoning_token": 5e-7,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwen-turbo-2024-11-01": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192,
+    "input_cost_per_token": 5e-8,
+    "output_cost_per_token": 2e-7,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
+  },
+  "dashscope/qwq-plus": {
+    "max_tokens": 131072,
+    "max_input_tokens": 98304,
+    "max_output_tokens": 8192,
+    "input_cost_per_token": 8e-7,
+    "output_cost_per_token": 0.0000024,
+    "litellm_provider": "dashscope",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_reasoning": true,
+    "mode": "chat",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/models"
   },
   "moonshot/moonshot-v1-8k": {
     "max_tokens": 8192,
