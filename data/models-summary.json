@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-09-19T22:51:07.145Z",
+  "lastUpdated": "2025-09-20T22:51:54.707Z",
   "totalModels": 179,
   "totalTags": 6737,
   "categories": [
@@ -16,37 +16,37 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "102.6M",
+      "pullCount": "102.7M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "62.5M",
+      "pullCount": "62.6M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "39.8M",
+      "pullCount": "40.2M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "35.6M",
+      "pullCount": "35.8M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "19.4M",
+      "pullCount": "19.5M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma3",
-      "pullCount": "17M",
+      "pullCount": "17.2M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -58,13 +58,13 @@
     },
     {
       "name": "llama3",
-      "pullCount": "10.9M",
+      "pullCount": "11M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "phi3",
-      "pullCount": "9.8M",
+      "pullCount": "9.9M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
