@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-09-21T22:51:45.513Z",
+  "lastUpdated": "2025-09-22T22:51:41.961Z",
   "totalModels": 179,
   "totalTags": 6737,
   "categories": [
@@ -22,37 +22,37 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "62.7M",
+      "pullCount": "62.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "40.3M",
+      "pullCount": "40.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "36M",
+      "pullCount": "36.1M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "19.6M",
+      "pullCount": "19.7M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma3",
-      "pullCount": "17.4M",
+      "pullCount": "17.6M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "qwen2.5",
-      "pullCount": "14M",
+      "pullCount": "14.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
