@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-09-28T22:51:49.215Z",
+  "lastUpdated": "2025-09-29T22:51:49.602Z",
   "totalModels": 181,
   "totalTags": 6753,
   "categories": [
@@ -22,37 +22,37 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "63.7M",
+      "pullCount": "63.8M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "41.6M",
+      "pullCount": "41.7M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "37.2M",
+      "pullCount": "37.3M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "mistral",
-      "pullCount": "19.9M",
+      "pullCount": "20M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma3",
-      "pullCount": "18.6M",
+      "pullCount": "18.7M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "qwen2.5",
-      "pullCount": "14.3M",
+      "pullCount": "14.4M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -64,7 +64,7 @@
     },
     {
       "name": "phi3",
-      "pullCount": "10.4M",
+      "pullCount": "10.5M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -76,7 +76,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "8.9M",
+      "pullCount": "9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 56
     },
@@ -105,16 +105,16 @@
       "tagCount": 4
     },
     {
+      "name": "phi4",
+      "pullCount": "5M",
+      "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
+      "tagCount": 5
+    },
+    {
       "name": "qwen",
       "pullCount": "4.9M",
       "description": "Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters",
       "tagCount": 379
-    },
-    {
-      "name": "phi4",
-      "pullCount": "4.9M",
-      "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
-      "tagCount": 5
     },
     {
       "name": "qwen2",
