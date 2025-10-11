@@ -13074,36 +13074,6 @@
     "supports_vision": true,
     "supports_web_search": true
   },
-  "gpt-5-codex": {
-    "cache_read_input_token_cost": 1.25e-7,
-    "input_cost_per_token": 0.00000125,
-    "litellm_provider": "openai",
-    "max_input_tokens": 272000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "responses",
-    "output_cost_per_token": 0.00001,
-    "supported_endpoints": [
-      "/v1/responses"
-    ],
-    "supported_modalities": [
-      "text",
-      "image"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
-    "supports_function_calling": true,
-    "supports_native_streaming": false,
-    "supports_parallel_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": false,
-    "supports_response_schema": true,
-    "supports_system_messages": false,
-    "supports_tool_choice": true,
-    "supports_vision": true
-  },
   "gpt-5-2025-08-07": {
     "cache_read_input_token_cost": 1.25e-7,
     "cache_read_input_token_cost_flex": 6.25e-8,
@@ -13205,6 +13175,36 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": false,
+    "supports_vision": true
+  },
+  "gpt-5-codex": {
+    "cache_read_input_token_cost": 1.25e-7,
+    "input_cost_per_token": 0.00000125,
+    "litellm_provider": "openai",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "responses",
+    "output_cost_per_token": 0.00001,
+    "supported_endpoints": [
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": false,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": false,
+    "supports_response_schema": true,
+    "supports_system_messages": false,
+    "supports_tool_choice": true,
     "supports_vision": true
   },
   "gpt-5-mini": {
@@ -19681,6 +19681,22 @@
     "litellm_provider": "together_ai",
     "mode": "embedding",
     "output_cost_per_token": 0
+  },
+  "together_ai/baai/bge-base-en-v1.5": {
+    "input_cost_per_token": 8e-9,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 512,
+    "mode": "embedding",
+    "output_cost_per_token": 0,
+    "output_vector_size": 768
+  },
+  "together_ai/BAAI/bge-base-en-v1.5": {
+    "input_cost_per_token": 8e-9,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 512,
+    "mode": "embedding",
+    "output_cost_per_token": 0,
+    "output_vector_size": 768
   },
   "together-ai-up-to-4b": {
     "input_cost_per_token": 1e-7,
