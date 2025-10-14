@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-10-13T22:51:30.909Z",
-  "totalModels": 182,
-  "totalTags": 6760,
+  "lastUpdated": "2025-10-14T22:52:00.204Z",
+  "totalModels": 183,
+  "totalTags": 6761,
   "categories": [
     "base",
     "chat",
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "104.2M",
+      "pullCount": "104.3M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "65.8M",
+      "pullCount": "66M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "42.8M",
+      "pullCount": "42.9M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "39.8M",
+      "pullCount": "40M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "20.7M",
+      "pullCount": "20.8M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -52,13 +52,13 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "15M",
+      "pullCount": "15.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "phi3",
-      "pullCount": "11.4M",
+      "pullCount": "11.5M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -124,13 +124,13 @@
     },
     {
       "name": "llama2",
-      "pullCount": "4.2M",
+      "pullCount": "4.3M",
       "description": "Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.",
       "tagCount": 102
     },
     {
       "name": "minicpm-v",
-      "pullCount": "3.6M",
+      "pullCount": "3.7M",
       "description": "A series of multimodal LLMs (MLLMs) designed for vision-language understanding.",
       "tagCount": 17
     }
