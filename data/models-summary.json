@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-10-14T22:52:00.204Z",
-  "totalModels": 183,
-  "totalTags": 6761,
+  "lastUpdated": "2025-10-15T22:51:42.319Z",
+  "totalModels": 184,
+  "totalTags": 6762,
   "categories": [
     "base",
     "chat",
@@ -22,31 +22,31 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "66M",
+      "pullCount": "66.2M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "42.9M",
+      "pullCount": "43.2M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "40M",
+      "pullCount": "40.2M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "20.8M",
+      "pullCount": "21M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "mistral",
-      "pullCount": "20.7M",
+      "pullCount": "20.8M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "phi3",
-      "pullCount": "11.5M",
+      "pullCount": "11.6M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -76,7 +76,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "10M",
+      "pullCount": "10.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -94,13 +94,13 @@
     },
     {
       "name": "phi4",
-      "pullCount": "5.4M",
+      "pullCount": "5.5M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
       "tagCount": 5
     },
     {
       "name": "gemma",
-      "pullCount": "5.3M",
+      "pullCount": "5.4M",
       "description": "Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1",
       "tagCount": 102
     },
