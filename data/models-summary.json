@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-01T22:48:46.550Z",
+  "lastUpdated": "2025-11-02T22:48:57.585Z",
   "totalModels": 186,
   "totalTags": 6836,
   "categories": [
@@ -16,37 +16,37 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "105.2M",
+      "pullCount": "105.3M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "68.8M",
+      "pullCount": "69M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "44.6M",
+      "pullCount": "44.7M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "43.1M",
+      "pullCount": "43.3M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "23.6M",
+      "pullCount": "23.7M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "mistral",
-      "pullCount": "21.4M",
+      "pullCount": "21.5M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -58,19 +58,19 @@
     },
     {
       "name": "phi3",
-      "pullCount": "12.7M",
+      "pullCount": "12.8M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen3",
-      "pullCount": "12M",
+      "pullCount": "12.2M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "llama3",
-      "pullCount": "11.5M",
+      "pullCount": "11.6M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
