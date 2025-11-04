@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-03T22:48:56.711Z",
+  "lastUpdated": "2025-11-04T22:49:39.736Z",
   "totalModels": 186,
   "totalTags": 6836,
   "categories": [
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "105.3M",
+      "pullCount": "105.4M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "69.1M",
+      "pullCount": "69.3M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "44.7M",
+      "pullCount": "44.8M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "43.4M",
+      "pullCount": "43.6M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "23.9M",
+      "pullCount": "24M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -58,13 +58,13 @@
     },
     {
       "name": "phi3",
-      "pullCount": "12.8M",
+      "pullCount": "12.9M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen3",
-      "pullCount": "12.3M",
+      "pullCount": "12.4M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -88,7 +88,7 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "8M",
+      "pullCount": "8.1M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -100,7 +100,7 @@
     },
     {
       "name": "gemma",
-      "pullCount": "5.4M",
+      "pullCount": "5.5M",
       "description": "Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1",
       "tagCount": 102
     },
