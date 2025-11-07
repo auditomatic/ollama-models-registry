@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-11-06T22:49:27.600Z",
-  "totalModels": 186,
-  "totalTags": 6836,
+  "lastUpdated": "2025-11-07T22:49:15.751Z",
+  "totalModels": 187,
+  "totalTags": 6837,
   "categories": [
     "base",
     "chat",
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "105.4M",
+      "pullCount": "105.5M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "69.6M",
+      "pullCount": "69.8M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "44.9M",
+      "pullCount": "45M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "43.9M",
+      "pullCount": "44.1M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "24.2M",
+      "pullCount": "24.3M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -52,19 +52,19 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "16.2M",
+      "pullCount": "16.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "phi3",
-      "pullCount": "13M",
+      "pullCount": "13.1M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen3",
-      "pullCount": "12.6M",
+      "pullCount": "12.7M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -130,7 +130,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "4M",
+      "pullCount": "4.1M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     }
