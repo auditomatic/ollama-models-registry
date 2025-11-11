@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-10T22:50:27.541Z",
+  "lastUpdated": "2025-11-11T22:49:12.337Z",
   "totalModels": 187,
   "totalTags": 6837,
   "categories": [
@@ -16,37 +16,37 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "105.6M",
+      "pullCount": "105.7M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "70.2M",
+      "pullCount": "70.3M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "45.2M",
+      "pullCount": "45.3M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "44.6M",
+      "pullCount": "44.8M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "24.7M",
+      "pullCount": "24.9M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "mistral",
-      "pullCount": "21.7M",
+      "pullCount": "21.8M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -58,13 +58,13 @@
     },
     {
       "name": "phi3",
-      "pullCount": "13.3M",
+      "pullCount": "13.4M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen3",
-      "pullCount": "12.9M",
+      "pullCount": "13M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "phi4",
-      "pullCount": "6M",
+      "pullCount": "6.1M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
       "tagCount": 5
     },
