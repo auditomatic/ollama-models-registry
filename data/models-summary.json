@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-12T22:48:08.653Z",
+  "lastUpdated": "2025-11-13T22:48:54.298Z",
   "totalModels": 187,
   "totalTags": 6837,
   "categories": [
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "105.7M",
+      "pullCount": "105.8M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "70.5M",
+      "pullCount": "70.6M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "45.3M",
+      "pullCount": "45.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "45M",
+      "pullCount": "45.2M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "25M",
+      "pullCount": "25.1M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -64,13 +64,13 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "13M",
+      "pullCount": "13.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "llama3",
-      "pullCount": "11.7M",
+      "pullCount": "11.8M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -88,7 +88,7 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "8.2M",
+      "pullCount": "8.3M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -123,16 +123,16 @@
       "tagCount": 102
     },
     {
+      "name": "gpt-oss",
+      "pullCount": "4.4M",
+      "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
+      "tagCount": 5
+    },
+    {
       "name": "qwen2",
       "pullCount": "4.4M",
       "description": "Qwen2 is a new series of large language models from Alibaba group",
       "tagCount": 97
-    },
-    {
-      "name": "gpt-oss",
-      "pullCount": "4.3M",
-      "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
-      "tagCount": 5
     }
   ]
 }
