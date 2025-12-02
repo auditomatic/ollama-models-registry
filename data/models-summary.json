@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-12-01T22:50:47.272Z",
-  "totalModels": 190,
-  "totalTags": 6847,
+  "lastUpdated": "2025-12-02T22:50:17.860Z",
+  "totalModels": 191,
+  "totalTags": 6863,
   "categories": [
     "base",
     "chat",
@@ -22,31 +22,31 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "73M",
+      "pullCount": "73.2M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "48.1M",
+      "pullCount": "48.2M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "46.6M",
+      "pullCount": "46.7M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "gemma3",
-      "pullCount": "27.1M",
+      "pullCount": "27.3M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "mistral",
-      "pullCount": "22.4M",
+      "pullCount": "22.5M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -58,19 +58,19 @@
     },
     {
       "name": "phi3",
-      "pullCount": "14.8M",
+      "pullCount": "14.9M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen3",
-      "pullCount": "14.1M",
+      "pullCount": "14.2M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "llama3",
-      "pullCount": "12.2M",
+      "pullCount": "12.3M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -118,7 +118,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "4.8M",
+      "pullCount": "4.9M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
