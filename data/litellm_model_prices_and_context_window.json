@@ -16956,7 +16956,7 @@
   },
   "amazon-nova/nova-micro-v1": {
     "input_cost_per_token": 3.5e-8,
-    "litellm_provider": "amazon-nova",
+    "litellm_provider": "amazon_nova",
     "max_input_tokens": 128000,
     "max_output_tokens": 10000,
     "max_tokens": 10000,
@@ -16968,7 +16968,7 @@
   },
   "amazon-nova/nova-lite-v1": {
     "input_cost_per_token": 6e-8,
-    "litellm_provider": "amazon-nova",
+    "litellm_provider": "amazon_nova",
     "max_input_tokens": 300000,
     "max_output_tokens": 10000,
     "max_tokens": 10000,
@@ -16982,7 +16982,7 @@
   },
   "amazon-nova/nova-premier-v1": {
     "input_cost_per_token": 0.0000025,
-    "litellm_provider": "amazon-nova",
+    "litellm_provider": "amazon_nova",
     "max_input_tokens": 1000000,
     "max_output_tokens": 10000,
     "max_tokens": 10000,
@@ -16996,7 +16996,7 @@
   },
   "amazon-nova/nova-pro-v1": {
     "input_cost_per_token": 8e-7,
-    "litellm_provider": "amazon-nova",
+    "litellm_provider": "amazon_nova",
     "max_input_tokens": 300000,
     "max_output_tokens": 10000,
     "max_tokens": 10000,
