@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-10T22:51:17.218Z",
+  "lastUpdated": "2025-12-11T22:50:42.121Z",
   "totalModels": 195,
   "totalTags": 6883,
   "categories": [
@@ -22,37 +22,37 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "73.9M",
+      "pullCount": "74M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "49.2M",
+      "pullCount": "49.3M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "47.3M",
+      "pullCount": "47.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "gemma3",
-      "pullCount": "27.9M",
+      "pullCount": "28M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
     {
       "name": "mistral",
-      "pullCount": "23M",
+      "pullCount": "23.1M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "qwen2.5",
-      "pullCount": "17.7M",
+      "pullCount": "17.8M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -82,7 +82,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "10.9M",
+      "pullCount": "11M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "phi4",
-      "pullCount": "6.4M",
+      "pullCount": "6.5M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
       "tagCount": 5
     },
