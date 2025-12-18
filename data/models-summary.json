@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-12-17T22:50:54.402Z",
-  "totalModels": 202,
-  "totalTags": 6929,
+  "lastUpdated": "2025-12-18T22:50:55.657Z",
+  "totalModels": 203,
+  "totalTags": 6933,
   "categories": [
     "base",
     "chat",
@@ -22,13 +22,13 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "74.4M",
+      "pullCount": "74.5M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "49.9M",
+      "pullCount": "50M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -40,13 +40,13 @@
     },
     {
       "name": "gemma3",
-      "pullCount": "28.3M",
+      "pullCount": "28.4M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
     {
       "name": "mistral",
-      "pullCount": "23.2M",
+      "pullCount": "23.3M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -57,16 +57,16 @@
       "tagCount": 133
     },
     {
-      "name": "phi3",
-      "pullCount": "15.2M",
-      "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
-      "tagCount": 72
-    },
-    {
       "name": "qwen3",
       "pullCount": "15.2M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
+    },
+    {
+      "name": "phi3",
+      "pullCount": "15.2M",
+      "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
+      "tagCount": 72
     },
     {
       "name": "llama3",
@@ -82,13 +82,13 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "11.4M",
+      "pullCount": "11.5M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "9.2M",
+      "pullCount": "9.3M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
