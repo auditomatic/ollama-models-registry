@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-12-19T22:50:41.504Z",
+  "lastUpdated": "2025-12-20T22:49:44.013Z",
   "totalModels": 203,
-  "totalTags": 6933,
+  "totalTags": 6934,
   "categories": [
     "base",
     "chat",
@@ -16,7 +16,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "107.7M",
+      "pullCount": "107.8M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -28,13 +28,13 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "50.1M",
+      "pullCount": "50.2M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "48M",
+      "pullCount": "48.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -52,7 +52,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "18.2M",
+      "pullCount": "18.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
