@@ -3662,12 +3662,16 @@
     "supports_web_search": true
   },
   "azure/gpt-image-1": {
-    "input_cost_per_pixel": 4.0054321e-8,
+    "cache_read_input_image_token_cost": 0.0000025,
+    "cache_read_input_token_cost": 0.00000125,
+    "input_cost_per_image_token": 0.00001,
+    "input_cost_per_token": 0.000005,
     "litellm_provider": "azure",
     "mode": "image_generation",
-    "output_cost_per_pixel": 0,
+    "output_cost_per_image_token": 0.00004,
     "supported_endpoints": [
-      "/v1/images/generations"
+      "/v1/images/generations",
+      "/v1/images/edits"
     ]
   },
   "azure/hd/1024-x-1024/dall-e-3": {
@@ -3770,12 +3774,16 @@
     ]
   },
   "azure/gpt-image-1-mini": {
-    "input_cost_per_pixel": 8.0566406e-9,
+    "cache_read_input_image_token_cost": 2.5e-7,
+    "cache_read_input_token_cost": 2e-7,
+    "input_cost_per_image_token": 0.0000025,
+    "input_cost_per_token": 0.000002,
     "litellm_provider": "azure",
     "mode": "image_generation",
-    "output_cost_per_pixel": 0,
+    "output_cost_per_image_token": 0.000008,
     "supported_endpoints": [
-      "/v1/images/generations"
+      "/v1/images/generations",
+      "/v1/images/edits"
     ]
   },
   "azure/gpt-image-1.5": {
@@ -10942,13 +10950,13 @@
     "supports_tool_choice": true
   },
   "fireworks_ai/accounts/fireworks/models/deepseek-v3p2": {
-    "input_cost_per_token": 0.0000012,
+    "input_cost_per_token": 5.6e-7,
     "litellm_provider": "fireworks_ai",
     "max_input_tokens": 163840,
     "max_output_tokens": 163840,
     "max_tokens": 163840,
     "mode": "chat",
-    "output_cost_per_token": 0.0000012,
+    "output_cost_per_token": 0.00000168,
     "source": "https://fireworks.ai/models/fireworks/deepseek-v3p2",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -11631,6 +11639,7 @@
     "supports_tool_choice": true
   },
   "gemini-1.5-flash": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.000002,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.000004,
     "input_cost_per_character": 1.875e-8,
@@ -11735,6 +11744,7 @@
     "supports_vision": true
   },
   "gemini-1.5-flash-exp-0827": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.000002,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.000004,
     "input_cost_per_character": 1.875e-8,
@@ -11769,6 +11779,7 @@
     "supports_vision": true
   },
   "gemini-1.5-flash-preview-0514": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.000002,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.000004,
     "input_cost_per_character": 1.875e-8,
@@ -11802,6 +11813,7 @@
     "supports_vision": true
   },
   "gemini-1.5-pro": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.00003125,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.0000625,
     "input_cost_per_character": 3.125e-7,
@@ -11889,6 +11901,7 @@
     "supports_vision": true
   },
   "gemini-1.5-pro-preview-0215": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.00003125,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.0000625,
     "input_cost_per_character": 3.125e-7,
@@ -11916,6 +11929,7 @@
     "supports_tool_choice": true
   },
   "gemini-1.5-pro-preview-0409": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.00003125,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.0000625,
     "input_cost_per_character": 3.125e-7,
@@ -11942,6 +11956,7 @@
     "supports_tool_choice": true
   },
   "gemini-1.5-pro-preview-0514": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_audio_per_second": 0.00003125,
     "input_cost_per_audio_per_second_above_128k_tokens": 0.0000625,
     "input_cost_per_character": 3.125e-7,
@@ -12213,6 +12228,7 @@
     "tpm": 250000
   },
   "gemini-2.0-flash-preview-image-generation": {
+    "deprecation_date": "2025-11-14",
     "cache_read_input_token_cost": 2.5e-8,
     "input_cost_per_audio_token": 7e-7,
     "input_cost_per_token": 1e-7,
@@ -12251,6 +12267,7 @@
     "supports_web_search": true
   },
   "gemini-2.0-flash-thinking-exp": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 0,
     "input_cost_per_audio_per_second": 0,
     "input_cost_per_audio_per_second_above_128k_tokens": 0,
@@ -12299,6 +12316,7 @@
     "supports_web_search": true
   },
   "gemini-2.0-flash-thinking-exp-01-21": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 0,
     "input_cost_per_audio_per_second": 0,
     "input_cost_per_audio_per_second_above_128k_tokens": 0,
@@ -12485,6 +12503,7 @@
     "tpm": 8000000
   },
   "gemini-2.5-flash-image-preview": {
+    "deprecation_date": "2026-01-15",
     "cache_read_input_token_cost": 7.5e-8,
     "input_cost_per_audio_token": 0.000001,
     "input_cost_per_token": 3e-7,
@@ -12795,6 +12814,7 @@
     "tpm": 8000000
   },
   "gemini-2.5-flash-lite-preview-06-17": {
+    "deprecation_date": "2025-11-18",
     "cache_read_input_token_cost": 2.5e-8,
     "input_cost_per_audio_token": 5e-7,
     "input_cost_per_token": 1e-7,
@@ -12884,6 +12904,7 @@
     "supports_web_search": true
   },
   "gemini-2.5-flash-preview-05-20": {
+    "deprecation_date": "2025-11-18",
     "cache_read_input_token_cost": 7.5e-8,
     "input_cost_per_audio_token": 0.000001,
     "input_cost_per_token": 3e-7,
@@ -13155,6 +13176,7 @@
     "supports_web_search": true
   },
   "gemini-2.5-pro-preview-03-25": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 3.125e-7,
     "input_cost_per_audio_token": 0.00000125,
     "input_cost_per_token": 0.00000125,
@@ -13200,6 +13222,7 @@
     "supports_web_search": true
   },
   "gemini-2.5-pro-preview-05-06": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 3.125e-7,
     "input_cost_per_audio_token": 0.00000125,
     "input_cost_per_token": 0.00000125,
@@ -13415,6 +13438,7 @@
     "tpm": 10000000
   },
   "gemini/gemini-1.5-flash": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 7.5e-8,
     "input_cost_per_token_above_128k_tokens": 1.5e-7,
     "litellm_provider": "gemini",
@@ -13498,6 +13522,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-flash-8b": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0,
     "input_cost_per_token_above_128k_tokens": 0,
     "litellm_provider": "gemini",
@@ -13524,6 +13549,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-flash-8b-exp-0827": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0,
     "input_cost_per_token_above_128k_tokens": 0,
     "litellm_provider": "gemini",
@@ -13549,6 +13575,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-flash-8b-exp-0924": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0,
     "input_cost_per_token_above_128k_tokens": 0,
     "litellm_provider": "gemini",
@@ -13575,6 +13602,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-flash-exp-0827": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0,
     "input_cost_per_token_above_128k_tokens": 0,
     "litellm_provider": "gemini",
@@ -13600,6 +13628,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-flash-latest": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 7.5e-8,
     "input_cost_per_token_above_128k_tokens": 1.5e-7,
     "litellm_provider": "gemini",
@@ -13626,6 +13655,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-pro": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0.0000035,
     "input_cost_per_token_above_128k_tokens": 0.000007,
     "litellm_provider": "gemini",
@@ -13687,6 +13717,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-pro-exp-0801": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0.0000035,
     "input_cost_per_token_above_128k_tokens": 0.000007,
     "litellm_provider": "gemini",
@@ -13706,6 +13737,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-pro-exp-0827": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0,
     "input_cost_per_token_above_128k_tokens": 0,
     "litellm_provider": "gemini",
@@ -13725,6 +13757,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-1.5-pro-latest": {
+    "deprecation_date": "2025-09-29",
     "input_cost_per_token": 0.0000035,
     "input_cost_per_token_above_128k_tokens": 0.000007,
     "litellm_provider": "gemini",
@@ -13907,6 +13940,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-2.0-flash-lite-preview-02-05": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 1.875e-8,
     "input_cost_per_audio_token": 7.5e-8,
     "input_cost_per_token": 7.5e-8,
@@ -13944,6 +13978,7 @@
     "tpm": 10000000
   },
   "gemini/gemini-2.0-flash-live-001": {
+    "deprecation_date": "2025-12-09",
     "cache_read_input_token_cost": 7.5e-8,
     "input_cost_per_audio_token": 0.0000021,
     "input_cost_per_image": 0.0000021,
@@ -13992,6 +14027,7 @@
     "tpm": 250000
   },
   "gemini/gemini-2.0-flash-preview-image-generation": {
+    "deprecation_date": "2025-11-14",
     "cache_read_input_token_cost": 2.5e-8,
     "input_cost_per_audio_token": 7e-7,
     "input_cost_per_token": 1e-7,
@@ -14031,6 +14067,7 @@
     "tpm": 10000000
   },
   "gemini/gemini-2.0-flash-thinking-exp": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 0,
     "input_cost_per_audio_per_second": 0,
     "input_cost_per_audio_per_second_above_128k_tokens": 0,
@@ -14080,6 +14117,7 @@
     "tpm": 4000000
   },
   "gemini/gemini-2.0-flash-thinking-exp-01-21": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 0,
     "input_cost_per_audio_per_second": 0,
     "input_cost_per_audio_per_second_above_128k_tokens": 0,
@@ -14268,6 +14306,7 @@
     "tpm": 8000000
   },
   "gemini/gemini-2.5-flash-image-preview": {
+    "deprecation_date": "2026-01-15",
     "cache_read_input_token_cost": 7.5e-8,
     "input_cost_per_audio_token": 0.000001,
     "input_cost_per_token": 3e-7,
@@ -14588,6 +14627,7 @@
     "tpm": 250000
   },
   "gemini/gemini-2.5-flash-lite-preview-06-17": {
+    "deprecation_date": "2025-11-18",
     "cache_read_input_token_cost": 2.5e-8,
     "input_cost_per_audio_token": 5e-7,
     "input_cost_per_token": 1e-7,
@@ -14679,6 +14719,7 @@
     "tpm": 250000
   },
   "gemini/gemini-2.5-flash-preview-05-20": {
+    "deprecation_date": "2025-11-18",
     "cache_read_input_token_cost": 7.5e-8,
     "input_cost_per_audio_token": 0.000001,
     "input_cost_per_token": 3e-7,
@@ -15025,6 +15066,7 @@
     "tpm": 250000
   },
   "gemini/gemini-2.5-pro-preview-03-25": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 3.125e-7,
     "input_cost_per_audio_token": 7e-7,
     "input_cost_per_token": 0.00000125,
@@ -15065,6 +15107,7 @@
     "tpm": 10000000
   },
   "gemini/gemini-2.5-pro-preview-05-06": {
+    "deprecation_date": "2025-12-02",
     "cache_read_input_token_cost": 3.125e-7,
     "input_cost_per_audio_token": 7e-7,
     "input_cost_per_token": 0.00000125,
@@ -15340,6 +15383,7 @@
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
   },
   "gemini/imagen-3.0-generate-002": {
+    "deprecation_date": "2025-11-10",
     "litellm_provider": "gemini",
     "mode": "image_generation",
     "output_cost_per_image": 0.04,
@@ -15406,6 +15450,7 @@
     ]
   },
   "gemini/veo-3.0-fast-generate-preview": {
+    "deprecation_date": "2025-11-12",
     "litellm_provider": "gemini",
     "max_input_tokens": 1024,
     "max_tokens": 1024,
@@ -15420,6 +15465,7 @@
     ]
   },
   "gemini/veo-3.0-generate-preview": {
+    "deprecation_date": "2025-11-12",
     "litellm_provider": "gemini",
     "max_input_tokens": 1024,
     "max_tokens": 1024,
@@ -16979,6 +17025,336 @@
     "supports_vision": true,
     "supports_pdf_input": true
   },
+  "low/1024-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.009,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "low/1024-x-1536/gpt-image-1.5": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "low/1536-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "medium/1024-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.034,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "medium/1024-x-1536/gpt-image-1.5": {
+    "input_cost_per_image": 0.05,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "medium/1536-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.05,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "high/1024-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.133,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "high/1024-x-1536/gpt-image-1.5": {
+    "input_cost_per_image": 0.2,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "high/1536-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.2,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "standard/1024-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.009,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "standard/1024-x-1536/gpt-image-1.5": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "standard/1536-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "1024-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.009,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "1024-x-1536/gpt-image-1.5": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "1536-x-1024/gpt-image-1.5": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "low/1024-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.009,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "low/1024-x-1536/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "low/1536-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "medium/1024-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.034,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "medium/1024-x-1536/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.05,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "medium/1536-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.05,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "high/1024-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.133,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "high/1024-x-1536/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.2,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "high/1536-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.2,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "standard/1024-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.009,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "standard/1024-x-1536/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "standard/1536-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "1024-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.009,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "1024-x-1536/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
+  "1536-x-1024/gpt-image-1.5-2025-12-16": {
+    "input_cost_per_image": 0.013,
+    "litellm_provider": "openai",
+    "mode": "image_generation",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits"
+    ],
+    "supports_vision": true,
+    "supports_pdf_input": true
+  },
   "gpt-5": {
     "cache_read_input_token_cost": 1.25e-7,
     "cache_read_input_token_cost_flex": 6.25e-8,
@@ -17740,16 +18116,16 @@
     "supports_vision": true
   },
   "gpt-image-1": {
-    "input_cost_per_image": 0.042,
-    "input_cost_per_pixel": 4.0054321e-8,
-    "input_cost_per_token": 0.000005,
+    "cache_read_input_image_token_cost": 0.0000025,
+    "cache_read_input_token_cost": 0.00000125,
     "input_cost_per_image_token": 0.00001,
+    "input_cost_per_token": 0.000005,
     "litellm_provider": "openai",
     "mode": "image_generation",
-    "output_cost_per_pixel": 0,
-    "output_cost_per_token": 0.00004,
+    "output_cost_per_image_token": 0.00004,
     "supported_endpoints": [
-      "/v1/images/generations"
+      "/v1/images/generations",
+      "/v1/images/edits"
     ]
   },
   "gpt-image-1-mini": {
@@ -24832,6 +25208,7 @@
     "source": "https://docs.mistral.ai/capabilities/code_generation/"
   },
   "text-embedding-004": {
+    "deprecation_date": "2026-01-14",
     "input_cost_per_character": 2.5e-8,
     "input_cost_per_token": 1e-7,
     "litellm_provider": "vertex_ai-embedding-models",
@@ -27602,6 +27979,7 @@
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
   },
   "vertex_ai/imagen-3.0-generate-002": {
+    "deprecation_date": "2025-11-10",
     "litellm_provider": "vertex_ai-image-models",
     "mode": "image_generation",
     "output_cost_per_image": 0.04,
@@ -28112,6 +28490,7 @@
     ]
   },
   "vertex_ai/veo-3.0-fast-generate-preview": {
+    "deprecation_date": "2025-11-12",
     "litellm_provider": "vertex_ai-video-models",
     "max_input_tokens": 1024,
     "max_tokens": 1024,
@@ -28126,6 +28505,7 @@
     ]
   },
   "vertex_ai/veo-3.0-generate-preview": {
+    "deprecation_date": "2025-11-12",
     "litellm_provider": "vertex_ai-video-models",
     "max_input_tokens": 1024,
     "max_tokens": 1024,
