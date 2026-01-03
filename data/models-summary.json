@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-02T22:51:17.909Z",
+  "lastUpdated": "2026-01-03T22:50:44.582Z",
   "totalModels": 205,
   "totalTags": 6936,
   "categories": [
@@ -28,13 +28,13 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "51.5M",
+      "pullCount": "51.6M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "49M",
+      "pullCount": "49.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -46,7 +46,7 @@
     },
     {
       "name": "mistral",
-      "pullCount": "23.7M",
+      "pullCount": "23.8M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "16.3M",
+      "pullCount": "16.4M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -76,7 +76,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "12.6M",
+      "pullCount": "12.7M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -100,7 +100,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "6.1M",
+      "pullCount": "6.2M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
