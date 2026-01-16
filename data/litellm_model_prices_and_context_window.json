@@ -3634,6 +3634,37 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "azure/gpt-5.2-codex": {
+    "cache_read_input_token_cost": 1.75e-7,
+    "input_cost_per_token": 0.00000175,
+    "litellm_provider": "azure",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
+    "mode": "chat",
+    "output_cost_per_token": 0.000014,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "azure/gpt-5.2-pro": {
     "input_cost_per_token": 0.000021,
     "litellm_provider": "azure",
@@ -28782,13 +28813,13 @@
     "supports_web_search": true
   },
   "vertex_ai/zai-org/glm-4.7-maas": {
-    "input_cost_per_token": 3e-7,
+    "input_cost_per_token": 6e-7,
     "litellm_provider": "vertex_ai-zai_models",
     "max_input_tokens": 200000,
     "max_output_tokens": 128000,
     "max_tokens": 128000,
     "mode": "chat",
-    "output_cost_per_token": 0.0000012,
+    "output_cost_per_token": 0.0000022,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models",
     "supports_function_calling": true,
     "supports_reasoning": true,
