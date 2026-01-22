@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-21T22:54:51.378Z",
+  "lastUpdated": "2026-01-22T22:52:34.006Z",
   "totalModels": 208,
   "totalTags": 6958,
   "categories": [
@@ -16,19 +16,19 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "109M",
+      "pullCount": "109.1M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "76.7M",
+      "pullCount": "76.8M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "53.8M",
+      "pullCount": "53.9M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -40,7 +40,7 @@
     },
     {
       "name": "gemma3",
-      "pullCount": "30.4M",
+      "pullCount": "30.5M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "17.8M",
+      "pullCount": "17.9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -70,13 +70,13 @@
     },
     {
       "name": "llama3",
-      "pullCount": "14M",
+      "pullCount": "14.1M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "gemma2",
-      "pullCount": "13.9M",
+      "pullCount": "14M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -88,13 +88,13 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "10.2M",
+      "pullCount": "10.3M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
       "name": "phi4",
-      "pullCount": "6.9M",
+      "pullCount": "7M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
       "tagCount": 5
     },
@@ -124,7 +124,7 @@
     },
     {
       "name": "llama2",
-      "pullCount": "5.1M",
+      "pullCount": "5.2M",
       "description": "Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.",
       "tagCount": 102
     },
