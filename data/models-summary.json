@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-05T22:56:08.876Z",
+  "lastUpdated": "2026-02-06T22:54:06.359Z",
   "totalModels": 211,
-  "totalTags": 6965,
+  "totalTags": 6966,
   "categories": [
     "base",
     "chat",
@@ -16,43 +16,43 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "109.7M",
+      "pullCount": "109.8M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "77.6M",
+      "pullCount": "77.7M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "55.7M",
+      "pullCount": "55.9M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "53.2M",
+      "pullCount": "53.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "gemma3",
-      "pullCount": "31.3M",
+      "pullCount": "31.4M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
     {
       "name": "mistral",
-      "pullCount": "24.8M",
+      "pullCount": "24.9M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "qwen2.5",
-      "pullCount": "20.3M",
+      "pullCount": "20.4M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -64,13 +64,13 @@
     },
     {
       "name": "phi3",
-      "pullCount": "15.8M",
+      "pullCount": "15.9M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "gemma2",
-      "pullCount": "15M",
+      "pullCount": "15.1M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -82,7 +82,7 @@
     },
     {
       "name": "llava",
-      "pullCount": "12.7M",
+      "pullCount": "12.8M",
       "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
       "tagCount": 98
     },
@@ -106,7 +106,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "6.5M",
+      "pullCount": "6.6M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
