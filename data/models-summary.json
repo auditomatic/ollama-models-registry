@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-11T22:57:40.094Z",
-  "totalModels": 211,
-  "totalTags": 6966,
+  "lastUpdated": "2026-02-12T22:57:20.355Z",
+  "totalModels": 212,
+  "totalTags": 6967,
   "categories": [
     "base",
     "chat",
@@ -22,25 +22,25 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "77.9M",
+      "pullCount": "78M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "56.5M",
+      "pullCount": "56.7M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "53.9M",
+      "pullCount": "54M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "gemma3",
-      "pullCount": "31.6M",
+      "pullCount": "31.7M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
@@ -52,13 +52,13 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "20.9M",
+      "pullCount": "21M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "18.9M",
+      "pullCount": "19M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -70,7 +70,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "15.5M",
+      "pullCount": "15.6M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -88,7 +88,7 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "10.9M",
+      "pullCount": "11M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -100,7 +100,7 @@
     },
     {
       "name": "phi4",
-      "pullCount": "7.1M",
+      "pullCount": "7.2M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
       "tagCount": 5
     },
@@ -130,7 +130,7 @@
     },
     {
       "name": "qwen2",
-      "pullCount": "4.8M",
+      "pullCount": "4.9M",
       "description": "Qwen2 is a new series of large language models from Alibaba group",
       "tagCount": 97
     }
