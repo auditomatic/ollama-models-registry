@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T22:57:20.355Z",
+  "lastUpdated": "2026-02-13T22:58:40.878Z",
   "totalModels": 212,
   "totalTags": 6967,
   "categories": [
@@ -16,25 +16,25 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "110M",
+      "pullCount": "110.1M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "78M",
+      "pullCount": "78.1M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "56.7M",
+      "pullCount": "56.8M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "54M",
+      "pullCount": "54.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -46,13 +46,13 @@
     },
     {
       "name": "mistral",
-      "pullCount": "25.1M",
+      "pullCount": "25.2M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "qwen2.5",
-      "pullCount": "21M",
+      "pullCount": "21.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -76,7 +76,7 @@
     },
     {
       "name": "llama3",
-      "pullCount": "15.1M",
+      "pullCount": "15.2M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -106,7 +106,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "6.8M",
+      "pullCount": "6.9M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
