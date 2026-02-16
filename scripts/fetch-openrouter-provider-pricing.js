@@ -111,6 +111,17 @@ function toNumber(value) {
   return Number.isFinite(n) ? n : null;
 }
 
+function normalizeMoneyValue(value) {
+  if (value === null || value === undefined) return null;
+  // Eliminate floating-point noise while preserving small token prices.
+  return Number(value.toFixed(12));
+}
+
+function toPerMillion(costPerToken) {
+  if (costPerToken === null || costPerToken === undefined) return null;
+  return normalizeMoneyValue(costPerToken * 1_000_000);
+}
+
 async function fetchJsonWithRetries(url, options, retries) {
   let lastError = null;
 
@@ -260,8 +271,8 @@ async function main() {
       if (!providerName) continue;
       if (!targetProviders.has(providerName.toLowerCase())) continue;
 
-      const promptCostPerToken = toNumber(endpoint?.pricing?.prompt);
-      const completionCostPerToken = toNumber(endpoint?.pricing?.completion);
+      const promptCostPerToken = normalizeMoneyValue(toNumber(endpoint?.pricing?.prompt));
+      const completionCostPerToken = normalizeMoneyValue(toNumber(endpoint?.pricing?.completion));
 
       extracted.push({
         modelId,
@@ -275,12 +286,12 @@ async function main() {
         maxPromptTokens: toNumber(endpoint?.max_prompt_tokens),
         promptCostPerToken,
         completionCostPerToken,
-        promptCostPer1M: promptCostPerToken === null ? null : promptCostPerToken * 1_000_000,
-        completionCostPer1M: completionCostPerToken === null ? null : completionCostPerToken * 1_000_000,
+        promptCostPer1M: toPerMillion(promptCostPerToken),
+        completionCostPer1M: toPerMillion(completionCostPerToken),
         supportsImplicitCaching: Boolean(endpoint?.supports_implicit_caching),
         uptimeLast30m: toNumber(endpoint?.uptime_last_30m),
-        sourceModelPricingPrompt: toNumber(modelInfo?.pricing?.prompt),
-        sourceModelPricingCompletion: toNumber(modelInfo?.pricing?.completion),
+        sourceModelPricingPrompt: normalizeMoneyValue(toNumber(modelInfo?.pricing?.prompt)),
+        sourceModelPricingCompletion: normalizeMoneyValue(toNumber(modelInfo?.pricing?.completion)),
         extractedAt: startedAt
       });
     }
