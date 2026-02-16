@@ -49,21 +49,29 @@ jobs:
       if: github.event.inputs.dry_run == 'true'
       run: npm run test
 
+    - name: Run OpenRouter provider pricing harvest (dry-run)
+      if: github.event.inputs.dry_run == 'true'
+      run: node scripts/fetch-openrouter-provider-pricing.js --dry-run --concurrency 1 --retries 2
+
     - name: Run scraper (production)
       if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
       run: npm run scrape
 
+    - name: Run OpenRouter provider pricing harvest (production)
+      if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
+      run: node scripts/fetch-openrouter-provider-pricing.js --concurrency 1 --retries 2
+
     - name: Check for changes
       id: changes
       run: |
-        if git diff --quiet data/ && git diff --quiet models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json 2>/dev/null; then
+        if git diff --quiet data/ && git diff --quiet models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null; then
           echo "changed=false" >> $GITHUB_OUTPUT
           echo "No changes detected in data files or root JSON files"
         else
           echo "changed=true" >> $GITHUB_OUTPUT
           echo "Changes detected in data files or root JSON files"
           git diff --stat data/ 2>/dev/null || true
-          git diff --stat models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json 2>/dev/null || true
+          git diff --stat models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null || true
         fi
 
     - name: Commit and push changes
@@ -72,7 +80,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/
-        git add models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json 2>/dev/null || true
+        git add models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null || true
         git commit -m "Update Ollama models data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         git push
 
@@ -99,6 +107,18 @@ jobs:
           if [ -f "data/litellm_model_prices_and_context_window.json" ]; then
             cp data/litellm_model_prices_and_context_window.json ./
             echo "LiteLLM prices data copied to repo root"
+          fi
+          if [ -f "data/mistral-provider-pricing.json" ]; then
+            cp data/mistral-provider-pricing.json ./
+            echo "Mistral provider pricing copied to repo root"
+          fi
+          if [ -f "data/nebius-provider-pricing.json" ]; then
+            cp data/nebius-provider-pricing.json ./
+            echo "Nebius provider pricing copied to repo root"
+          fi
+          if [ -f "data/openrouter-provider-endpoints.raw.json" ]; then
+            cp data/openrouter-provider-endpoints.raw.json ./
+            echo "OpenRouter raw provider endpoints copied to repo root"
           fi
           echo "JSON files copied to repo root"
         else
