@@ -5,7 +5,8 @@
   "main": "scripts/scrape.js",
   "scripts": {
     "scrape": "node scripts/scrape.js",
-    "test": "node scripts/scrape.js --dry-run"
+    "test": "node scripts/scrape.js --dry-run",
+    "scrape:openrouter-pricing": "node scripts/fetch-openrouter-provider-pricing.js"
   },
   "repository": {
     "type": "git",

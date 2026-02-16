@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-02-16T19:29:39.918Z",
+  "source": "openrouter-provider-endpoints",
+  "settings": {
+    "providers": [
+      "mistral",
+      "nebius"
+    ],
+    "concurrency": 1,
+    "retries": 1,
+    "timeoutMs": 20000,
+    "dryRun": true,
+    "limit": null
+  },
+  "summary": {
+    "catalogModelCount": 342,
+    "scannedModelCount": 15,
+    "successfulEndpointRequests": 15,
+    "failedEndpointRequests": 0,
+    "extractedEndpointRows": 0
+  },
+  "errors": [],
+  "rows": []
+}
