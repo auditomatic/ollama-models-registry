@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T22:57:37.393Z",
+  "lastUpdated": "2026-02-18T22:59:05.229Z",
   "totalModels": 213,
   "totalTags": 6969,
   "categories": [
@@ -16,7 +16,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "110.3M",
+      "pullCount": "110.4M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -28,43 +28,43 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "57.4M",
+      "pullCount": "57.5M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "54.4M",
+      "pullCount": "54.5M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "gemma3",
-      "pullCount": "31.9M",
+      "pullCount": "32M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
     {
       "name": "mistral",
-      "pullCount": "25.4M",
+      "pullCount": "25.5M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "qwen2.5",
-      "pullCount": "21.5M",
+      "pullCount": "21.6M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "19.4M",
+      "pullCount": "19.5M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "gemma2",
-      "pullCount": "16M",
+      "pullCount": "16.1M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -76,19 +76,19 @@
     },
     {
       "name": "llama3",
-      "pullCount": "15.5M",
+      "pullCount": "15.7M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "llava",
-      "pullCount": "12.8M",
+      "pullCount": "12.9M",
       "description": "🌋 LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding. Updated to version 1.6.",
       "tagCount": 98
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "11.1M",
+      "pullCount": "11.2M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
