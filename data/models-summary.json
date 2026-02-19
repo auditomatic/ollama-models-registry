@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T22:59:05.229Z",
+  "lastUpdated": "2026-02-19T22:58:27.006Z",
   "totalModels": 213,
   "totalTags": 6969,
   "categories": [
@@ -52,7 +52,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "21.6M",
+      "pullCount": "21.7M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
