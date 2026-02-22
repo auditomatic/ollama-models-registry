@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T22:54:15.275Z",
+  "lastUpdated": "2026-02-22T22:54:14.715Z",
   "totalModels": 213,
   "totalTags": 6969,
   "categories": [
@@ -28,7 +28,7 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "57.5M",
+      "pullCount": "57.6M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
