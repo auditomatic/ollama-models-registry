@@ -8295,37 +8295,6 @@
     "supports_vision": true,
     "tool_use_system_prompt_tokens": 346
   },
-  "us/claude-sonnet-4-6": {
-    "cache_creation_input_token_cost": 0.000004125,
-    "cache_creation_input_token_cost_above_200k_tokens": 0.00000825,
-    "cache_read_input_token_cost": 3.3e-7,
-    "cache_read_input_token_cost_above_200k_tokens": 6.6e-7,
-    "input_cost_per_token": 0.0000033,
-    "input_cost_per_token_above_200k_tokens": 0.0000066,
-    "litellm_provider": "anthropic",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 64000,
-    "max_tokens": 64000,
-    "mode": "chat",
-    "output_cost_per_token": 0.0000165,
-    "output_cost_per_token_above_200k_tokens": 0.00002475,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_assistant_prefill": true,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346,
-    "inference_geo": "us"
-  },
   "claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.00000375,
     "cache_read_input_token_cost": 3e-7,
@@ -8517,100 +8486,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
-  },
-  "fast/claude-opus-4-6": {
-    "cache_creation_input_token_cost": 0.00000625,
-    "cache_creation_input_token_cost_above_200k_tokens": 0.0000125,
-    "cache_creation_input_token_cost_above_1hr": 0.00001,
-    "cache_read_input_token_cost": 5e-7,
-    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
-    "input_cost_per_token": 0.00003,
-    "input_cost_per_token_above_200k_tokens": 0.00001,
-    "litellm_provider": "anthropic",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 0.00015,
-    "output_cost_per_token_above_200k_tokens": 0.0000375,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
-  },
-  "us/claude-opus-4-6": {
-    "cache_creation_input_token_cost": 0.000006875,
-    "cache_creation_input_token_cost_above_200k_tokens": 0.00001375,
-    "cache_creation_input_token_cost_above_1hr": 0.000011,
-    "cache_read_input_token_cost": 5.5e-7,
-    "cache_read_input_token_cost_above_200k_tokens": 0.0000011,
-    "input_cost_per_token": 0.0000055,
-    "input_cost_per_token_above_200k_tokens": 0.000011,
-    "litellm_provider": "anthropic",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 0.0000275,
-    "output_cost_per_token_above_200k_tokens": 0.00004125,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
-  },
-  "fast/us/claude-opus-4-6": {
-    "cache_creation_input_token_cost": 0.000006875,
-    "cache_creation_input_token_cost_above_200k_tokens": 0.00001375,
-    "cache_creation_input_token_cost_above_1hr": 0.000011,
-    "cache_read_input_token_cost": 5.5e-7,
-    "cache_read_input_token_cost_above_200k_tokens": 0.0000011,
-    "input_cost_per_token": 0.00003,
-    "input_cost_per_token_above_200k_tokens": 0.000011,
-    "litellm_provider": "anthropic",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 0.00015,
-    "output_cost_per_token_above_200k_tokens": 0.00004125,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
+    "tool_use_system_prompt_tokens": 346,
+    "provider_specific_entry": {
+      "us": 1.1,
+      "fast": 6
+    }
   },
   "claude-opus-4-6-20260205": {
     "cache_creation_input_token_cost": 0.00000625,
@@ -8641,69 +8521,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
-  },
-  "fast/claude-opus-4-6-20260205": {
-    "cache_creation_input_token_cost": 0.00000625,
-    "cache_creation_input_token_cost_above_200k_tokens": 0.0000125,
-    "cache_creation_input_token_cost_above_1hr": 0.00001,
-    "cache_read_input_token_cost": 5e-7,
-    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
-    "input_cost_per_token": 0.00003,
-    "input_cost_per_token_above_200k_tokens": 0.00001,
-    "litellm_provider": "anthropic",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 0.00015,
-    "output_cost_per_token_above_200k_tokens": 0.0000375,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
-  },
-  "us/claude-opus-4-6-20260205": {
-    "cache_creation_input_token_cost": 0.000006875,
-    "cache_creation_input_token_cost_above_200k_tokens": 0.00001375,
-    "cache_creation_input_token_cost_above_1hr": 0.000011,
-    "cache_read_input_token_cost": 5.5e-7,
-    "cache_read_input_token_cost_above_200k_tokens": 0.0000011,
-    "input_cost_per_token": 0.0000055,
-    "input_cost_per_token_above_200k_tokens": 0.000011,
-    "litellm_provider": "anthropic",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 0.0000275,
-    "output_cost_per_token_above_200k_tokens": 0.00004125,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_function_calling": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "tool_use_system_prompt_tokens": 346
+    "tool_use_system_prompt_tokens": 346,
+    "provider_specific_entry": {
+      "us": 1.1,
+      "fast": 6
+    }
   },
   "claude-sonnet-4-20250514": {
     "deprecation_date": "2026-05-14",
@@ -14768,7 +14590,14 @@
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "gemini-3.1-pro-preview": {
     "cache_read_input_token_cost": 2e-7,
@@ -14819,7 +14648,14 @@
     "supports_vision": true,
     "supports_web_search": true,
     "supports_url_context": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "gemini-3.1-pro-preview-customtools": {
     "cache_read_input_token_cost": 2e-7,
@@ -14919,7 +14755,14 @@
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "vertex_ai/gemini-3-flash-preview": {
     "cache_read_input_token_cost": 5e-8,
@@ -14963,7 +14806,12 @@
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 9e-7,
+    "input_cost_per_audio_token_priority": 0.0000018,
+    "output_cost_per_token_priority": 0.0000054,
+    "cache_read_input_token_cost_priority": 9e-8,
+    "supports_service_tier": true
   },
   "vertex_ai/gemini-3.1-pro-preview": {
     "cache_read_input_token_cost": 2e-7,
@@ -15014,7 +14862,14 @@
     "supports_vision": true,
     "supports_web_search": true,
     "supports_url_context": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "vertex_ai/gemini-3.1-pro-preview-customtools": {
     "cache_read_input_token_cost": 2e-7,
@@ -15065,7 +14920,14 @@
     "supports_vision": true,
     "supports_web_search": true,
     "supports_url_context": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "gemini-2.5-pro-exp-03-25": {
     "cache_read_input_token_cost": 1.25e-7,
@@ -16860,6 +16722,8 @@
     "cache_read_input_token_cost_above_200k_tokens": 2.5e-7,
     "input_cost_per_token": 0.00000125,
     "input_cost_per_token_above_200k_tokens": 0.0000025,
+    "input_cost_per_token_priority": 0.00000125,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000025,
     "litellm_provider": "gemini",
     "max_audio_length_hours": 8.4,
     "max_audio_per_prompt": 1,
@@ -16873,8 +16737,11 @@
     "mode": "chat",
     "output_cost_per_token": 0.00001,
     "output_cost_per_token_above_200k_tokens": 0.000015,
+    "output_cost_per_token_priority": 0.00001,
+    "output_cost_per_token_above_200k_tokens_priority": 0.000015,
     "rpm": 2000,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "supports_service_tier": true,
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/completions"
@@ -16979,7 +16846,14 @@
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "tpm": 800000
+    "tpm": 800000,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "gemini/gemini-3-flash-preview": {
     "cache_read_input_token_cost": 5e-8,
@@ -17027,7 +16901,12 @@
     "supports_vision": true,
     "supports_web_search": true,
     "supports_native_streaming": true,
-    "tpm": 800000
+    "tpm": 800000,
+    "input_cost_per_token_priority": 9e-7,
+    "input_cost_per_audio_token_priority": 0.0000018,
+    "output_cost_per_token_priority": 0.0000054,
+    "cache_read_input_token_cost_priority": 9e-8,
+    "supports_service_tier": true
   },
   "gemini/gemini-3.1-pro-preview": {
     "cache_read_input_token_cost": 2e-7,
@@ -17078,7 +16957,14 @@
     "supports_web_search": true,
     "supports_url_context": true,
     "supports_native_streaming": true,
-    "tpm": 800000
+    "tpm": 800000,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "gemini/gemini-3.1-pro-preview-customtools": {
     "cache_read_input_token_cost": 2e-7,
@@ -17129,7 +17015,14 @@
     "supports_web_search": true,
     "supports_url_context": true,
     "supports_native_streaming": true,
-    "tpm": 800000
+    "tpm": 800000,
+    "input_cost_per_token_priority": 0.0000036,
+    "input_cost_per_token_above_200k_tokens_priority": 0.0000072,
+    "output_cost_per_token_priority": 0.0000216,
+    "output_cost_per_token_above_200k_tokens_priority": 0.0000324,
+    "cache_read_input_token_cost_priority": 3.6e-7,
+    "cache_read_input_token_cost_above_200k_tokens_priority": 7.2e-7,
+    "supports_service_tier": true
   },
   "gemini-3-flash-preview": {
     "cache_read_input_token_cost": 5e-8,
@@ -17175,7 +17068,12 @@
     "supports_url_context": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "supports_native_streaming": true
+    "supports_native_streaming": true,
+    "input_cost_per_token_priority": 9e-7,
+    "input_cost_per_audio_token_priority": 0.0000018,
+    "output_cost_per_token_priority": 0.0000054,
+    "cache_read_input_token_cost_priority": 9e-8,
+    "supports_service_tier": true
   },
   "gemini/gemini-2.5-pro-exp-03-25": {
     "cache_read_input_token_cost": 0,
