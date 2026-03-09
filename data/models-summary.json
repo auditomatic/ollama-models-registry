@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T22:53:35.145Z",
+  "lastUpdated": "2026-03-09T22:55:51.891Z",
   "totalModels": 214,
   "totalTags": 7003,
   "categories": [
@@ -22,19 +22,19 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "79.3M",
+      "pullCount": "79.4M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "59.5M",
+      "pullCount": "59.7M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "56.3M",
+      "pullCount": "56.6M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -52,19 +52,19 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "23.2M",
+      "pullCount": "23.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "23M",
+      "pullCount": "23.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "llama3",
-      "pullCount": "17.7M",
+      "pullCount": "17.8M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -100,7 +100,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "7.4M",
+      "pullCount": "7.5M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
