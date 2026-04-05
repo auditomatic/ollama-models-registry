@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T22:56:22.889Z",
+  "lastUpdated": "2026-04-05T22:58:21.580Z",
   "totalModels": 218,
   "totalTags": 7062,
   "categories": [
@@ -16,31 +16,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "112.6M",
+      "pullCount": "112.7M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "81.8M",
+      "pullCount": "81.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "llama3.2",
-      "pullCount": "63.8M",
+      "pullCount": "63.9M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "62.7M",
+      "pullCount": "62.9M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "gemma3",
-      "pullCount": "34.9M",
+      "pullCount": "35M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
@@ -52,25 +52,25 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "26.7M",
+      "pullCount": "26.8M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "25.8M",
+      "pullCount": "25.9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "llama3",
-      "pullCount": "21.5M",
+      "pullCount": "21.6M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "gemma2",
-      "pullCount": "19.8M",
+      "pullCount": "19.9M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "9.1M",
+      "pullCount": "9.2M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
