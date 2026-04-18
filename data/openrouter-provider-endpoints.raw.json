@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T23:03:24.374Z",
+  "generatedAt": "2026-04-18T23:00:36.373Z",
   "source": "openrouter-provider-endpoints",
   "settings": {
     "providers": [
@@ -13,9 +13,9 @@
     "limit": null
   },
   "summary": {
-    "catalogModelCount": 345,
-    "scannedModelCount": 345,
-    "successfulEndpointRequests": 345,
+    "catalogModelCount": 342,
+    "scannedModelCount": 342,
+    "successfulEndpointRequests": 342,
     "failedEndpointRequests": 0,
     "extractedEndpointRows": 36
   },
@@ -36,10 +36,10 @@
       "promptCostPer1M": 0.15,
       "completionCostPer1M": 0.6,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.3854880642874,
+      "uptimeLast30m": 99.04011813930593,
       "sourceModelPricingPrompt": 1.5e-7,
       "sourceModelPricingCompletion": 6e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "nvidia/nemotron-3-super-120b-a12b",
@@ -59,14 +59,14 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 9e-8,
       "sourceModelPricingCompletion": 4.5e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "qwen/qwen3.5-397b-a17b",
       "providerName": "Nebius",
       "endpointName": "Nebius | qwen/qwen3.5-397b-a17b-20260216",
       "tag": "nebius/fp4",
-      "status": -5,
+      "status": 0,
       "quantization": "fp4",
       "contextLength": 262144,
       "maxCompletionTokens": null,
@@ -76,10 +76,10 @@
       "promptCostPer1M": 0.6,
       "completionCostPer1M": 3.6,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 72.13622291021672,
+      "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 3.9e-7,
       "sourceModelPricingCompletion": 0.00000234,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "minimax/minimax-m2.5",
@@ -99,14 +99,14 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 1.18e-7,
       "sourceModelPricingCompletion": 9.9e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "z-ai/glm-5",
       "providerName": "Nebius",
       "endpointName": "Nebius | z-ai/glm-5-20260211",
       "tag": "nebius/fp4",
-      "status": -5,
+      "status": 0,
       "quantization": "fp4",
       "contextLength": 202752,
       "maxCompletionTokens": null,
@@ -116,10 +116,10 @@
       "promptCostPer1M": 1,
       "completionCostPer1M": 3.2,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 75.75757575757575,
+      "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 7.2e-7,
       "sourceModelPricingCompletion": 0.0000023,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-small-creative",
@@ -136,10 +136,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.95883503138829,
+      "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/devstral-2512",
@@ -159,7 +159,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/ministral-14b-2512",
@@ -176,10 +176,10 @@
       "promptCostPer1M": 0.2,
       "completionCostPer1M": 0.2,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 98.79740980573543,
+      "uptimeLast30m": 99.40556606322616,
       "sourceModelPricingPrompt": 2e-7,
       "sourceModelPricingCompletion": 2e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/ministral-8b-2512",
@@ -196,10 +196,10 @@
       "promptCostPer1M": 0.15,
       "completionCostPer1M": 0.15,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.3439037725533,
+      "uptimeLast30m": 99.15307402760351,
       "sourceModelPricingPrompt": 1.5e-7,
       "sourceModelPricingCompletion": 1.5e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/ministral-3b-2512",
@@ -216,10 +216,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.1,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.9822316986496,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 1e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-large-2512",
@@ -239,7 +239,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 5e-7,
       "sourceModelPricingCompletion": 0.0000015,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "prime-intellect/intellect-3",
@@ -259,7 +259,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 2e-7,
       "sourceModelPricingCompletion": 0.0000011,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/voxtral-small-24b-2507",
@@ -276,10 +276,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": null,
+      "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "qwen/qwen3-next-80b-a3b-thinking",
@@ -299,7 +299,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 9.75e-8,
       "sourceModelPricingCompletion": 7.8e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "nousresearch/hermes-4-70b",
@@ -319,7 +319,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 1.3e-7,
       "sourceModelPricingCompletion": 4e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "nousresearch/hermes-4-405b",
@@ -339,7 +339,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 0.000001,
       "sourceModelPricingCompletion": 0.000003,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-medium-3.1",
@@ -356,10 +356,10 @@
       "promptCostPer1M": 0.4,
       "completionCostPer1M": 2,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.8911860718172,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "openai/gpt-oss-120b",
@@ -376,10 +376,10 @@
       "promptCostPer1M": 0.15,
       "completionCostPer1M": 0.6,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.47643979057592,
+      "uptimeLast30m": 99.68911917098445,
       "sourceModelPricingPrompt": 3.9e-8,
       "sourceModelPricingCompletion": 1.9e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/codestral-2508",
@@ -396,10 +396,10 @@
       "promptCostPer1M": 0.3,
       "completionCostPer1M": 0.9,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.31972789115646,
       "sourceModelPricingPrompt": 3e-7,
       "sourceModelPricingCompletion": 9e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -416,10 +416,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 96.86226568867156,
+      "uptimeLast30m": 99.66216216216216,
       "sourceModelPricingPrompt": 9e-8,
       "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/devstral-medium",
@@ -439,7 +439,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/devstral-small",
@@ -459,7 +459,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-small-3.2-24b-instruct",
@@ -476,10 +476,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.83840894965817,
+      "uptimeLast30m": 99.9140365958492,
       "sourceModelPricingPrompt": 7.5e-8,
       "sourceModelPricingCompletion": 2e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-medium-3",
@@ -499,7 +499,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "qwen/qwen3-32b",
@@ -519,7 +519,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 8e-8,
       "sourceModelPricingCompletion": 2.4e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "google/gemma-3-27b-it",
@@ -536,10 +536,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.99552552686922,
+      "uptimeLast30m": 99.57736557877436,
       "sourceModelPricingPrompt": 8e-8,
       "sourceModelPricingCompletion": 1.6e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-saba",
@@ -559,7 +559,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 2e-7,
       "sourceModelPricingCompletion": 6e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "qwen/qwen2.5-vl-72b-instruct",
@@ -579,14 +579,14 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 2.5e-7,
       "sourceModelPricingCompletion": 7.5e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "meta-llama/llama-3.3-70b-instruct",
       "providerName": "Nebius",
       "endpointName": "Nebius | meta-llama/llama-3.3-70b-instruct",
       "tag": "nebius/fp8",
-      "status": -5,
+      "status": -2,
       "quantization": "fp8",
       "contextLength": 131072,
       "maxCompletionTokens": null,
@@ -596,10 +596,10 @@
       "promptCostPer1M": 0.13,
       "completionCostPer1M": 0.4,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 77.93478260869566,
+      "uptimeLast30m": 89.88212180746562,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 3.2e-7,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-large-2411",
@@ -619,7 +619,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-large-2407",
@@ -639,7 +639,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/pixtral-large-2411",
@@ -659,7 +659,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "meta-llama/llama-3.1-8b-instruct",
@@ -676,10 +676,10 @@
       "promptCostPer1M": 0.02,
       "completionCostPer1M": 0.06,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.59963042808747,
+      "uptimeLast30m": 99.80885251777075,
       "sourceModelPricingPrompt": 2e-8,
       "sourceModelPricingCompletion": 5e-8,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-nemo",
@@ -699,7 +699,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 2e-8,
       "sourceModelPricingCompletion": 4e-8,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mixtral-8x22b-instruct",
@@ -716,10 +716,10 @@
       "promptCostPer1M": 2,
       "completionCostPer1M": 6,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": null,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     },
     {
       "modelId": "mistralai/mistral-large",
@@ -739,7 +739,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-04-17T23:03:16.637Z"
+      "extractedAt": "2026-04-18T23:00:29.384Z"
     }
   ]
 }
