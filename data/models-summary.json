@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-04-26T23:01:53.321Z",
-  "totalModels": 224,
-  "totalTags": 7113,
+  "lastUpdated": "2026-04-27T23:06:30.554Z",
+  "totalModels": 225,
+  "totalTags": 7114,
   "categories": [
     "base",
     "chat",
@@ -22,25 +22,25 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "83.8M",
+      "pullCount": "83.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "66.9M",
+      "pullCount": "67.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "66.9M",
+      "pullCount": "67M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "36M",
+      "pullCount": "36.1M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
@@ -52,7 +52,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "28.5M",
+      "pullCount": "28.6M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -70,7 +70,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "21.7M",
+      "pullCount": "21.8M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "9.9M",
+      "pullCount": "10M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -112,7 +112,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "7.2M",
+      "pullCount": "7.3M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 58
     },
