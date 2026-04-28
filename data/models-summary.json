@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-04-27T23:06:30.554Z",
-  "totalModels": 225,
-  "totalTags": 7114,
+  "lastUpdated": "2026-04-28T23:07:31.665Z",
+  "totalModels": 227,
+  "totalTags": 7125,
   "categories": [
     "base",
     "chat",
@@ -22,19 +22,19 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "83.9M",
+      "pullCount": "84M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "67.1M",
+      "pullCount": "67.2M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "67M",
+      "pullCount": "67.2M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -52,19 +52,19 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "28.6M",
+      "pullCount": "28.7M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "27.8M",
+      "pullCount": "27.9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "llama3",
-      "pullCount": "23.5M",
+      "pullCount": "23.6M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -76,13 +76,13 @@
     },
     {
       "name": "phi3",
-      "pullCount": "17.3M",
+      "pullCount": "17.4M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "14.8M",
+      "pullCount": "14.9M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -100,7 +100,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "9.1M",
+      "pullCount": "9.2M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
@@ -112,7 +112,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "7.3M",
+      "pullCount": "7.4M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 58
     },
