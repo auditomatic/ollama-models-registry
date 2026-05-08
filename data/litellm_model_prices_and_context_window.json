@@ -28876,6 +28876,19 @@
     "mode": "chat",
     "output_cost_per_token": 0
   },
+  "sambanova/MiniMax-M2.7": {
+    "input_cost_per_token": 3e-7,
+    "litellm_provider": "sambanova",
+    "max_input_tokens": 204800,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000012,
+    "source": "https://cloud.sambanova.ai/plans/pricing",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
   "sambanova/DeepSeek-R1": {
     "input_cost_per_token": 0.000005,
     "litellm_provider": "sambanova",
