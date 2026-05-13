@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T23:08:55.371Z",
+  "lastUpdated": "2026-05-13T23:09:30.198Z",
   "totalModels": 229,
   "totalTags": 7177,
   "categories": [
@@ -16,25 +16,25 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "114.2M",
+      "pullCount": "114.3M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "85.2M",
+      "pullCount": "85.3M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "69.4M",
+      "pullCount": "69.5M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "68.9M",
+      "pullCount": "69M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -46,7 +46,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "29.8M",
+      "pullCount": "29.9M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "28.7M",
+      "pullCount": "28.8M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -70,7 +70,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "22.9M",
+      "pullCount": "23M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -82,7 +82,7 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "15.4M",
+      "pullCount": "15.5M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -100,19 +100,19 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "10.1M",
+      "pullCount": "10.3M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 58
     },
     {
       "name": "gpt-oss",
-      "pullCount": "9.5M",
+      "pullCount": "9.6M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
     {
       "name": "gemma4",
-      "pullCount": "8.3M",
+      "pullCount": "8.5M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 30
     },
@@ -130,7 +130,7 @@
     },
     {
       "name": "llama2",
-      "pullCount": "6.8M",
+      "pullCount": "6.9M",
       "description": "Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.",
       "tagCount": 102
     }
