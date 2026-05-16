@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T23:08:13.209Z",
+  "lastUpdated": "2026-05-16T23:05:46.555Z",
   "totalModels": 229,
   "totalTags": 7177,
   "categories": [
@@ -16,25 +16,25 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "114.4M",
+      "pullCount": "114.5M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "85.5M",
+      "pullCount": "85.6M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "69.9M",
+      "pullCount": "70.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "69.2M",
+      "pullCount": "69.3M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -46,7 +46,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "30.1M",
+      "pullCount": "30.2M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "28.9M",
+      "pullCount": "29M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "10.7M",
+      "pullCount": "11M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 58
     },
@@ -112,7 +112,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "8.9M",
+      "pullCount": "9M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 30
     },
@@ -124,7 +124,7 @@
     },
     {
       "name": "gemma",
-      "pullCount": "7M",
+      "pullCount": "7.1M",
       "description": "Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1",
       "tagCount": 102
     },
