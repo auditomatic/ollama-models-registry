@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T23:08:02.967Z",
+  "lastUpdated": "2026-05-25T23:09:20.598Z",
   "totalModels": 229,
   "totalTags": 7191,
   "categories": [
@@ -16,7 +16,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "114.9M",
+      "pullCount": "115M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -28,13 +28,13 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "71.3M",
+      "pullCount": "71.5M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "70.3M",
+      "pullCount": "70.4M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -46,13 +46,13 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "31M",
+      "pullCount": "31.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "29.5M",
+      "pullCount": "29.6M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "12.4M",
+      "pullCount": "12.5M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 64
     },
@@ -106,7 +106,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "10.3M",
+      "pullCount": "10.4M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 34
     },
