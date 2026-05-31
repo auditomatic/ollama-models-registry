@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T23:08:31.940Z",
+  "generatedAt": "2026-05-31T23:08:10.772Z",
   "source": "openrouter-provider-endpoints",
   "settings": {
     "providers": [
@@ -13,11 +13,11 @@
     "limit": null
   },
   "summary": {
-    "catalogModelCount": 354,
-    "scannedModelCount": 354,
-    "successfulEndpointRequests": 354,
+    "catalogModelCount": 344,
+    "scannedModelCount": 344,
+    "successfulEndpointRequests": 344,
     "failedEndpointRequests": 0,
-    "extractedEndpointRows": 33
+    "extractedEndpointRows": 29
   },
   "errors": [],
   "rows": [
@@ -39,7 +39,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 0.0000015,
       "sourceModelPricingCompletion": 0.0000075,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "moonshotai/kimi-k2.6",
@@ -56,10 +56,10 @@
       "promptCostPer1M": 0.95,
       "completionCostPer1M": 4,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.36908517350159,
+      "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 6.84e-7,
       "sourceModelPricingCompletion": 0.00000342,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-small-2603",
@@ -76,10 +76,10 @@
       "promptCostPer1M": 0.15,
       "completionCostPer1M": 0.6,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.94392104082547,
+      "uptimeLast30m": 99.9234693877551,
       "sourceModelPricingPrompt": 1.5e-7,
       "sourceModelPricingCompletion": 6e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "nvidia/nemotron-3-super-120b-a12b",
@@ -96,10 +96,10 @@
       "promptCostPer1M": 0.3,
       "completionCostPer1M": 0.9,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": null,
       "sourceModelPricingPrompt": 9e-8,
       "sourceModelPricingCompletion": 4.5e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/devstral-2512",
@@ -116,10 +116,10 @@
       "promptCostPer1M": 0.4,
       "completionCostPer1M": 2,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.85119047619048,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/ministral-14b-2512",
@@ -136,10 +136,10 @@
       "promptCostPer1M": 0.2,
       "completionCostPer1M": 0.2,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.14836077240594,
+      "uptimeLast30m": 99.72034323684777,
       "sourceModelPricingPrompt": 2e-7,
       "sourceModelPricingCompletion": 2e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/ministral-8b-2512",
@@ -156,10 +156,10 @@
       "promptCostPer1M": 0.15,
       "completionCostPer1M": 0.15,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.90228218383558,
+      "uptimeLast30m": 99.68258238063214,
       "sourceModelPricingPrompt": 1.5e-7,
       "sourceModelPricingCompletion": 1.5e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/ministral-3b-2512",
@@ -176,10 +176,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.1,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.97333333333333,
+      "uptimeLast30m": 99.972444199504,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 1e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-large-2512",
@@ -196,10 +196,10 @@
       "promptCostPer1M": 0.5,
       "completionCostPer1M": 1.5,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.9182783982566,
       "sourceModelPricingPrompt": 5e-7,
       "sourceModelPricingCompletion": 0.0000015,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "prime-intellect/intellect-3",
@@ -219,7 +219,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 2e-7,
       "sourceModelPricingCompletion": 0.0000011,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/voxtral-small-24b-2507",
@@ -236,10 +236,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": null,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "qwen/qwen3-next-80b-a3b-thinking",
@@ -259,7 +259,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 9.75e-8,
       "sourceModelPricingCompletion": 7.8e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "nousresearch/hermes-4-70b",
@@ -279,7 +279,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 1.3e-7,
       "sourceModelPricingCompletion": 4e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "nousresearch/hermes-4-405b",
@@ -299,7 +299,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 0.000001,
       "sourceModelPricingCompletion": 0.000003,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-medium-3.1",
@@ -319,7 +319,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "openai/gpt-oss-120b",
@@ -339,7 +339,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 3.9e-8,
       "sourceModelPricingCompletion": 1.8e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/codestral-2508",
@@ -356,10 +356,10 @@
       "promptCostPer1M": 0.3,
       "completionCostPer1M": 0.9,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.45945945945947,
       "sourceModelPricingPrompt": 3e-7,
       "sourceModelPricingCompletion": 9e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -379,47 +379,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 9e-8,
       "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
-    },
-    {
-      "modelId": "mistralai/devstral-medium",
-      "providerName": "Mistral",
-      "endpointName": "Mistral | mistralai/devstral-medium-2507",
-      "tag": "mistral",
-      "status": 0,
-      "quantization": "unknown",
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "maxPromptTokens": null,
-      "promptCostPerToken": 4e-7,
-      "completionCostPerToken": 0.000002,
-      "promptCostPer1M": 0.4,
-      "completionCostPer1M": 2,
-      "supportsImplicitCaching": false,
-      "uptimeLast30m": null,
-      "sourceModelPricingPrompt": 4e-7,
-      "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
-    },
-    {
-      "modelId": "mistralai/devstral-small",
-      "providerName": "Mistral",
-      "endpointName": "Mistral | mistralai/devstral-small-2507",
-      "tag": "mistral",
-      "status": 0,
-      "quantization": "unknown",
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "maxPromptTokens": null,
-      "promptCostPerToken": 1e-7,
-      "completionCostPerToken": 3e-7,
-      "promptCostPer1M": 0.1,
-      "completionCostPer1M": 0.3,
-      "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.96960486322189,
-      "sourceModelPricingPrompt": 1e-7,
-      "sourceModelPricingCompletion": 3e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-small-3.2-24b-instruct",
@@ -436,10 +396,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.97083697871099,
+      "uptimeLast30m": 99.94188749418875,
       "sourceModelPricingPrompt": 7.5e-8,
       "sourceModelPricingCompletion": 2e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-medium-3",
@@ -459,7 +419,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 4e-7,
       "sourceModelPricingCompletion": 0.000002,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "qwen/qwen3-32b",
@@ -479,7 +439,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 8e-8,
       "sourceModelPricingCompletion": 2.8e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "google/gemma-3-27b-it",
@@ -496,10 +456,10 @@
       "promptCostPer1M": 0.1,
       "completionCostPer1M": 0.3,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.89283800678692,
+      "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 8e-8,
       "sourceModelPricingCompletion": 1.6e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-saba",
@@ -519,7 +479,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 2e-7,
       "sourceModelPricingCompletion": 6e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "qwen/qwen2.5-vl-72b-instruct",
@@ -539,7 +499,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 2.5e-7,
       "sourceModelPricingCompletion": 7.5e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "meta-llama/llama-3.3-70b-instruct",
@@ -556,30 +516,10 @@
       "promptCostPer1M": 0.13,
       "completionCostPer1M": 0.4,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 89.6168470312957,
+      "uptimeLast30m": 88.47736625514403,
       "sourceModelPricingPrompt": 1e-7,
       "sourceModelPricingCompletion": 3.2e-7,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
-    },
-    {
-      "modelId": "mistralai/mistral-large-2411",
-      "providerName": "Mistral",
-      "endpointName": "Mistral | mistralai/mistral-large-2411",
-      "tag": "mistral",
-      "status": 0,
-      "quantization": "unknown",
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "maxPromptTokens": null,
-      "promptCostPerToken": 0.000002,
-      "completionCostPerToken": 0.000006,
-      "promptCostPer1M": 2,
-      "completionCostPer1M": 6,
-      "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
-      "sourceModelPricingPrompt": 0.000002,
-      "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-large-2407",
@@ -599,27 +539,7 @@
       "uptimeLast30m": 100,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
-    },
-    {
-      "modelId": "mistralai/pixtral-large-2411",
-      "providerName": "Mistral",
-      "endpointName": "Mistral | mistralai/pixtral-large-2411",
-      "tag": "mistral",
-      "status": 0,
-      "quantization": "unknown",
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "maxPromptTokens": null,
-      "promptCostPerToken": 0.000002,
-      "completionCostPerToken": 0.000006,
-      "promptCostPer1M": 2,
-      "completionCostPer1M": 6,
-      "supportsImplicitCaching": false,
-      "uptimeLast30m": null,
-      "sourceModelPricingPrompt": 0.000002,
-      "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-nemo",
@@ -636,10 +556,10 @@
       "promptCostPer1M": 0.15,
       "completionCostPer1M": 0.15,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 99.90631980975715,
+      "uptimeLast30m": 99.98172403289675,
       "sourceModelPricingPrompt": 2e-8,
       "sourceModelPricingCompletion": 3e-8,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mixtral-8x22b-instruct",
@@ -659,7 +579,7 @@
       "uptimeLast30m": null,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     },
     {
       "modelId": "mistralai/mistral-large",
@@ -676,10 +596,10 @@
       "promptCostPer1M": 2,
       "completionCostPer1M": 6,
       "supportsImplicitCaching": false,
-      "uptimeLast30m": 100,
+      "uptimeLast30m": 99.64539007092199,
       "sourceModelPricingPrompt": 0.000002,
       "sourceModelPricingCompletion": 0.000006,
-      "extractedAt": "2026-05-30T23:08:26.255Z"
+      "extractedAt": "2026-05-31T23:08:04.104Z"
     }
   ]
 }
