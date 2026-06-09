@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T23:11:23.877Z",
+  "lastUpdated": "2026-06-09T23:11:20.312Z",
   "totalModels": 234,
   "totalTags": 7243,
   "categories": [
@@ -16,7 +16,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "115.6M",
+      "pullCount": "115.7M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -28,25 +28,25 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "73.6M",
+      "pullCount": "73.7M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "72M",
+      "pullCount": "72.1M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "37.5M",
+      "pullCount": "37.6M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
     {
       "name": "qwen2.5",
-      "pullCount": "32.2M",
+      "pullCount": "32.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -100,7 +100,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "12.5M",
+      "pullCount": "12.8M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 47
     },
