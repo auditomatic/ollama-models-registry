@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-06-15T23:23:20.148Z",
-  "totalModels": 236,
-  "totalTags": 7261,
+  "lastUpdated": "2026-06-16T23:15:30.545Z",
+  "totalModels": 233,
+  "totalTags": 7254,
   "categories": [
     "base",
     "chat",
@@ -22,31 +22,31 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "87.7M",
+      "pullCount": "87.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "74.5M",
+      "pullCount": "74.7M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "72.8M",
+      "pullCount": "72.9M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "37.7M",
+      "pullCount": "37.8M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
     {
       "name": "qwen2.5",
-      "pullCount": "32.7M",
+      "pullCount": "32.8M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -64,7 +64,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "25.5M",
+      "pullCount": "25.6M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -82,9 +82,15 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "16.8M",
+      "pullCount": "16.9M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
+    },
+    {
+      "name": "gemma4",
+      "pullCount": "14.3M",
+      "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
+      "tagCount": 48
     },
     {
       "name": "llava",
@@ -93,14 +99,8 @@
       "tagCount": 98
     },
     {
-      "name": "gemma4",
-      "pullCount": "14.1M",
-      "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
-      "tagCount": 48
-    },
-    {
       "name": "qwen3.5",
-      "pullCount": "13.7M",
+      "pullCount": "13.8M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 64
     },
