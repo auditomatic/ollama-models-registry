@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T23:09:54.113Z",
+  "lastUpdated": "2026-06-21T23:10:21.477Z",
   "totalModels": 234,
   "totalTags": 7261,
   "categories": [
@@ -22,19 +22,19 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "88.2M",
+      "pullCount": "88.3M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "75.2M",
+      "pullCount": "75.3M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "73.4M",
+      "pullCount": "73.6M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -46,25 +46,25 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "33M",
+      "pullCount": "33.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "31.1M",
+      "pullCount": "31.2M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "mistral",
-      "pullCount": "30.3M",
+      "pullCount": "30.4M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma2",
-      "pullCount": "25.9M",
+      "pullCount": "26M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -88,7 +88,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "14.9M",
+      "pullCount": "15M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 48
     },
@@ -112,7 +112,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "10.3M",
+      "pullCount": "10.4M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
