@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T23:08:11.423Z",
+  "lastUpdated": "2026-06-30T23:10:22.724Z",
   "totalModels": 235,
   "totalTags": 7271,
   "categories": [
@@ -22,25 +22,25 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "88.8M",
+      "pullCount": "88.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "76.5M",
+      "pullCount": "76.6M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "74.5M",
+      "pullCount": "74.7M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "38.1M",
+      "pullCount": "38.2M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 29
     },
@@ -52,7 +52,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "31.5M",
+      "pullCount": "31.6M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -64,31 +64,31 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "26.6M",
+      "pullCount": "26.7M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
     {
       "name": "llama3",
-      "pullCount": "24.5M",
+      "pullCount": "24.6M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
-      "name": "phi3",
-      "pullCount": "17.7M",
-      "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
-      "tagCount": 72
-    },
-    {
       "name": "qwen2.5-coder",
-      "pullCount": "17.7M",
+      "pullCount": "17.8M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
+      "name": "phi3",
+      "pullCount": "17.8M",
+      "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
+      "tagCount": 72
+    },
+    {
       "name": "gemma4",
-      "pullCount": "16.1M",
+      "pullCount": "16.3M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 49
     },
@@ -106,7 +106,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "12M",
+      "pullCount": "12.1M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
