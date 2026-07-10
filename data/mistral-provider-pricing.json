@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T23:53:19.256Z",
+  "generatedAt": "2026-07-10T23:40:59.588Z",
   "source": "openrouter-provider-endpoints",
   "providerName": "mistral",
   "modelCount": 17,
@@ -24,7 +24,7 @@
         "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 0.0000015,
         "sourceModelPricingCompletion": 0.0000075,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -45,7 +45,7 @@
           "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 0.0000015,
           "sourceModelPricingCompletion": 0.0000075,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -65,10 +65,10 @@
         "promptCostPer1M": 0.15,
         "completionCostPer1M": 0.6,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 100,
+        "uptimeLast30m": 99.98846863468634,
         "sourceModelPricingPrompt": 1.5e-7,
         "sourceModelPricingCompletion": 6e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -86,10 +86,10 @@
           "promptCostPer1M": 0.15,
           "completionCostPer1M": 0.6,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 100,
+          "uptimeLast30m": 99.98846863468634,
           "sourceModelPricingPrompt": 1.5e-7,
           "sourceModelPricingCompletion": 6e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -109,10 +109,10 @@
         "promptCostPer1M": 0.4,
         "completionCostPer1M": 2,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 100,
+        "uptimeLast30m": 99.7872340425532,
         "sourceModelPricingPrompt": 4e-7,
         "sourceModelPricingCompletion": 0.000002,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -130,10 +130,10 @@
           "promptCostPer1M": 0.4,
           "completionCostPer1M": 2,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 100,
+          "uptimeLast30m": 99.7872340425532,
           "sourceModelPricingPrompt": 4e-7,
           "sourceModelPricingCompletion": 0.000002,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -153,10 +153,10 @@
         "promptCostPer1M": 0.2,
         "completionCostPer1M": 0.2,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.52091394877465,
+        "uptimeLast30m": 99.80127186009538,
         "sourceModelPricingPrompt": 2e-7,
         "sourceModelPricingCompletion": 2e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -174,10 +174,10 @@
           "promptCostPer1M": 0.2,
           "completionCostPer1M": 0.2,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.52091394877465,
+          "uptimeLast30m": 99.80127186009538,
           "sourceModelPricingPrompt": 2e-7,
           "sourceModelPricingCompletion": 2e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -197,10 +197,10 @@
         "promptCostPer1M": 0.15,
         "completionCostPer1M": 0.15,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.39797617522737,
+        "uptimeLast30m": 99.94946304485156,
         "sourceModelPricingPrompt": 1.5e-7,
         "sourceModelPricingCompletion": 1.5e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -218,10 +218,10 @@
           "promptCostPer1M": 0.15,
           "completionCostPer1M": 0.15,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.39797617522737,
+          "uptimeLast30m": 99.94946304485156,
           "sourceModelPricingPrompt": 1.5e-7,
           "sourceModelPricingCompletion": 1.5e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -241,10 +241,10 @@
         "promptCostPer1M": 0.1,
         "completionCostPer1M": 0.1,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.73958333333334,
+        "uptimeLast30m": 99.89445910290237,
         "sourceModelPricingPrompt": 1e-7,
         "sourceModelPricingCompletion": 1e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -262,10 +262,10 @@
           "promptCostPer1M": 0.1,
           "completionCostPer1M": 0.1,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.73958333333334,
+          "uptimeLast30m": 99.89445910290237,
           "sourceModelPricingPrompt": 1e-7,
           "sourceModelPricingCompletion": 1e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -285,10 +285,10 @@
         "promptCostPer1M": 0.5,
         "completionCostPer1M": 1.5,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.50387596899225,
+        "uptimeLast30m": 99.72531245708008,
         "sourceModelPricingPrompt": 5e-7,
         "sourceModelPricingCompletion": 0.0000015,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -306,10 +306,10 @@
           "promptCostPer1M": 0.5,
           "completionCostPer1M": 1.5,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.50387596899225,
+          "uptimeLast30m": 99.72531245708008,
           "sourceModelPricingPrompt": 5e-7,
           "sourceModelPricingCompletion": 0.0000015,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -329,10 +329,10 @@
         "promptCostPer1M": 0.1,
         "completionCostPer1M": 0.3,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.47089947089947,
+        "uptimeLast30m": 99.90867579908675,
         "sourceModelPricingPrompt": 1e-7,
         "sourceModelPricingCompletion": 3e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -350,10 +350,10 @@
           "promptCostPer1M": 0.1,
           "completionCostPer1M": 0.3,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.47089947089947,
+          "uptimeLast30m": 99.90867579908675,
           "sourceModelPricingPrompt": 1e-7,
           "sourceModelPricingCompletion": 3e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -376,7 +376,7 @@
         "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 4e-7,
         "sourceModelPricingCompletion": 0.000002,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -397,7 +397,7 @@
           "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 4e-7,
           "sourceModelPricingCompletion": 0.000002,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -420,7 +420,7 @@
         "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 3e-7,
         "sourceModelPricingCompletion": 9e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -441,7 +441,7 @@
           "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 3e-7,
           "sourceModelPricingCompletion": 9e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -461,10 +461,10 @@
         "promptCostPer1M": 0.1,
         "completionCostPer1M": 0.3,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.60842417187004,
+        "uptimeLast30m": 99.90627928772258,
         "sourceModelPricingPrompt": 7.5e-8,
         "sourceModelPricingCompletion": 2e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -482,10 +482,10 @@
           "promptCostPer1M": 0.1,
           "completionCostPer1M": 0.3,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.60842417187004,
+          "uptimeLast30m": 99.90627928772258,
           "sourceModelPricingPrompt": 7.5e-8,
           "sourceModelPricingCompletion": 2e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -505,10 +505,10 @@
         "promptCostPer1M": 0.4,
         "completionCostPer1M": 2,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 98.33333333333333,
+        "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 4e-7,
         "sourceModelPricingCompletion": 0.000002,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -526,10 +526,10 @@
           "promptCostPer1M": 0.4,
           "completionCostPer1M": 2,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 98.33333333333333,
+          "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 4e-7,
           "sourceModelPricingCompletion": 0.000002,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -552,7 +552,7 @@
         "uptimeLast30m": null,
         "sourceModelPricingPrompt": 2e-7,
         "sourceModelPricingCompletion": 6e-7,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -573,7 +573,7 @@
           "uptimeLast30m": null,
           "sourceModelPricingPrompt": 2e-7,
           "sourceModelPricingCompletion": 6e-7,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -596,7 +596,7 @@
         "uptimeLast30m": null,
         "sourceModelPricingPrompt": 0.000002,
         "sourceModelPricingCompletion": 0.000006,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -617,7 +617,7 @@
           "uptimeLast30m": null,
           "sourceModelPricingPrompt": 0.000002,
           "sourceModelPricingCompletion": 0.000006,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -637,10 +637,10 @@
         "promptCostPer1M": 0.15,
         "completionCostPer1M": 0.15,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.50561421149656,
+        "uptimeLast30m": 99.91104420418776,
         "sourceModelPricingPrompt": 2e-8,
         "sourceModelPricingCompletion": 3e-8,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -658,10 +658,10 @@
           "promptCostPer1M": 0.15,
           "completionCostPer1M": 0.15,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.50561421149656,
+          "uptimeLast30m": 99.91104420418776,
           "sourceModelPricingPrompt": 2e-8,
           "sourceModelPricingCompletion": 3e-8,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -681,10 +681,10 @@
         "promptCostPer1M": 2,
         "completionCostPer1M": 6,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": null,
+        "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 0.000002,
         "sourceModelPricingCompletion": 0.000006,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -702,10 +702,10 @@
           "promptCostPer1M": 2,
           "completionCostPer1M": 6,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": null,
+          "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 0.000002,
           "sourceModelPricingCompletion": 0.000006,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     },
@@ -725,10 +725,10 @@
         "promptCostPer1M": 2,
         "completionCostPer1M": 6,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.91289198606272,
+        "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 0.000002,
         "sourceModelPricingCompletion": 0.000006,
-        "extractedAt": "2026-07-09T23:53:05.906Z"
+        "extractedAt": "2026-07-10T23:40:45.479Z"
       },
       "variants": [
         {
@@ -746,10 +746,10 @@
           "promptCostPer1M": 2,
           "completionCostPer1M": 6,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.91289198606272,
+          "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 0.000002,
           "sourceModelPricingCompletion": 0.000006,
-          "extractedAt": "2026-07-09T23:53:05.906Z"
+          "extractedAt": "2026-07-10T23:40:45.479Z"
         }
       ]
     }
