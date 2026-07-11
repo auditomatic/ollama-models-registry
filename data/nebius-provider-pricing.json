@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T23:40:59.588Z",
+  "generatedAt": "2026-07-11T23:39:45.557Z",
   "source": "openrouter-provider-endpoints",
   "providerName": "nebius",
   "modelCount": 13,
@@ -21,10 +21,10 @@
         "promptCostPer1M": 0.95,
         "completionCostPer1M": 4,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.65870307167235,
+        "uptimeLast30m": null,
         "sourceModelPricingPrompt": 6.6e-7,
         "sourceModelPricingCompletion": 0.00000341,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -42,10 +42,10 @@
           "promptCostPer1M": 0.95,
           "completionCostPer1M": 4,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.65870307167235,
+          "uptimeLast30m": null,
           "sourceModelPricingPrompt": 6.6e-7,
           "sourceModelPricingCompletion": 0.00000341,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -55,7 +55,7 @@
         "providerName": "Nebius",
         "endpointName": "Nebius | z-ai/glm-5.1-20260406",
         "tag": "nebius/fp8",
-        "status": 0,
+        "status": -5,
         "quantization": "fp8",
         "contextLength": 202752,
         "maxCompletionTokens": null,
@@ -65,10 +65,10 @@
         "promptCostPer1M": 1.4,
         "completionCostPer1M": 4.4,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 96.875,
+        "uptimeLast30m": 62.27544910179641,
         "sourceModelPricingPrompt": 9.66e-7,
         "sourceModelPricingCompletion": 0.000003036,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -76,7 +76,7 @@
           "providerName": "Nebius",
           "endpointName": "Nebius | z-ai/glm-5.1-20260406",
           "tag": "nebius/fp8",
-          "status": 0,
+          "status": -5,
           "quantization": "fp8",
           "contextLength": 202752,
           "maxCompletionTokens": null,
@@ -86,10 +86,10 @@
           "promptCostPer1M": 1.4,
           "completionCostPer1M": 4.4,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 96.875,
+          "uptimeLast30m": 62.27544910179641,
           "sourceModelPricingPrompt": 9.66e-7,
           "sourceModelPricingCompletion": 0.000003036,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -112,7 +112,7 @@
         "uptimeLast30m": null,
         "sourceModelPricingPrompt": 8e-8,
         "sourceModelPricingCompletion": 4.5e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -133,7 +133,7 @@
           "uptimeLast30m": null,
           "sourceModelPricingPrompt": 8e-8,
           "sourceModelPricingCompletion": 4.5e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -156,7 +156,7 @@
         "uptimeLast30m": null,
         "sourceModelPricingPrompt": 1.5e-7,
         "sourceModelPricingCompletion": 9e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -177,7 +177,7 @@
           "uptimeLast30m": null,
           "sourceModelPricingPrompt": 1.5e-7,
           "sourceModelPricingCompletion": 9e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -200,7 +200,7 @@
         "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 5e-8,
         "sourceModelPricingCompletion": 2e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -221,7 +221,7 @@
           "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 5e-8,
           "sourceModelPricingCompletion": 2e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -244,7 +244,7 @@
         "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 1.3e-7,
         "sourceModelPricingCompletion": 4e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -265,7 +265,7 @@
           "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 1.3e-7,
           "sourceModelPricingCompletion": 4e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -288,7 +288,7 @@
         "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 0.000001,
         "sourceModelPricingCompletion": 0.000003,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -309,7 +309,7 @@
           "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 0.000001,
           "sourceModelPricingCompletion": 0.000003,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -329,10 +329,10 @@
         "promptCostPer1M": 0.15,
         "completionCostPer1M": 0.6,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.92997198879551,
+        "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 3.6e-8,
         "sourceModelPricingCompletion": 1.8e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -350,10 +350,10 @@
           "promptCostPer1M": 0.15,
           "completionCostPer1M": 0.6,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.92997198879551,
+          "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 3.6e-8,
           "sourceModelPricingCompletion": 1.8e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -373,10 +373,10 @@
         "promptCostPer1M": 0.1,
         "completionCostPer1M": 0.3,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.929676511955,
+        "uptimeLast30m": 100,
         "sourceModelPricingPrompt": 4.815e-8,
         "sourceModelPricingCompletion": 1.9305e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -394,10 +394,10 @@
           "promptCostPer1M": 0.1,
           "completionCostPer1M": 0.3,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.929676511955,
+          "uptimeLast30m": 100,
           "sourceModelPricingPrompt": 4.815e-8,
           "sourceModelPricingCompletion": 1.9305e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -417,10 +417,10 @@
         "promptCostPer1M": 0.2,
         "completionCostPer1M": 0.6,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 99.48936170212765,
+        "uptimeLast30m": 99.88770353733858,
         "sourceModelPricingPrompt": 9e-8,
         "sourceModelPricingCompletion": 1e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -438,10 +438,10 @@
           "promptCostPer1M": 0.2,
           "completionCostPer1M": 0.6,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 99.48936170212765,
+          "uptimeLast30m": 99.88770353733858,
           "sourceModelPricingPrompt": 9e-8,
           "sourceModelPricingCompletion": 1e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -451,7 +451,7 @@
         "providerName": "Nebius",
         "endpointName": "Nebius | qwen/qwen3-32b-04-28",
         "tag": "nebius/base",
-        "status": -2,
+        "status": 0,
         "quantization": "fp8",
         "contextLength": 40960,
         "maxCompletionTokens": null,
@@ -461,10 +461,10 @@
         "promptCostPer1M": 0.1,
         "completionCostPer1M": 0.3,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 92.01228878648233,
+        "uptimeLast30m": 99.85855728429985,
         "sourceModelPricingPrompt": 8e-8,
         "sourceModelPricingCompletion": 2.8e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -472,7 +472,7 @@
           "providerName": "Nebius",
           "endpointName": "Nebius | qwen/qwen3-32b-04-28",
           "tag": "nebius/base",
-          "status": -2,
+          "status": 0,
           "quantization": "fp8",
           "contextLength": 40960,
           "maxCompletionTokens": null,
@@ -482,10 +482,10 @@
           "promptCostPer1M": 0.1,
           "completionCostPer1M": 0.3,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 92.01228878648233,
+          "uptimeLast30m": 99.85855728429985,
           "sourceModelPricingPrompt": 8e-8,
           "sourceModelPricingCompletion": 2.8e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -505,10 +505,10 @@
         "promptCostPer1M": 0.1,
         "completionCostPer1M": 0.3,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 71.87866354044549,
+        "uptimeLast30m": 51.51301900070373,
         "sourceModelPricingPrompt": 8e-8,
         "sourceModelPricingCompletion": 1.6e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -526,10 +526,10 @@
           "promptCostPer1M": 0.1,
           "completionCostPer1M": 0.3,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 71.87866354044549,
+          "uptimeLast30m": 51.51301900070373,
           "sourceModelPricingPrompt": 8e-8,
           "sourceModelPricingCompletion": 1.6e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     },
@@ -539,7 +539,7 @@
         "providerName": "Nebius",
         "endpointName": "Nebius | meta-llama/llama-3.3-70b-instruct",
         "tag": "nebius/fp8",
-        "status": 0,
+        "status": -2,
         "quantization": "fp8",
         "contextLength": 131072,
         "maxCompletionTokens": null,
@@ -549,10 +549,10 @@
         "promptCostPer1M": 0.13,
         "completionCostPer1M": 0.4,
         "supportsImplicitCaching": false,
-        "uptimeLast30m": 97.22863741339492,
+        "uptimeLast30m": 92.30947955390334,
         "sourceModelPricingPrompt": 1e-7,
         "sourceModelPricingCompletion": 3.2e-7,
-        "extractedAt": "2026-07-10T23:40:45.479Z"
+        "extractedAt": "2026-07-11T23:39:26.492Z"
       },
       "variants": [
         {
@@ -560,7 +560,7 @@
           "providerName": "Nebius",
           "endpointName": "Nebius | meta-llama/llama-3.3-70b-instruct",
           "tag": "nebius/fp8",
-          "status": 0,
+          "status": -2,
           "quantization": "fp8",
           "contextLength": 131072,
           "maxCompletionTokens": null,
@@ -570,10 +570,10 @@
           "promptCostPer1M": 0.13,
           "completionCostPer1M": 0.4,
           "supportsImplicitCaching": false,
-          "uptimeLast30m": 97.22863741339492,
+          "uptimeLast30m": 92.30947955390334,
           "sourceModelPricingPrompt": 1e-7,
           "sourceModelPricingCompletion": 3.2e-7,
-          "extractedAt": "2026-07-10T23:40:45.479Z"
+          "extractedAt": "2026-07-11T23:39:26.492Z"
         }
       ]
     }
