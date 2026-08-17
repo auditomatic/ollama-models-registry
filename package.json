@@ -22,9 +22,6 @@
   ],
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {
-    "puppeteer": "^22.0.0"
-  },
   "engines": {
     "node": ">=18"
   }

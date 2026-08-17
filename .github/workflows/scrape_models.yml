@@ -55,6 +55,10 @@ jobs:
 
     - name: Run scraper (production)
       if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
+      # Ollama/OpenRouter harvests are independent: if the Ollama scrape fails
+      # (e.g. upstream markup change), keep the job running so the OpenRouter
+      # harvest, commit, and Pages deploy still happen.
+      continue-on-error: true
       run: npm run scrape
 
     - name: Run OpenRouter provider pricing harvest (production)
