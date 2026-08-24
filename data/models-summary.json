@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-23T22:57:49.937Z",
+  "lastUpdated": "2026-08-24T23:01:09.771Z",
   "totalModels": 235,
-  "totalTags": 7312,
+  "totalTags": 7318,
   "categories": [
     "audio",
     "cloud",
@@ -13,25 +13,25 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "118.7M",
+      "pullCount": "118.8M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "91.8M",
+      "pullCount": "91.9M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "83.3M",
+      "pullCount": "83.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "81M",
+      "pullCount": "81.1M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
@@ -43,19 +43,19 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "37.8M",
+      "pullCount": "38M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "35.2M",
+      "pullCount": "35.3M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "mistral",
-      "pullCount": "32.4M",
+      "pullCount": "32.5M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -73,25 +73,25 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "23.2M",
+      "pullCount": "23.3M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
-      "tagCount": 49
+      "tagCount": 50
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "20.6M",
+      "pullCount": "20.7M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
       "name": "qwen3.5",
-      "pullCount": "18.2M",
+      "pullCount": "18.3M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 64
     },
     {
       "name": "phi3",
-      "pullCount": "18M",
+      "pullCount": "18.1M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -109,7 +109,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "12.1M",
+      "pullCount": "12.2M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
@@ -120,16 +120,16 @@
       "tagCount": 9
     },
     {
+      "name": "gemma",
+      "pullCount": "7.8M",
+      "description": "Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1",
+      "tagCount": 102
+    },
+    {
       "name": "phi4",
       "pullCount": "7.7M",
       "description": "Phi-4 is a 14B parameter, state-of-the-art open model from Microsoft.",
       "tagCount": 5
-    },
-    {
-      "name": "qwen",
-      "pullCount": "7.6M",
-      "description": "Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters",
-      "tagCount": 379
     }
   ]
 }
