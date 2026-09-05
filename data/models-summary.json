@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T00:25:13.602Z",
+  "lastUpdated": "2026-09-05T00:24:10.987Z",
   "totalModels": 239,
   "totalTags": 7371,
   "categories": [
@@ -19,13 +19,13 @@
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "92.3M",
+      "pullCount": "92.4M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "84.4M",
+      "pullCount": "84.5M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -43,37 +43,37 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "39.2M",
+      "pullCount": "39.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "36.2M",
+      "pullCount": "36.3M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "mistral",
-      "pullCount": "33.2M",
+      "pullCount": "33.3M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma2",
-      "pullCount": "31.7M",
+      "pullCount": "31.8M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
     {
       "name": "llama3",
-      "pullCount": "25.1M",
+      "pullCount": "25.2M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "gemma4",
-      "pullCount": "24.1M",
+      "pullCount": "24.2M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 50
     },
@@ -85,7 +85,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "19.3M",
+      "pullCount": "19.4M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 64
     },
@@ -109,13 +109,13 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "12.5M",
+      "pullCount": "12.6M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "8.9M",
+      "pullCount": "9M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
