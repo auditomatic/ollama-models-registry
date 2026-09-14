@@ -136,6 +136,13 @@ npm run scrape
 - `data/models.json` - Complete dataset
 - `data/models-summary.json` - Summary with top models and stats
 - `data/last-updated.txt` - Last update timestamp
+- `models.dev/api.json` - Mirror of `https://models.dev/api.json`
+- `models.dev/models.json` - Mirror of `https://models.dev/models.json`
+- `models.dev/catalog.json` - Mirror of `https://models.dev/catalog.json`
+
+Refresh the models.dev mirror locally with `npm run mirror:models-dev`. The daily
+workflow publishes these files at `/models.dev/api.json`, `/models.dev/models.json`,
+and `/models.dev/catalog.json` on the GitHub Pages site.
 
 ## 🤝 Contributing
 

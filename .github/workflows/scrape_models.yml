@@ -53,6 +53,10 @@ jobs:
       if: github.event.inputs.dry_run == 'true'
       run: node scripts/fetch-openrouter-provider-pricing.js --dry-run --concurrency 1 --retries 2
 
+    - name: Run models.dev mirror (dry-run)
+      if: github.event.inputs.dry_run == 'true'
+      run: node scripts/fetch-models-dev.js --dry-run
+
     - name: Run scraper (production)
       if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
       # Ollama/OpenRouter harvests are independent: if the Ollama scrape fails
@@ -65,16 +69,20 @@ jobs:
       if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
       run: node scripts/fetch-openrouter-provider-pricing.js --concurrency 1 --retries 2
 
+    - name: Run models.dev mirror (production)
+      if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true')
+      run: node scripts/fetch-models-dev.js
+
     - name: Check for changes
       id: changes
       run: |
-        if git diff --quiet data/ && git diff --quiet models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null; then
+        if git diff --quiet data/ models.dev/ && git diff --quiet models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null; then
           echo "changed=false" >> $GITHUB_OUTPUT
-          echo "No changes detected in data files or root JSON files"
+          echo "No changes detected in mirrored data or root JSON files"
         else
           echo "changed=true" >> $GITHUB_OUTPUT
-          echo "Changes detected in data files or root JSON files"
-          git diff --stat data/ 2>/dev/null || true
+          echo "Changes detected in mirrored data or root JSON files"
+          git diff --stat data/ models.dev/ 2>/dev/null || true
           git diff --stat models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null || true
         fi
 
@@ -83,7 +91,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/
+        git add data/ models.dev/
         git add models.json models-summary.json last-updated.txt litellm_model_prices_and_context_window.json mistral-provider-pricing.json nebius-provider-pricing.json openrouter-provider-endpoints.raw.json 2>/dev/null || true
         git commit -m "Update Ollama models data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         git push
@@ -142,6 +150,11 @@ jobs:
           echo '{"error": "Data not available"}' > _site/models.json
           echo '{"error": "Data not available"}' > _site/models-summary.json
           echo "$(date -u)" > _site/last-updated.txt
+        fi
+        if [ -d "models.dev" ] && [ "$(ls -A models.dev)" ]; then
+          cp -r models.dev _site/
+        else
+          echo "Warning: models.dev mirror is unavailable"
         fi
 
     - name: Upload to Pages
