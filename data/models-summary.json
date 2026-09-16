@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-15T00:55:24.442Z",
+  "lastUpdated": "2026-09-16T00:49:01.738Z",
   "totalModels": 240,
   "totalTags": 7375,
   "categories": [
@@ -25,7 +25,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "85.7M",
+      "pullCount": "85.8M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -37,7 +37,7 @@
     },
     {
       "name": "gemma3",
-      "pullCount": "40.4M",
+      "pullCount": "40.5M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -49,7 +49,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "37M",
+      "pullCount": "37.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -61,7 +61,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "32.5M",
+      "pullCount": "32.6M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -91,7 +91,7 @@
     },
     {
       "name": "phi3",
-      "pullCount": "18.1M",
+      "pullCount": "18.2M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
@@ -103,7 +103,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "14.6M",
+      "pullCount": "14.7M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -115,7 +115,7 @@
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "9.2M",
+      "pullCount": "9.3M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
