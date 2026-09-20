@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T00:39:11.637Z",
+  "lastUpdated": "2026-09-20T00:24:04.422Z",
   "totalModels": 240,
   "totalTags": 7375,
   "categories": [
@@ -13,31 +13,31 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "119.6M",
+      "pullCount": "119.7M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "92.9M",
+      "pullCount": "93M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "86.2M",
+      "pullCount": "86.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "83.7M",
+      "pullCount": "83.8M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "gemma3",
-      "pullCount": "40.5M",
+      "pullCount": "40.6M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
@@ -61,21 +61,21 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "32.8M",
+      "pullCount": "32.9M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
-    },
-    {
-      "name": "llama3",
-      "pullCount": "25.3M",
-      "description": "Meta Llama 3: The most capable openly available LLM to date",
-      "tagCount": 68
     },
     {
       "name": "gemma4",
       "pullCount": "25.3M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 50
+    },
+    {
+      "name": "llama3",
+      "pullCount": "25.3M",
+      "description": "Meta Llama 3: The most capable openly available LLM to date",
+      "tagCount": 68
     },
     {
       "name": "qwen2.5-coder",
@@ -85,7 +85,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "20.5M",
+      "pullCount": "20.6M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 64
     },
@@ -109,13 +109,13 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "12.9M",
+      "pullCount": "13M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "9.3M",
+      "pullCount": "9.4M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
