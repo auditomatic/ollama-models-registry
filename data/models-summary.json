@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T00:53:14.072Z",
+  "lastUpdated": "2026-09-27T00:52:57.170Z",
   "totalModels": 238,
   "totalTags": 7370,
   "categories": [
@@ -25,7 +25,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "87.1M",
+      "pullCount": "87.2M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -49,7 +49,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "38M",
+      "pullCount": "38.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -67,7 +67,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "25.7M",
+      "pullCount": "25.8M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 50
     },
@@ -97,7 +97,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "15M",
+      "pullCount": "15.1M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -109,13 +109,13 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "13.2M",
+      "pullCount": "13.3M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "9.5M",
+      "pullCount": "9.6M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
