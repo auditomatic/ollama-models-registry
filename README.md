@@ -139,6 +139,12 @@ npm run scrape
 - `models.dev/api.json` - Mirror of `https://models.dev/api.json`
 - `models.dev/models.json` - Mirror of `https://models.dev/models.json`
 - `models.dev/catalog.json` - Mirror of `https://models.dev/catalog.json`
+- `data/openrouter-endpoint-prices.json` - Every OpenRouter model's backends
+  (provider, tag, status, prompt and completion price in USD per token), from
+  `/api/v1/models/{id}/endpoints`, one line per model. A model whose request
+  fails keeps the previous day's entry and its `fetchedAt`. Published at
+  `/openrouter-endpoint-prices.json`; read by Auditomatic for OpenRouter cost
+  ranges.
 
 Refresh the models.dev mirror locally with `npm run mirror:models-dev`. The daily
 workflow publishes these files at `/models.dev/api.json`, `/models.dev/models.json`,

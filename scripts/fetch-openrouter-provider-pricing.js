@@ -8,6 +8,8 @@
  * 2) Fetches provider endpoints for each model (/api/v1/models/{id}/endpoints)
  * 3) Extracts rows for target providers (default: Mistral + Nebius)
  * 4) Writes raw + provider-grouped pricing snapshots
+ * 5) Writes openrouter-endpoint-prices.json: every backend's price for every
+ *    model, for Auditomatic's OpenRouter cost estimates
  */
 
 const fs = require('fs').promises;
@@ -21,6 +23,7 @@ const DEFAULT_CONCURRENCY = 8;
 const DEFAULT_RETRIES = 3;
 const DEFAULT_TIMEOUT_MS = 20000;
 const DEFAULT_TARGET_PROVIDERS = ['mistral', 'nebius'];
+const ENDPOINT_PRICES_FILE = 'openrouter-endpoint-prices.json';
 
 function parseArgs(argv) {
   const args = {
@@ -191,6 +194,68 @@ function pickSelectedVariant(variants) {
     });
 
   return ranked.length ? ranked[0] : null;
+}
+
+/**
+ * One model's backends as the endpoints listing states them, prices in dollars
+ * per token. Every backend is kept, live or not, with OpenRouter's own status
+ * (0 = serving): which backends a cost range should span is the app's rule to
+ * apply, and keeping the facts here lets that rule change without a new
+ * harvest.
+ */
+function endpointPriceRows(endpoints) {
+  return endpoints.map((endpoint) => ({
+    provider: String(endpoint?.provider_name || '').trim() || null,
+    tag: endpoint?.tag || null,
+    status: toNumber(endpoint?.status),
+    prompt: normalizeMoneyValue(toNumber(endpoint?.pricing?.prompt)),
+    completion: normalizeMoneyValue(toNumber(endpoint?.pricing?.completion))
+  }));
+}
+
+async function readJsonIfPresent(filePath) {
+  try {
+    return JSON.parse(await fs.readFile(filePath, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Every catalog model's backend prices, keyed by the catalog id the app stores
+ * as the row's modelId. A model whose endpoints request failed today keeps
+ * yesterday's entry, with yesterday's fetchedAt, rather than disappearing for a
+ * day: a failed request is not OpenRouter delisting the model.
+ */
+function buildEndpointPrices(endpointResults, previous, startedAt) {
+  const models = {};
+  let carriedForward = 0;
+  let missing = 0;
+
+  for (const result of endpointResults) {
+    if (result.ok) {
+      const endpoints = result.payload?.data?.endpoints;
+      models[result.modelId] = {
+        fetchedAt: startedAt,
+        endpoints: endpointPriceRows(Array.isArray(endpoints) ? endpoints : [])
+      };
+    } else if (previous?.models?.[result.modelId]) {
+      models[result.modelId] = previous.models[result.modelId];
+      carriedForward += 1;
+    } else {
+      missing += 1;
+    }
+  }
+
+  return {
+    generatedAt: new Date().toISOString(),
+    source: 'https://openrouter.ai/api/v1/models/{id}/endpoints',
+    units: 'USD per token',
+    modelCount: Object.keys(models).length,
+    carriedForward,
+    missing,
+    models
+  };
 }
 
 async function main() {
@@ -375,6 +440,31 @@ async function main() {
   const rawPath = path.join(args.outDir, 'openrouter-provider-endpoints.raw.json');
   await fs.writeFile(rawPath, JSON.stringify(rawOutput, null, 2));
 
+  const endpointPricesPath = path.join(args.outDir, ENDPOINT_PRICES_FILE);
+  const endpointPrices = buildEndpointPrices(
+    endpointResults,
+    await readJsonIfPresent(endpointPricesPath),
+    startedAt
+  );
+  // One line per model: small to serve, and a day's price changes read as a
+  // diff of the models that changed.
+  const endpointPricesText = [
+    '{',
+    ...Object.entries(endpointPrices)
+      .filter(([key]) => key !== 'models')
+      .map(([key, value]) => `  ${JSON.stringify(key)}: ${JSON.stringify(value)},`),
+    '  "models": {',
+    Object.entries(endpointPrices.models)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([modelId, entry]) => `    ${JSON.stringify(modelId)}: ${JSON.stringify(entry)}`)
+      .join(',\n'),
+    '  }',
+    '}',
+    ''
+  ].join('\n');
+  JSON.parse(endpointPricesText);
+  await fs.writeFile(endpointPricesPath, endpointPricesText);
+
   for (const provider of args.providers) {
     const snapshot = providerSnapshots[provider] || {
       generatedAt: new Date().toISOString(),
@@ -391,6 +481,7 @@ async function main() {
 
   console.log('Done.');
   console.log(`Raw output: ${rawPath}`);
+  console.log(`Endpoint prices: ${endpointPricesPath} (${endpointPrices.modelCount} models, ${endpointPrices.carriedForward} carried forward, ${endpointPrices.missing} missing)`);
   for (const provider of args.providers) {
     console.log(`Provider output: ${path.join(args.outDir, `${provider}-provider-pricing.json`)}`);
   }
