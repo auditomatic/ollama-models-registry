@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T01:11:27.924Z",
+  "lastUpdated": "2026-09-28T15:56:10.057Z",
   "totalModels": 238,
   "totalTags": 7370,
   "categories": [
@@ -25,7 +25,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "87.3M",
+      "pullCount": "87.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -43,13 +43,13 @@
     },
     {
       "name": "gemma3",
-      "pullCount": "40.7M",
+      "pullCount": "40.8M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "qwen3",
-      "pullCount": "38.1M",
+      "pullCount": "38.2M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -61,7 +61,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "33.5M",
+      "pullCount": "33.6M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -79,7 +79,7 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "21.8M",
+      "pullCount": "21.9M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
