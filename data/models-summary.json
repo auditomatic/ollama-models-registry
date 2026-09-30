@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T02:18:52.481Z",
+  "lastUpdated": "2026-09-30T01:34:41.691Z",
   "totalModels": 240,
   "totalTags": 7383,
   "categories": [
@@ -13,7 +13,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "119.9M",
+      "pullCount": "120M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -25,7 +25,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "87.4M",
+      "pullCount": "87.5M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -37,7 +37,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "41.2M",
+      "pullCount": "41.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -61,19 +61,19 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "33.6M",
+      "pullCount": "33.7M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
     {
       "name": "gemma4",
-      "pullCount": "25.9M",
+      "pullCount": "26M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 50
     },
     {
       "name": "llama3",
-      "pullCount": "25.3M",
+      "pullCount": "25.4M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
@@ -85,7 +85,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "21.1M",
+      "pullCount": "21.2M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 62
     },
