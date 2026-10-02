@@ -1,10 +1,11 @@
 {
-  "lastUpdated": "2026-10-01T01:35:04.510Z",
+  "lastUpdated": "2026-10-02T01:49:20.037Z",
   "totalModels": 240,
-  "totalTags": 7384,
+  "totalTags": 7392,
   "categories": [
     "audio",
     "cloud",
+    "decision",
     "embedding",
     "thinking",
     "tools",
@@ -25,7 +26,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "87.6M",
+      "pullCount": "87.8M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -37,7 +38,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "41.4M",
+      "pullCount": "41.5M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -49,21 +50,21 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "38.5M",
+      "pullCount": "38.6M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
+    },
+    {
+      "name": "gemma2",
+      "pullCount": "33.8M",
+      "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
+      "tagCount": 94
     },
     {
       "name": "mistral",
       "pullCount": "33.8M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
-    },
-    {
-      "name": "gemma2",
-      "pullCount": "33.7M",
-      "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
-      "tagCount": 94
     },
     {
       "name": "gemma4",
@@ -79,13 +80,13 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "21.9M",
+      "pullCount": "22M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
       "name": "qwen3.5",
-      "pullCount": "21.3M",
+      "pullCount": "21.4M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 62
     },
@@ -97,7 +98,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "15.2M",
+      "pullCount": "15.3M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -115,7 +116,7 @@
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "9.6M",
+      "pullCount": "9.7M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
