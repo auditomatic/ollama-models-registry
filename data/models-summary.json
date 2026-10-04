@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-03T01:27:06.276Z",
+  "lastUpdated": "2026-10-04T01:59:55.298Z",
   "totalModels": 242,
-  "totalTags": 7404,
+  "totalTags": 7411,
   "categories": [
     "audio",
     "cloud",
@@ -26,7 +26,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "87.9M",
+      "pullCount": "88M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -38,7 +38,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "41.5M",
+      "pullCount": "41.6M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -50,13 +50,13 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "38.7M",
+      "pullCount": "38.8M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "gemma2",
-      "pullCount": "33.9M",
+      "pullCount": "34M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "26.2M",
+      "pullCount": "26.3M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 51
     },
@@ -86,9 +86,9 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "21.4M",
+      "pullCount": "21.5M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
-      "tagCount": 62
+      "tagCount": 69
     },
     {
       "name": "phi3",
@@ -98,7 +98,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "15.3M",
+      "pullCount": "15.4M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -110,7 +110,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "13.4M",
+      "pullCount": "13.5M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
