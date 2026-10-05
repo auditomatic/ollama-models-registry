@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-04T01:59:55.298Z",
+  "lastUpdated": "2026-10-05T01:17:19.937Z",
   "totalModels": 242,
-  "totalTags": 7411,
+  "totalTags": 7414,
   "categories": [
     "audio",
     "cloud",
@@ -14,7 +14,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "120M",
+      "pullCount": "120.1M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -26,19 +26,19 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "88M",
+      "pullCount": "88.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "84.8M",
+      "pullCount": "84.9M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "qwen2.5",
-      "pullCount": "41.6M",
+      "pullCount": "41.7M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -50,7 +50,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "38.8M",
+      "pullCount": "38.9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -80,15 +80,15 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "22M",
+      "pullCount": "22.1M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
       "name": "qwen3.5",
-      "pullCount": "21.5M",
+      "pullCount": "21.6M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
-      "tagCount": 69
+      "tagCount": 72
     },
     {
       "name": "phi3",
@@ -128,7 +128,7 @@
     },
     {
       "name": "qwen",
-      "pullCount": "7.9M",
+      "pullCount": "8M",
       "description": "Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters",
       "tagCount": 379
     }
