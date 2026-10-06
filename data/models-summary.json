@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T01:17:19.937Z",
+  "lastUpdated": "2026-10-06T02:31:38.552Z",
   "totalModels": 242,
   "totalTags": 7414,
   "categories": [
@@ -26,7 +26,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "88.1M",
+      "pullCount": "88.2M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -50,13 +50,13 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "38.9M",
+      "pullCount": "39M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "gemma2",
-      "pullCount": "34M",
+      "pullCount": "34.1M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "26.3M",
+      "pullCount": "26.4M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 51
     },
@@ -86,7 +86,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "21.6M",
+      "pullCount": "21.7M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
@@ -116,7 +116,7 @@
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "9.7M",
+      "pullCount": "9.8M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
