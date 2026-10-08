@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T01:49:21.045Z",
+  "lastUpdated": "2026-10-08T02:17:04.460Z",
   "totalModels": 245,
   "totalTags": 7436,
   "categories": [
@@ -26,7 +26,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "88.3M",
+      "pullCount": "88.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -38,25 +38,25 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "41.8M",
+      "pullCount": "41.9M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "gemma3",
-      "pullCount": "40.9M",
+      "pullCount": "41M",
       "description": "The current, most capable model that runs on a single GPU.",
       "tagCount": 26
     },
     {
       "name": "qwen3",
-      "pullCount": "39.1M",
+      "pullCount": "39.3M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "gemma2",
-      "pullCount": "34.2M",
+      "pullCount": "34.3M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -80,13 +80,13 @@
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "22.1M",
+      "pullCount": "22.2M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
       "name": "qwen3.5",
-      "pullCount": "21.7M",
+      "pullCount": "21.8M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
@@ -110,7 +110,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "13.5M",
+      "pullCount": "13.6M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
