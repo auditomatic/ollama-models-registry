@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-12T01:48:03.140Z",
-  "totalModels": 245,
-  "totalTags": 7439,
+  "lastUpdated": "2026-10-13T03:11:32.457Z",
+  "totalModels": 247,
+  "totalTags": 7452,
   "categories": [
     "audio",
     "cloud",
@@ -14,7 +14,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "120.2M",
+      "pullCount": "120.3M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -26,7 +26,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "89.1M",
+      "pullCount": "89.4M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -38,7 +38,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "42.2M",
+      "pullCount": "42.3M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -50,13 +50,13 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "39.7M",
+      "pullCount": "39.8M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "gemma2",
-      "pullCount": "34.6M",
+      "pullCount": "34.7M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -74,19 +74,19 @@
     },
     {
       "name": "llama3",
-      "pullCount": "25.5M",
+      "pullCount": "25.6M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "22.3M",
+      "pullCount": "22.4M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
     {
       "name": "qwen3.5",
-      "pullCount": "22.1M",
+      "pullCount": "22.2M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
@@ -116,7 +116,7 @@
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "9.9M",
+      "pullCount": "10M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
