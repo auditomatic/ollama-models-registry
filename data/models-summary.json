@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-14T01:24:18.424Z",
+  "lastUpdated": "2026-10-15T00:52:56.260Z",
   "totalModels": 248,
-  "totalTags": 7460,
+  "totalTags": 7462,
   "categories": [
     "audio",
     "cloud",
@@ -26,7 +26,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "89.7M",
+      "pullCount": "90M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -38,7 +38,7 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "42.4M",
+      "pullCount": "42.5M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -50,13 +50,13 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "39.9M",
+      "pullCount": "40M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
     {
       "name": "gemma2",
-      "pullCount": "34.7M",
+      "pullCount": "34.8M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "gemma4",
-      "pullCount": "26.9M",
+      "pullCount": "27M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 51
     },
@@ -92,13 +92,13 @@
     },
     {
       "name": "phi3",
-      "pullCount": "18.2M",
+      "pullCount": "18.3M",
       "description": "Phi-3 is a family of lightweight 3B (Mini) and 14B (Medium) state-of-the-art open models by Microsoft.",
       "tagCount": 72
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "15.7M",
+      "pullCount": "15.8M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
