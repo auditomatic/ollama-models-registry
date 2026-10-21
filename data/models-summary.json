@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-20T01:16:55.434Z",
+  "lastUpdated": "2026-10-21T00:58:00.486Z",
   "totalModels": 257,
-  "totalTags": 7544,
+  "totalTags": 7547,
   "categories": [
     "audio",
     "cloud",
@@ -14,7 +14,7 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "120.4M",
+      "pullCount": "120.5M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
@@ -26,19 +26,19 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "91.5M",
+      "pullCount": "91.8M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "85.8M",
+      "pullCount": "85.9M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "qwen2.5",
-      "pullCount": "42.9M",
+      "pullCount": "43M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
@@ -50,7 +50,7 @@
     },
     {
       "name": "qwen3",
-      "pullCount": "40.7M",
+      "pullCount": "40.9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -62,13 +62,13 @@
     },
     {
       "name": "mistral",
-      "pullCount": "33.9M",
+      "pullCount": "34M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma4",
-      "pullCount": "27.3M",
+      "pullCount": "27.4M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 51
     },
@@ -80,13 +80,13 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "22.8M",
+      "pullCount": "22.9M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "22.6M",
+      "pullCount": "22.7M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
