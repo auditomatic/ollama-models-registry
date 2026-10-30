@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-29T01:57:19.562Z",
+  "lastUpdated": "2026-10-30T02:08:55.122Z",
   "totalModels": 264,
-  "totalTags": 7631,
+  "totalTags": 7634,
   "categories": [
     "audio",
     "cloud",
@@ -26,25 +26,25 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "94.1M",
+      "pullCount": "94.3M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "llama3.2",
-      "pullCount": "86.4M",
+      "pullCount": "86.5M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "qwen2.5",
-      "pullCount": "43.9M",
+      "pullCount": "44M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "41.8M",
+      "pullCount": "41.9M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -56,13 +56,13 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "35.9M",
+      "pullCount": "36M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
     {
       "name": "mistral",
-      "pullCount": "34M",
+      "pullCount": "34.1M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
@@ -74,19 +74,19 @@
     },
     {
       "name": "llama3",
-      "pullCount": "25.8M",
+      "pullCount": "25.9M",
       "description": "Meta Llama 3: The most capable openly available LLM to date",
       "tagCount": 68
     },
     {
       "name": "qwen3.5",
-      "pullCount": "23.7M",
+      "pullCount": "23.8M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "23M",
+      "pullCount": "23.1M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -98,7 +98,7 @@
     },
     {
       "name": "mxbai-embed-large",
-      "pullCount": "16.3M",
+      "pullCount": "16.4M",
       "description": "State-of-the-art large embedding model from mixedbread.ai",
       "tagCount": 4
     },
@@ -122,7 +122,7 @@
     },
     {
       "name": "glm-ocr",
-      "pullCount": "8.7M",
+      "pullCount": "8.8M",
       "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder–decoder architecture.",
       "tagCount": 3
     },
