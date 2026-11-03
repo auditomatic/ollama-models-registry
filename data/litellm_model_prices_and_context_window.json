@@ -13490,6 +13490,10 @@
     "input_cost_per_token": 2e-7,
     "output_cost_per_token": 5e-7,
     "litellm_provider": "azure_ai",
+    "token_count_framing": 149,
+    "token_count_tool_framing": 302,
+    "token_count_responses_framing": 145,
+    "token_count_responses_tool_framing": 100,
     "max_input_tokens": 128000,
     "max_output_tokens": 128000,
     "mode": "chat",
@@ -13843,7 +13847,7 @@
     "input_cost_per_token_flex": 3.7e-7,
     "input_cost_per_token_priority": 0.000001295,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000222,
@@ -13857,7 +13861,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/ap-northeast-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -14014,7 +14018,7 @@
     "input_cost_per_token_flex": 3.7e-7,
     "input_cost_per_token_priority": 0.000001295,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000222,
@@ -14028,7 +14032,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/ap-south-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -14152,12 +14156,12 @@
     "input_cost_per_token": 7.4e-7,
     "input_cost_per_token_flex": 3.7e-7,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000222,
     "output_cost_per_token_flex": 0.00000111,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.html",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_native_structured_output": true,
@@ -14262,7 +14266,7 @@
     "input_cost_per_token_flex": 3.7e-7,
     "input_cost_per_token_priority": 0.000001295,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000222,
@@ -14276,7 +14280,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/eu-north-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -14798,7 +14802,7 @@
     "input_cost_per_token_flex": 3.7e-7,
     "input_cost_per_token_priority": 0.000001295,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000222,
@@ -14812,7 +14816,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/sa-east-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -15047,7 +15051,7 @@
     "input_cost_per_token_flex": 3.1e-7,
     "input_cost_per_token_priority": 0.000001085,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000185,
@@ -15061,7 +15065,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/us-east-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -15168,7 +15172,7 @@
     "input_cost_per_token_flex": 3.1e-7,
     "input_cost_per_token_priority": 0.000001085,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000185,
@@ -15182,7 +15186,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/us-east-2/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -15564,6 +15568,7 @@
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-5.md"
   },
   "bedrock/us-gov-west-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000265,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8000,
@@ -15574,6 +15579,7 @@
     "supports_pdf_input": true
   },
   "bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3e-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8000,
@@ -15720,7 +15726,7 @@
     "input_cost_per_token_flex": 3.1e-7,
     "input_cost_per_token_priority": 0.000001085,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 163840,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000185,
@@ -15734,7 +15740,7 @@
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md"
   },
   "bedrock/us-west-2/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -23534,12 +23540,12 @@
     ]
   },
   "deepgram/streaming/nova-3": {
-    "input_cost_per_second": 0.00008,
+    "input_cost_per_second": 0.00012833,
     "litellm_provider": "deepgram",
     "metadata": {
-      "calculation": "$0.0048/60 seconds = $0.00008000 per second",
+      "calculation": "$0.0077/60 seconds = $0.00012833 per second",
       "note": "Nova-3 monolingual streaming, pay as you go",
-      "original_pricing_per_minute": 0.0048
+      "original_pricing_per_minute": 0.0077
     },
     "mode": "audio_transcription",
     "output_cost_per_second": 0,
@@ -23548,13 +23554,28 @@
       "/v1/listen"
     ]
   },
-  "deepgram/streaming/nova-3-multilingual": {
-    "input_cost_per_second": 0.00009667,
+  "deepgram/streaming/nova-3-medical": {
+    "input_cost_per_second": 0.00012833,
     "litellm_provider": "deepgram",
     "metadata": {
-      "calculation": "$0.0058/60 seconds = $0.00009667 per second",
+      "calculation": "$0.0077/60 seconds = $0.00012833 per second",
+      "note": "Nova-3 Medical streaming, launch price from Deepgram's 2025-03-03 announcement. deepgram.com/pricing does not list Nova-3 Medical, and this matches its current Nova-3 monolingual streaming pay as you go rate",
+      "original_pricing_per_minute": 0.0077
+    },
+    "mode": "audio_transcription",
+    "output_cost_per_second": 0,
+    "source": "https://www.businesswire.com/news/home/20250303470439/en",
+    "supported_endpoints": [
+      "/v1/listen"
+    ]
+  },
+  "deepgram/streaming/nova-3-multilingual": {
+    "input_cost_per_second": 0.00015333,
+    "litellm_provider": "deepgram",
+    "metadata": {
+      "calculation": "$0.0092/60 seconds = $0.00015333 per second",
       "note": "Nova-3 multilingual (language=multi) streaming, pay as you go",
-      "original_pricing_per_minute": 0.0058
+      "original_pricing_per_minute": 0.0092
     },
     "mode": "audio_transcription",
     "output_cost_per_second": 0,
@@ -24534,7 +24555,7 @@
     "input_cost_per_token_flex": 3.1e-7,
     "input_cost_per_token_priority": 0.000001085,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 164000,
+    "max_input_tokens": 156000,
     "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 0.00000185,
@@ -24545,7 +24566,7 @@
     "supports_reasoning": true,
     "supports_native_structured_output": true,
     "supports_tool_choice": true,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.md",
     "supports_audio_input": false,
     "supports_response_schema": true,
     "supports_vision": false
@@ -35011,6 +35032,7 @@
   "gpt-4.1": {
     "cache_read_input_token_cost": 5e-7,
     "cache_read_input_token_cost_priority": 8.75e-7,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 0.000002,
     "input_cost_per_token_batches": 0.000001,
     "input_cost_per_token_priority": 0.0000035,
@@ -35096,6 +35118,7 @@
   "gpt-4.1-mini": {
     "cache_read_input_token_cost": 1e-7,
     "cache_read_input_token_cost_priority": 1.75e-7,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 4e-7,
     "input_cost_per_token_batches": 2e-7,
     "input_cost_per_token_priority": 7e-7,
@@ -35255,6 +35278,7 @@
   "gpt-4o": {
     "cache_read_input_token_cost": 0.00000125,
     "cache_read_input_token_cost_priority": 0.000002125,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 0.0000025,
     "input_cost_per_token_batches": 0.00000125,
     "input_cost_per_token_priority": 0.00000425,
@@ -35599,6 +35623,7 @@
   "gpt-4o-mini": {
     "cache_read_input_token_cost": 7.5e-8,
     "cache_read_input_token_cost_priority": 1.25e-7,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 1.5e-7,
     "input_cost_per_token_batches": 7.5e-8,
     "input_cost_per_token_priority": 2.5e-7,
@@ -49843,6 +49868,7 @@
     "supports_max_reasoning_effort": true,
     "supports_mid_conversation_system": true,
     "supports_native_structured_output": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_output_config": true,
     "supports_parallel_tool_use_config": true,
     "supports_pdf_input": true,
@@ -49887,6 +49913,7 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_native_structured_output": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_max_reasoning_effort": true,
     "supports_output_config": true,
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -54194,23 +54221,23 @@
     "supports_vision": true
   },
   "wandb/meta-llama/Llama-3.1-8B-Instruct": {
-    "max_input_tokens": 131000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 128000,
     "input_cost_per_token": 2.2e-7,
     "output_cost_per_token": 2.2e-7,
     "litellm_provider": "wandb",
     "mode": "chat",
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference"
   },
   "wandb/deepseek-ai/DeepSeek-V3.1": {
     "supports_reasoning": true,
-    "max_input_tokens": 161000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 128000,
     "input_cost_per_token": 5.5e-7,
     "output_cost_per_token": 0.00000165,
     "litellm_provider": "wandb",
     "mode": "chat",
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference"
   },
   "wandb/meta-llama/Llama-3.3-70B-Instruct": {
     "max_input_tokens": 128000,
@@ -54694,6 +54721,8 @@
     "input_cost_per_token_above_200k_tokens_batches": 0.000002,
     "input_cost_per_token_batches": 0.000001,
     "litellm_provider": "xai",
+    "token_count_framing": 185,
+    "token_count_tool_framing": 214,
     "max_input_tokens": 1000000,
     "max_output_tokens": 1000000,
     "mode": "chat",
@@ -60112,6 +60141,11 @@
     "max_input_tokens": 922000,
     "max_output_tokens": 128000,
     "mode": "responses",
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-cyber.html",
     "use_openai_responses_path": true,
     "supported_endpoints": [
@@ -60133,7 +60167,8 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_xhigh_reasoning_effort": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "bedrock_mantle/openai.gpt-daybreak-blue-5.6-sol": {
     "input_cost_per_token": 0.0000044,
@@ -60148,6 +60183,11 @@
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
     "mode": "responses",
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "use_openai_responses_path": true,
     "supported_endpoints": [
       "/v1/responses"
@@ -60167,7 +60207,8 @@
     "supports_tool_choice": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_vision": true,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-daybreak-blue-56-sol.html"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-daybreak-blue-56-sol.html",
+    "supports_web_search": true
   },
   "bedrock_mantle/openai.gpt-5.6-luna": {
     "input_cost_per_token": 2.2e-7,
@@ -60573,6 +60614,11 @@
     "mode": "responses",
     "output_cost_per_token_above_272k_tokens_ultrafast": 0.000495,
     "output_cost_per_token_ultrafast": 0.00033,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "use_openai_responses_path": true,
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -60596,7 +60642,8 @@
     "supports_tool_choice": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_vision": true,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html",
+    "supports_web_search": true
   },
   "bedrock_mantle/openai.gpt-6-sol": {
     "input_cost_per_token": 0.0000022,
@@ -60611,6 +60658,11 @@
     "max_input_tokens": 922000,
     "max_output_tokens": 128000,
     "mode": "responses",
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "use_openai_responses_path": true,
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -60634,7 +60686,8 @@
     "supports_tool_choice": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_vision": true,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html",
+    "supports_web_search": true
   },
   "bedrock_mantle/openai.gpt-6-luna": {
     "input_cost_per_token": 1.1e-7,
@@ -60649,6 +60702,11 @@
     "max_input_tokens": 922000,
     "max_output_tokens": 128000,
     "mode": "responses",
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "use_openai_responses_path": true,
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -60672,7 +60730,8 @@
     "supports_tool_choice": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_vision": true,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html",
+    "supports_web_search": true
   },
   "us.openai.gpt-6-astra": {
     "supports_bedrock_runtime_chat_completions_response_format": true,
@@ -62992,7 +63051,9 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_framing": 23,
+    "token_count_tool_framing": 12
   },
   "deepseek/deepseek-v4-flash-vision-exp": {
     "cache_creation_input_token_cost": 0,
@@ -63098,7 +63159,9 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": false
+    "supports_vision": false,
+    "token_count_framing": 76,
+    "token_count_tool_framing": 75
   },
   "tencent/deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0,
@@ -64412,6 +64475,7 @@
     "input_cost_per_token": 3e-7,
     "input_cost_per_token_priority": 3.75e-7,
     "litellm_provider": "fireworks_ai",
+    "token_count_framing": 23,
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "mode": "chat",
@@ -64419,6 +64483,7 @@
     "output_cost_per_token_priority": 0.0000015,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -64438,6 +64503,7 @@
     "output_cost_per_token_priority": 0.00000225,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -64480,6 +64546,7 @@
     ],
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64510,6 +64577,7 @@
     "input_cost_per_token": 3e-7,
     "input_cost_per_token_priority": 3.75e-7,
     "litellm_provider": "fireworks_ai",
+    "token_count_framing": 23,
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "mode": "chat",
@@ -64517,6 +64585,7 @@
     "output_cost_per_token_priority": 0.0000015,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -64536,6 +64605,7 @@
     "output_cost_per_token_priority": 0.00000225,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -64610,6 +64680,7 @@
     ],
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64630,6 +64701,7 @@
     ],
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64653,6 +64725,7 @@
     ],
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64728,6 +64801,7 @@
     "output_cost_per_token_priority": 0.000003,
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64764,6 +64838,7 @@
     "output_cost_per_token_priority": 0.000006375,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_vision": true
   },
@@ -64800,6 +64875,7 @@
     "output_cost_per_token_priority": 0.000003,
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64870,6 +64946,7 @@
     ],
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -64893,6 +64970,7 @@
     ],
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67686,6 +67764,7 @@
     "output_cost_per_token_priority": 0.0000055,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67704,6 +67783,7 @@
     "output_cost_per_token_priority": 0.00000825,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67722,6 +67802,7 @@
     "output_cost_per_token_priority": 0.0000055,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67740,6 +67821,7 @@
     "output_cost_per_token_priority": 0.00000825,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67755,6 +67837,7 @@
     "output_cost_per_token": 0.0000066,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67797,6 +67880,7 @@
     "output_cost_per_token": 0.0000066,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -67815,6 +67899,7 @@
     "output_cost_per_token_priority": 6.25e-7,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -67833,6 +67918,7 @@
     "output_cost_per_token_priority": 9.375e-7,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -67850,6 +67936,7 @@
     "output_cost_per_token_priority": 6.25e-7,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -67868,6 +67955,7 @@
     "output_cost_per_token_priority": 9.375e-7,
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -67886,6 +67974,7 @@
     "output_cost_per_token_priority": 0.00000405,
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -68671,6 +68760,7 @@
     "supports_max_reasoning_effort": true,
     "supports_mid_conversation_system": true,
     "supports_native_structured_output": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_output_config": true,
     "supports_parallel_tool_use_config": true,
     "supports_pdf_input": true,
@@ -68716,6 +68806,7 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_native_structured_output": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_max_reasoning_effort": true,
     "supports_output_config": true,
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -68944,6 +69035,7 @@
     "supports_max_reasoning_effort": true,
     "supports_mid_conversation_system": true,
     "supports_native_structured_output": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_output_config": true,
     "supports_parallel_tool_use_config": true,
     "supports_pdf_input": true,
@@ -68984,6 +69076,7 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
     "supports_native_structured_output": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_max_reasoning_effort": true,
     "supports_output_config": true,
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -69023,7 +69116,13 @@
     "cache_read_input_token_cost_above_272k_tokens": 5.4e-7,
     "output_cost_per_token": 0.0000162,
     "output_cost_per_token_above_272k_tokens": 0.0000243,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html"
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.0144,
+      "search_context_size_low": 0.0144,
+      "search_context_size_medium": 0.0144
+    },
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html",
+    "supports_web_search": true
   },
   "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna": {
     "litellm_provider": "bedrock_mantle",
@@ -69058,7 +69157,13 @@
     "cache_read_input_token_cost_above_272k_tokens": 5.4e-8,
     "output_cost_per_token": 0.00000162,
     "output_cost_per_token_above_272k_tokens": 0.00000243,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html"
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.0144,
+      "search_context_size_low": 0.0144,
+      "search_context_size_medium": 0.0144
+    },
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html",
+    "supports_web_search": true
   },
   "bedrock_mantle/us-gov-west-1/openai.gpt-5.4": {
     "litellm_provider": "bedrock_mantle",
@@ -69087,7 +69192,13 @@
     "input_cost_per_token": 0.000003375,
     "cache_read_input_token_cost": 3.375e-7,
     "output_cost_per_token": 0.00002025,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-54.html"
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.0144,
+      "search_context_size_low": 0.0144,
+      "search_context_size_medium": 0.0144
+    },
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-54.html",
+    "supports_web_search": true
   },
   "bedrock_mantle/us-gov-west-1/xai.grok-4.3": {
     "use_openai_responses_path": true,
@@ -74129,6 +74240,7 @@
     "output_cost_per_token_priority": 0.00001875,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -75716,6 +75828,11 @@
     "output_cost_per_token_above_272k_tokens": 0.0000165,
     "output_cost_per_token_above_272k_tokens_ultrafast": 0.000099,
     "output_cost_per_token_ultrafast": 0.000066,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-1-sol.html",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -75738,6 +75855,7 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true,
+    "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true,
     "use_openai_responses_path": true
   },
@@ -77190,6 +77308,7 @@
     "supports_audio_input": true,
     "supports_audio_output": false,
     "supports_computer_use": true,
+    "supports_continuation": true,
     "supports_function_calling": true,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
@@ -77253,6 +77372,7 @@
     ],
     "supports_audio_input": true,
     "supports_computer_use": true,
+    "supports_continuation": true,
     "supports_function_calling": true,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
@@ -77314,6 +77434,7 @@
       "text"
     ],
     "supports_audio_input": true,
+    "supports_continuation": true,
     "supports_function_calling": true,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
@@ -77675,6 +77796,7 @@
     "output_cost_per_token_priority": 0.0000015,
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -77833,6 +77955,7 @@
     "output_cost_per_token_priority": 9e-7,
     "source": "https://platform.minimax.io/docs/guides/pricing",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -79470,6 +79593,11 @@
     "mode": "responses",
     "output_cost_per_token": 0.0000055,
     "output_cost_per_token_above_272k_tokens": 0.00000825,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.012,
+      "search_context_size_low": 0.012,
+      "search_context_size_medium": 0.012
+    },
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-1-terra.html",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -79492,6 +79620,7 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true,
+    "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true,
     "use_openai_responses_path": true
   },
@@ -81612,6 +81741,7 @@
     ],
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -81628,6 +81758,7 @@
     "output_cost_per_token": 0.00000308,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -81644,6 +81775,7 @@
     "output_cost_per_token": 8.4e-7,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -81660,6 +81792,7 @@
     "output_cost_per_token": 8.4e-7,
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
