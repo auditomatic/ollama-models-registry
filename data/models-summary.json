@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T04:19:56.878Z",
+  "lastUpdated": "2026-11-11T02:15:54.110Z",
   "totalModels": 269,
   "totalTags": 7665,
   "categories": [
@@ -20,7 +20,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "96.9M",
+      "pullCount": "97.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -38,13 +38,13 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "45.3M",
+      "pullCount": "45.4M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "43M",
+      "pullCount": "43.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -56,7 +56,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "36.8M",
+      "pullCount": "36.9M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -80,13 +80,13 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "25M",
+      "pullCount": "25.1M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
     {
       "name": "qwen2.5-coder",
-      "pullCount": "23.5M",
+      "pullCount": "23.6M",
       "description": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing.",
       "tagCount": 199
     },
@@ -122,7 +122,7 @@
     },
     {
       "name": "glm-ocr",
-      "pullCount": "9.1M",
+      "pullCount": "9.2M",
       "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder–decoder architecture.",
       "tagCount": 3
     },
