@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T02:23:58.581Z",
+  "lastUpdated": "2026-11-17T04:47:16.907Z",
   "totalModels": 270,
   "totalTags": 7666,
   "categories": [
@@ -14,13 +14,13 @@
   "topModels": [
     {
       "name": "llama3.1",
-      "pullCount": "121.1M",
+      "pullCount": "121.2M",
       "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
       "tagCount": 93
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "97.9M",
+      "pullCount": "98M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -32,19 +32,19 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "87.7M",
+      "pullCount": "87.8M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "qwen2.5",
-      "pullCount": "45.9M",
+      "pullCount": "46.1M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "43.6M",
+      "pullCount": "43.7M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -56,7 +56,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "37.3M",
+      "pullCount": "37.4M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -74,7 +74,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "26.2M",
+      "pullCount": "26.5M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
@@ -104,7 +104,7 @@
     },
     {
       "name": "gpt-oss",
-      "pullCount": "15.6M",
+      "pullCount": "15.8M",
       "description": "OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.",
       "tagCount": 5
     },
@@ -128,7 +128,7 @@
     },
     {
       "name": "bge-m3",
-      "pullCount": "8.5M",
+      "pullCount": "8.6M",
       "description": "BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity.",
       "tagCount": 3
     }
