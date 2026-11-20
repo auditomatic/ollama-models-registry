@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T03:51:51.903Z",
+  "lastUpdated": "2026-11-20T03:44:26.134Z",
   "totalModels": 270,
   "totalTags": 7666,
   "categories": [
@@ -20,13 +20,13 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "98.2M",
+      "pullCount": "98.3M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
     {
       "name": "deepseek-r1",
-      "pullCount": "95.2M",
+      "pullCount": "95.3M",
       "description": "DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro.",
       "tagCount": 35
     },
@@ -38,13 +38,13 @@
     },
     {
       "name": "qwen2.5",
-      "pullCount": "46.3M",
+      "pullCount": "46.4M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "44M",
+      "pullCount": "44.1M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -56,25 +56,25 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "37.5M",
+      "pullCount": "37.6M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
     {
       "name": "mistral",
-      "pullCount": "34.2M",
+      "pullCount": "34.3M",
       "description": "The 7B model released by Mistral AI, updated to version 0.3.",
       "tagCount": 84
     },
     {
       "name": "gemma4",
-      "pullCount": "29.4M",
+      "pullCount": "29.5M",
       "description": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding.",
       "tagCount": 51
     },
     {
       "name": "qwen3.5",
-      "pullCount": "26.7M",
+      "pullCount": "26.8M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
@@ -116,13 +116,13 @@
     },
     {
       "name": "qwen3-coder",
-      "pullCount": "11.1M",
+      "pullCount": "11.2M",
       "description": "Alibaba's performant long context models for agentic and coding tasks.",
       "tagCount": 9
     },
     {
       "name": "glm-ocr",
-      "pullCount": "9.4M",
+      "pullCount": "9.5M",
       "description": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder–decoder architecture.",
       "tagCount": 3
     },
