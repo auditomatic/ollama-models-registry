@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T03:07:54.370Z",
+  "lastUpdated": "2026-11-24T06:25:17.988Z",
   "totalModels": 272,
   "totalTags": 7670,
   "categories": [
@@ -20,7 +20,7 @@
     },
     {
       "name": "nomic-embed-text",
-      "pullCount": "99M",
+      "pullCount": "99.1M",
       "description": "A high-performing open embedding model with a large token context window.",
       "tagCount": 3
     },
@@ -32,19 +32,19 @@
     },
     {
       "name": "llama3.2",
-      "pullCount": "88.2M",
+      "pullCount": "88.3M",
       "description": "Meta's Llama 3.2 goes small with 1B and 3B models.",
       "tagCount": 63
     },
     {
       "name": "qwen2.5",
-      "pullCount": "46.7M",
+      "pullCount": "46.9M",
       "description": "Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support.",
       "tagCount": 133
     },
     {
       "name": "qwen3",
-      "pullCount": "44.4M",
+      "pullCount": "44.6M",
       "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.",
       "tagCount": 58
     },
@@ -56,7 +56,7 @@
     },
     {
       "name": "gemma2",
-      "pullCount": "37.8M",
+      "pullCount": "37.9M",
       "description": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B.",
       "tagCount": 94
     },
@@ -74,7 +74,7 @@
     },
     {
       "name": "qwen3.5",
-      "pullCount": "27.2M",
+      "pullCount": "27.3M",
       "description": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.",
       "tagCount": 72
     },
@@ -128,7 +128,7 @@
     },
     {
       "name": "bge-m3",
-      "pullCount": "8.8M",
+      "pullCount": "8.9M",
       "description": "BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity.",
       "tagCount": 3
     }
